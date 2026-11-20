@@ -1,0 +1,2102 @@
+
+<!-- ==================================================
+ AVORA SOLUTIONS — HOW WE WORK
+ Elementor HTML Widget | Complete Code
+ Brand: Navy #102F46 / Teal #168B87
+ Font: Open Sans | Body: 16px
+================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+#av-how {
+  --navy:#102F46;
+  --navy2:#19475A;
+  --teal:#168B87;
+  --teal-dark:#0E726E;
+  --mint:#E7F5F2;
+  --ice:#F4F9FA;
+  --white:#fff;
+  --heading:#15384A;
+  --body:#526774;
+  --border:#DFE9E9;
+  --shadow:0 18px 50px rgba(16,47,70,.075);
+  font-family:'Open Sans',sans-serif;
+  font-size:16px;
+  line-height:1.8;
+  color:var(--body);
+  background:#fff;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+#av-how *,
+#av-how *::before,
+#av-how *::after {
+  box-sizing:border-box;
+}
+
+#av-how h1,
+#av-how h2,
+#av-how h3,
+#av-how h4,
+#av-how p,
+#av-how ul {
+  margin:0;
+}
+
+#av-how h1,
+#av-how h2,
+#av-how h3,
+#av-how h4 {
+  font-family:'Open Sans',sans-serif;
+  color:var(--heading);
+  line-height:1.3;
+  font-weight:800;
+}
+
+#av-how p,
+#av-how li {
+  font-size:16px;
+  line-height:1.85;
+}
+
+#av-how a {
+  text-decoration:none;
+  transition:.25s ease;
+}
+
+#av-how button {
+  font-family:inherit;
+}
+
+#av-how a:focus-visible,
+#av-how button:focus-visible {
+  outline:3px solid var(--teal);
+  outline-offset:4px;
+}
+
+#av-how .avw-container {
+  width:min(100% - 40px,1180px);
+  margin:auto;
+}
+
+#av-how .avw-section {
+  padding:90px 0;
+}
+
+#av-how .avw-label {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:12px;
+  line-height:1.5;
+  font-weight:800;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  color:var(--teal);
+  margin-bottom:15px;
+}
+
+#av-how .avw-label::before {
+  content:"";
+  width:23px;
+  height:2px;
+  background:currentColor;
+}
+
+#av-how .avw-title {
+  font-size:clamp(29px,3.4vw,43px);
+  letter-spacing:-1.3px;
+  margin-bottom:18px;
+}
+
+#av-how .avw-title span {
+  color:var(--teal);
+}
+
+#av-how .avw-section-head {
+  text-align:center;
+  max-width:750px;
+  margin:0 auto 45px;
+}
+
+#av-how .avw-section-head .avw-label {
+  justify-content:center;
+}
+
+#av-how .avw-section-head p {
+  max-width:690px;
+  margin:auto;
+}
+
+#av-how .avw-btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:11px;
+  padding:14px 25px;
+  min-height:52px;
+  border:1px solid var(--teal);
+  border-radius:7px;
+  background:var(--teal);
+  color:#fff;
+  font-size:14px;
+  line-height:1.4;
+  font-weight:700;
+  cursor:pointer;
+}
+
+#av-how .avw-btn:hover {
+  background:var(--teal-dark);
+  border-color:var(--teal-dark);
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+#av-how .avw-btn-white {
+  background:#fff;
+  border-color:#fff;
+  color:var(--navy);
+}
+
+#av-how .avw-btn-white:hover {
+  background:var(--mint);
+  border-color:var(--mint);
+  color:var(--navy);
+}
+
+#av-how .avw-btn-outline {
+  background:transparent;
+  border-color:#BDD4D3;
+  color:var(--navy);
+}
+
+#av-how .avw-btn-outline:hover {
+  background:var(--mint);
+  border-color:var(--teal);
+  color:var(--navy);
+}
+
+#av-how .avw-btn svg {
+  width:18px;
+  height:18px;
+  flex-shrink:0;
+}
+
+#av-how .avw-icon {
+  width:27px;
+  height:27px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+/* ==================================================
+ 01 HERO
+================================================== */
+
+#av-how .avw-hero {
+  position:relative;
+  padding:105px 0 115px;
+  background:
+    radial-gradient(circle at 85% 25%,rgba(48,171,160,.18),transparent 34%),
+    radial-gradient(circle at 5% 95%,rgba(255,255,255,.055),transparent 30%),
+    linear-gradient(125deg,#102F46,#19475A);
+}
+
+#av-how .avw-hero::before {
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  right:-180px;
+  top:-260px;
+}
+
+#av-how .avw-hero-grid {
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:65px;
+  align-items:center;
+}
+
+#av-how .avw-hero .avw-label {
+  color:#91DDD5;
+}
+
+#av-how .avw-hero h1 {
+  font-size:clamp(38px,4.7vw,59px);
+  letter-spacing:-2px;
+  color:#fff;
+  line-height:1.16;
+  margin-bottom:23px;
+}
+
+#av-how .avw-hero h1 span {
+  color:#91DDD5;
+}
+
+#av-how .avw-hero p {
+  color:#D7E6EA;
+  font-size:17px;
+  max-width:590px;
+  margin-bottom:29px;
+}
+
+#av-how .avw-hero-actions {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+#av-how .avw-hero-note {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-top:26px;
+  color:#B9D9D9;
+  font-size:13px;
+  font-weight:600;
+}
+
+#av-how .avw-hero-note svg {
+  width:19px;
+  height:19px;
+  color:#91DDD5;
+}
+
+#av-how .avw-hero-panel {
+  background:#fff;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:17px;
+  padding:28px;
+  box-shadow:0 25px 65px rgba(0,0,0,.16);
+  transform:rotate(1deg);
+}
+
+#av-how .avw-panel-top {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  padding-bottom:18px;
+  border-bottom:1px solid var(--border);
+}
+
+#av-how .avw-panel-top strong {
+  color:var(--heading);
+  font-size:17px;
+}
+
+#av-how .avw-panel-tag {
+  background:var(--mint);
+  color:var(--teal-dark);
+  font-size:11px;
+  font-weight:800;
+  padding:6px 10px;
+  border-radius:20px;
+  white-space:nowrap;
+}
+
+#av-how .avw-panel-list {
+  padding-top:19px;
+}
+
+#av-how .avw-panel-row {
+  display:flex;
+  gap:15px;
+  position:relative;
+  padding-bottom:24px;
+}
+
+#av-how .avw-panel-row:last-child {
+  padding-bottom:0;
+}
+
+#av-how .avw-panel-row:not(:last-child)::after {
+  content:"";
+  position:absolute;
+  left:18px;
+  top:39px;
+  bottom:0;
+  width:1px;
+  background:#CFE5E1;
+}
+
+#av-how .avw-panel-number {
+  flex-shrink:0;
+  width:37px;
+  height:37px;
+  border-radius:50%;
+  background:var(--mint);
+  color:var(--teal);
+  display:grid;
+  place-items:center;
+  font-size:13px;
+  font-weight:800;
+}
+
+#av-how .avw-panel-row:last-child .avw-panel-number {
+  background:var(--teal);
+  color:#fff;
+}
+
+#av-how .avw-panel-row strong {
+  display:block;
+  color:var(--heading);
+  font-size:15px;
+  margin-bottom:3px;
+}
+
+#av-how .avw-panel-row p {
+  font-size:13px;
+  line-height:1.65;
+}
+
+/* ==================================================
+ 02 FOUR-STEP PROCESS
+================================================== */
+
+#av-how .avw-process {
+  background:#fff;
+}
+
+#av-how .avw-steps {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+#av-how .avw-step {
+  position:relative;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:#fff;
+  padding:29px 23px;
+  transition:.25s ease;
+}
+
+#av-how .avw-step:hover {
+  border-color:#A8D5D0;
+  box-shadow:var(--shadow);
+  transform:translateY(-4px);
+}
+
+#av-how .avw-step-number {
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:var(--mint);
+  color:var(--teal);
+  font-size:17px;
+  font-weight:800;
+  margin-bottom:23px;
+}
+
+#av-how .avw-step h3 {
+  font-size:19px;
+  margin-bottom:12px;
+}
+
+#av-how .avw-step p {
+  font-size:15px;
+}
+
+#av-how .avw-step-arrow {
+  position:absolute;
+  right:-14px;
+  top:48px;
+  z-index:2;
+  width:28px;
+  height:28px;
+  border:1px solid var(--border);
+  border-radius:50%;
+  background:#fff;
+  color:var(--teal);
+  display:grid;
+  place-items:center;
+  font-size:16px;
+}
+
+#av-how .avw-process-foot {
+  margin:30px auto 0;
+  padding:17px 24px;
+  background:var(--mint);
+  border-radius:9px;
+  max-width:850px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  text-align:center;
+}
+
+#av-how .avw-process-foot svg {
+  width:22px;
+  height:22px;
+  color:var(--teal);
+  flex-shrink:0;
+}
+
+#av-how .avw-process-foot p {
+  font-size:15px;
+}
+
+#av-how .avw-process-foot strong {
+  color:var(--heading);
+}
+
+/* ==================================================
+ 03 PRACTICE SETUP
+================================================== */
+
+#av-how .avw-setup {
+  background:var(--ice);
+}
+
+#av-how .avw-setup-grid {
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:75px;
+  align-items:center;
+}
+
+#av-how .avw-setup-copy p {
+  margin-bottom:18px;
+}
+
+#av-how .avw-setup-note {
+  padding:18px 20px;
+  background:var(--mint);
+  border-left:3px solid var(--teal);
+  border-radius:0 8px 8px 0;
+  font-size:14px;
+  margin-top:25px;
+}
+
+#av-how .avw-setup-cards {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:17px;
+}
+
+#av-how .avw-setup-card {
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:25px 22px;
+}
+
+#av-how .avw-setup-card:nth-child(2) {
+  transform:translateY(23px);
+}
+
+#av-how .avw-setup-card:nth-child(4) {
+  transform:translateY(23px);
+}
+
+#av-how .avw-setup-icon {
+  width:48px;
+  height:48px;
+  background:var(--mint);
+  color:var(--teal);
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  margin-bottom:17px;
+}
+
+#av-how .avw-setup-card h3 {
+  font-size:17px;
+  margin-bottom:9px;
+}
+
+#av-how .avw-setup-card p {
+  font-size:14px;
+}
+
+/* ==================================================
+ 04 ONBOARDING TIMELINE
+================================================== */
+
+#av-how .avw-timeline-section {
+  background:#fff;
+}
+
+#av-how .avw-timeline-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:65px;
+  align-items:center;
+}
+
+#av-how .avw-timeline-card {
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:30px;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+
+#av-how .avw-time-header {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  margin-bottom:27px;
+}
+
+#av-how .avw-time-header strong {
+  color:var(--heading);
+  font-size:18px;
+}
+
+#av-how .avw-time-badge {
+  background:var(--mint);
+  color:var(--teal-dark);
+  border-radius:20px;
+  padding:7px 13px;
+  font-size:12px;
+  font-weight:800;
+}
+
+#av-how .avw-time-row {
+  display:flex;
+  gap:17px;
+  position:relative;
+  padding-bottom:27px;
+}
+
+#av-how .avw-time-row:last-child {
+  padding-bottom:0;
+}
+
+#av-how .avw-time-row:not(:last-child)::before {
+  content:"";
+  position:absolute;
+  left:17px;
+  top:36px;
+  bottom:0;
+  width:2px;
+  background:#D5E9E5;
+}
+
+#av-how .avw-time-dot {
+  flex-shrink:0;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:var(--mint);
+  display:grid;
+  place-items:center;
+  color:var(--teal);
+  font-weight:800;
+  font-size:13px;
+}
+
+#av-how .avw-time-row h3 {
+  font-size:16px;
+  margin:4px 0 7px;
+}
+
+#av-how .avw-time-row p {
+  font-size:14px;
+}
+
+#av-how .avw-time-foot {
+  margin-top:24px;
+  padding:15px;
+  border-radius:9px;
+  background:var(--ice);
+  text-align:center;
+  font-size:13px;
+}
+
+#av-how .avw-timeline-copy p {
+  margin-bottom:19px;
+}
+
+#av-how .avw-check-list {
+  list-style:none;
+  padding:0;
+  margin:22px 0 28px;
+}
+
+#av-how .avw-check-list li {
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+#av-how .avw-check-list svg {
+  flex-shrink:0;
+  width:21px;
+  height:21px;
+  color:var(--teal);
+  margin-top:5px;
+}
+
+/* ==================================================
+ 05 AFTER ONBOARDING
+================================================== */
+
+#av-how .avw-after {
+  background:var(--ice);
+}
+
+#av-how .avw-after-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+#av-how .avw-after-card {
+  padding:31px 27px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+}
+
+#av-how .avw-after-icon {
+  width:55px;
+  height:55px;
+  border-radius:12px;
+  background:var(--mint);
+  color:var(--teal);
+  display:grid;
+  place-items:center;
+  margin-bottom:22px;
+}
+
+#av-how .avw-after-card h3 {
+  font-size:19px;
+  margin-bottom:12px;
+}
+
+#av-how .avw-after-card p {
+  font-size:15px;
+}
+
+#av-how .avw-after-note {
+  margin:30px auto 0;
+  max-width:900px;
+  padding:20px 25px;
+  border:1px solid #CDE6E1;
+  border-radius:10px;
+  background:var(--mint);
+  text-align:center;
+}
+
+#av-how .avw-after-note p {
+  font-size:15px;
+}
+
+#av-how .avw-after-note strong {
+  color:var(--heading);
+}
+
+/* ==================================================
+ 06 FAQ + CTA
+================================================== */
+
+#av-how .avw-faq-section {
+  background:#fff;
+}
+
+#av-how .avw-faq-grid {
+  display:grid;
+  grid-template-columns:.7fr 1.3fr;
+  gap:65px;
+  align-items:start;
+}
+
+#av-how .avw-faq-intro p {
+  margin-bottom:25px;
+}
+
+#av-how .avw-faq-item {
+  border:1px solid var(--border);
+  border-radius:10px;
+  margin-bottom:12px;
+  overflow:hidden;
+  background:#fff;
+}
+
+#av-how .avw-faq-item.open {
+  border-color:#A9D8D0;
+}
+
+#av-how .avw-faq-question {
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  padding:20px 22px;
+  border:0;
+  background:#fff;
+  color:var(--heading);
+  text-align:left;
+  font-size:16px;
+  line-height:1.55;
+  font-weight:700;
+  cursor:pointer;
+}
+
+#av-how .avw-faq-plus {
+  flex-shrink:0;
+  width:29px;
+  height:29px;
+  border-radius:50%;
+  background:var(--mint);
+  color:var(--teal);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+  font-weight:400;
+  transition:transform .2s;
+}
+
+#av-how .avw-faq-item.open .avw-faq-plus {
+  transform:rotate(45deg);
+}
+
+#av-how .avw-faq-answer {
+  padding:0 22px 21px;
+}
+
+#av-how .avw-faq-answer[hidden] {
+  display:none!important;
+}
+
+#av-how .avw-faq-answer p {
+  font-size:16px;
+}
+
+#av-how .avw-cta {
+  padding:70px 0;
+  background:linear-gradient(125deg,#102F46,#19475A);
+}
+
+#av-how .avw-cta-grid {
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:35px;
+  align-items:center;
+}
+
+#av-how .avw-cta .avw-label {
+  color:#91DDD5;
+}
+
+#av-how .avw-cta h2 {
+  color:#fff;
+  font-size:clamp(29px,3.3vw,40px);
+  letter-spacing:-1px;
+  margin-bottom:14px;
+}
+
+#av-how .avw-cta p {
+  color:#D4E6E9;
+  max-width:660px;
+}
+
+#av-how .avw-cta-actions {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* ==================================================
+ BACK TO TOP
+================================================== */
+
+#av-how .avw-back-top {
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:999;
+  width:46px;
+  height:46px;
+  border:0;
+  border-radius:50%;
+  background:var(--teal);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  box-shadow:0 8px 25px rgba(22,139,135,.3);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(12px);
+  transition:.25s;
+}
+
+#av-how .avw-back-top.show {
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+#av-how .avw-back-top:hover {
+  background:var(--navy);
+}
+
+#av-how .avw-back-top svg {
+  width:21px;
+  height:21px;
+  stroke:currentColor;
+  stroke-width:2;
+  fill:none;
+}
+
+/* ==================================================
+ RESPONSIVE
+================================================== */
+
+@media(max-width:1050px) {
+  #av-how .avw-hero-grid {
+    gap:35px;
+  }
+
+  #av-how .avw-setup-grid,
+  #av-how .avw-timeline-grid,
+  #av-how .avw-faq-grid {
+    gap:40px;
+  }
+
+  #av-how .avw-steps {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #av-how .avw-step-arrow {
+    display:none;
+  }
+}
+
+@media(max-width:800px) {
+  #av-how .avw-section {
+    padding:70px 0;
+  }
+
+  #av-how .avw-hero {
+    padding:75px 0;
+  }
+
+  #av-how .avw-hero-grid,
+  #av-how .avw-setup-grid,
+  #av-how .avw-timeline-grid,
+  #av-how .avw-faq-grid,
+  #av-how .avw-cta-grid {
+    grid-template-columns:1fr;
+  }
+
+  #av-how .avw-hero-panel {
+    transform:none;
+    max-width:550px;
+  }
+
+  #av-how .avw-setup-cards {
+    max-width:650px;
+  }
+
+  #av-how .avw-cta-actions {
+    justify-content:flex-start;
+  }
+}
+
+@media(max-width:600px) {
+  #av-how .avw-container {
+    width:min(100% - 34px,1180px);
+  }
+
+  #av-how .avw-section {
+    padding:58px 0;
+  }
+
+  #av-how .avw-hero {
+    padding:65px 0;
+  }
+
+  #av-how .avw-hero h1 {
+    font-size:37px;
+    letter-spacing:-1.3px;
+  }
+
+  #av-how .avw-hero p {
+    font-size:16px;
+  }
+
+  #av-how .avw-title {
+    font-size:29px;
+    letter-spacing:-.8px;
+  }
+
+  #av-how .avw-section-head {
+    margin-bottom:32px;
+  }
+
+  #av-how .avw-hero-actions {
+    align-items:stretch;
+  }
+
+  #av-how .avw-hero-panel {
+    padding:21px;
+  }
+
+  #av-how .avw-steps,
+  #av-how .avw-setup-cards,
+  #av-how .avw-after-grid {
+    grid-template-columns:1fr;
+  }
+
+  #av-how .avw-setup-card:nth-child(2),
+  #av-how .avw-setup-card:nth-child(4) {
+    transform:none;
+  }
+
+  #av-how .avw-step,
+  #av-how .avw-setup-card,
+  #av-how .avw-after-card {
+    padding:24px;
+  }
+
+  #av-how .avw-timeline-card {
+    padding:21px;
+  }
+
+  #av-how .avw-time-header {
+    flex-wrap:wrap;
+  }
+
+  #av-how .avw-process-foot {
+    align-items:flex-start;
+    text-align:left;
+  }
+
+  #av-how .avw-faq-question {
+    padding:18px;
+  }
+
+  #av-how .avw-faq-answer {
+    padding:0 18px 19px;
+  }
+
+  #av-how .avw-cta {
+    padding:60px 0;
+  }
+
+  #av-how .avw-cta-actions {
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  #av-how .avw-back-top {
+    right:15px;
+    bottom:15px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  #av-how *,
+  #av-how *::before,
+  #av-how *::after {
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+
+<div id="av-how">
+
+<!-- ==================================================
+ SECTION 01 — HERO
+================================================== -->
+
+<section class="avw-hero">
+  <div class="avw-container avw-hero-grid">
+
+    <div>
+      <span class="avw-label">
+        HOW WE WORK
+      </span>
+
+      <h1>
+        From First Conversation
+        to <span>Dedicated Medical
+        Virtual Assistant Support.</span>
+      </h1>
+
+      <p>
+        A clear, collaborative process
+        that helps your practice
+        identify the right
+        administrative support,
+        select a suitable assistant,
+        and get started through
+        secure onboarding.
+      </p>
+
+      <div class="avw-hero-actions">
+        <a class="avw-btn"
+           href="https://www.avorasolutions.com/contact">
+          Schedule a Discovery Call
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+            <path d="M5 12h14m-6-6 6 6-6 6"/>
+          </svg>
+        </a>
+
+        <a class="avw-btn avw-btn-white"
+           href="#avw-process">
+          See Our Process
+        </a>
+      </div>
+
+      <div class="avw-hero-note">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 2"/>
+        </svg>
+        Typical onboarding: 1–2 weeks,
+        depending on practice requirements
+      </div>
+    </div>
+
+    <div class="avw-hero-panel">
+      <div class="avw-panel-top">
+        <strong>Your Path to Getting Started</strong>
+        <span class="avw-panel-tag">
+          4 CLEAR STEPS
+        </span>
+      </div>
+
+      <div class="avw-panel-list">
+
+        <div class="avw-panel-row">
+          <span class="avw-panel-number">01</span>
+          <div>
+            <strong>Discovery</strong>
+            <p>
+              Tell us about your
+              practice and workload.
+            </p>
+          </div>
+        </div>
+
+        <div class="avw-panel-row">
+          <span class="avw-panel-number">02</span>
+          <div>
+            <strong>Candidate Matching</strong>
+            <p>
+              Review a candidate aligned
+              with your requirements.
+            </p>
+          </div>
+        </div>
+
+        <div class="avw-panel-row">
+          <span class="avw-panel-number">03</span>
+          <div>
+            <strong>Interview &amp; Selection</strong>
+            <p>
+              Meet the candidate
+              and make your choice.
+            </p>
+          </div>
+        </div>
+
+        <div class="avw-panel-row">
+          <span class="avw-panel-number">04</span>
+          <div>
+            <strong>Secure Onboarding</strong>
+            <p>
+              Set up approved access
+              and begin working together.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================================================
+ SECTION 02 — FOUR-STEP PROCESS
+================================================== -->
+
+<section class="avw-section avw-process"
+         id="avw-process">
+  <div class="avw-container">
+
+    <div class="avw-section-head">
+      <span class="avw-label">
+        THE PROCESS
+      </span>
+
+      <h2 class="avw-title">
+        Four Steps to
+        <span>Getting Started</span>
+      </h2>
+
+      <p>
+        Your practice stays involved
+        at every important decision,
+        from defining responsibilities
+        to selecting the assistant
+        who will support your team.
+      </p>
+    </div>
+
+    <div class="avw-steps">
+
+      <article class="avw-step">
+        <div class="avw-step-number">01</div>
+
+        <h3>Discovery</h3>
+
+        <p>
+          We discuss the tasks
+          taking time away from
+          your staff, your current
+          processes, and the type
+          of support you need.
+        </p>
+
+        <span class="avw-step-arrow"
+              aria-hidden="true">→</span>
+      </article>
+
+      <article class="avw-step">
+        <div class="avw-step-number">02</div>
+
+        <h3>Candidate Matching</h3>
+
+        <p>
+          Based on your requirements,
+          we identify a Medical
+          Virtual Assistant whose
+          experience and capabilities
+          align with the role.
+        </p>
+
+        <span class="avw-step-arrow"
+              aria-hidden="true">→</span>
+      </article>
+
+      <article class="avw-step">
+        <div class="avw-step-number">03</div>
+
+        <h3>Interview &amp; Select</h3>
+
+        <p>
+          Your practice interviews
+          the candidate, discusses
+          expectations, and decides
+          whether the fit is right
+          before moving forward.
+        </p>
+
+        <span class="avw-step-arrow"
+              aria-hidden="true">→</span>
+      </article>
+
+      <article class="avw-step">
+        <div class="avw-step-number">04</div>
+
+        <h3>Secure Onboarding</h3>
+
+        <p>
+          We coordinate orientation,
+          authorized system access,
+          and workflow setup so
+          your selected assistant
+          can begin supporting
+          approved tasks.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="avw-process-foot">
+      <svg class="avw-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7v5l3 2"/>
+      </svg>
+
+      <p>
+        <strong>Standard onboarding:
+        approximately 1–2 weeks.</strong>
+        Actual timing depends on
+        candidate selection,
+        practice readiness,
+        system access, and
+        onboarding requirements.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================================================
+ SECTION 03 — UNDERSTANDING PRACTICE NEEDS
+================================================== -->
+
+<section class="avw-section avw-setup">
+  <div class="avw-container avw-setup-grid">
+
+    <div class="avw-setup-copy">
+      <span class="avw-label">
+        BEFORE WE MATCH
+      </span>
+
+      <h2 class="avw-title">
+        We Start With
+        <span>Your Actual Workload.</span>
+      </h2>
+
+      <p>
+        Every medical practice
+        has different staffing
+        pressures. A practice
+        managing frequent prior
+        authorizations may need
+        different support from
+        one handling large
+        volumes of appointment
+        requests or referrals.
+      </p>
+
+      <p>
+        During discovery, we
+        focus on the responsibilities
+        you want to delegate
+        and the systems your
+        team already uses.
+      </p>
+
+      <div class="avw-setup-note">
+        <strong>Our approach:</strong>
+        We define the role around
+        your existing workflows
+        rather than asking your
+        practice to adopt an
+        entirely new operating model.
+      </div>
+    </div>
+
+    <div class="avw-setup-cards">
+
+      <div class="avw-setup-card">
+        <div class="avw-setup-icon">
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <rect x="4" y="3" width="16" height="18" rx="2"/>
+            <path d="M8 8h8M8 12h8M8 16h5"/>
+          </svg>
+        </div>
+        <h3>Responsibilities</h3>
+        <p>
+          Which tasks should
+          your assistant handle,
+          and which remain
+          with existing staff?
+        </p>
+      </div>
+
+      <div class="avw-setup-card">
+        <div class="avw-setup-icon">
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="16" rx="2"/>
+            <path d="M7 9h10M7 13h10M7 17h6"/>
+          </svg>
+        </div>
+        <h3>Existing Systems</h3>
+        <p>
+          Which EMR/EHR,
+          payer portals,
+          scheduling tools,
+          or communication
+          systems are involved?
+        </p>
+      </div>
+
+      <div class="avw-setup-card">
+        <div class="avw-setup-icon">
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <circle cx="8" cy="8" r="3"/>
+            <circle cx="17" cy="9" r="2"/>
+            <path d="M2 20v-2a6 6 0 0 1 12 0v2M15 15a5 5 0 0 1 7 5"/>
+          </svg>
+        </div>
+        <h3>Team Coordination</h3>
+        <p>
+          Who will assign
+          work, answer questions,
+          and review tasks
+          requiring approval?
+        </p>
+      </div>
+
+      <div class="avw-setup-card">
+        <div class="avw-setup-icon">
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <h3>Access Requirements</h3>
+        <p>
+          What permissions,
+          security controls,
+          and workflow
+          instructions are
+          needed before work begins?
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================================================
+ SECTION 04 — ONBOARDING
+================================================== -->
+
+<section class="avw-section avw-timeline-section">
+  <div class="avw-container avw-timeline-grid">
+
+    <div class="avw-timeline-card">
+      <div class="avw-time-header">
+        <strong>Onboarding Overview</strong>
+        <span class="avw-time-badge">
+          TYPICALLY 1–2 WEEKS
+        </span>
+      </div>
+
+      <div class="avw-time-row">
+        <span class="avw-time-dot">1</span>
+        <div>
+          <h3>Confirm the Role</h3>
+          <p>
+            Finalize responsibilities,
+            priorities, and the
+            selected assistant.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-time-row">
+        <span class="avw-time-dot">2</span>
+        <div>
+          <h3>Arrange Authorized Access</h3>
+          <p>
+            Coordinate the
+            approved systems,
+            permissions, and
+            secure virtual workspace.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-time-row">
+        <span class="avw-time-dot">3</span>
+        <div>
+          <h3>Review Practice Procedures</h3>
+          <p>
+            Introduce workflows,
+            documentation expectations,
+            communication channels,
+            and escalation contacts.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-time-row">
+        <span class="avw-time-dot">4</span>
+        <div>
+          <h3>Begin Assigned Work</h3>
+          <p>
+            Start with agreed
+            administrative tasks
+            under your practice's
+            direction and oversight.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-time-foot">
+        This is an onboarding sequence,
+        not a guaranteed day-by-day schedule.
+      </div>
+    </div>
+
+    <div class="avw-timeline-copy">
+      <span class="avw-label">
+        SECURE ONBOARDING
+      </span>
+
+      <h2 class="avw-title">
+        Getting Your Assistant
+        <span>Ready to Work</span>
+      </h2>
+
+      <p>
+        Once you select a
+        candidate, onboarding
+        focuses on the practical
+        details required for
+        a productive start.
+      </p>
+
+      <p>
+        Avora coordinates the
+        working environment
+        and helps align the
+        assistant with your
+        practice's instructions,
+        systems, and
+        authorized responsibilities.
+      </p>
+
+      <ul class="avw-check-list">
+        <li>
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+          Controlled U.S.-based
+          virtual working environment.
+        </li>
+
+        <li>
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+          Credential protection
+          and approved access permissions.
+        </li>
+
+        <li>
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+          Practice-specific workflow
+          instructions and escalation paths.
+        </li>
+
+        <li>
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+          HIPAA-aligned
+          administrative operations,
+          subject to applicable
+          requirements and agreements.
+        </li>
+      </ul>
+
+      <a class="avw-btn avw-btn-outline"
+         href="https://www.avorasolutions.com/contact">
+        Discuss Your Onboarding Needs
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================================================
+ SECTION 05 — AFTER ONBOARDING
+================================================== -->
+
+<section class="avw-section avw-after">
+  <div class="avw-container">
+
+    <div class="avw-section-head">
+      <span class="avw-label">
+        ONGOING SUPPORT
+      </span>
+
+      <h2 class="avw-title">
+        What Happens
+        <span>After Onboarding?</span>
+      </h2>
+
+      <p>
+        Your assistant becomes
+        part of your administrative
+        workflow, supporting
+        assigned responsibilities
+        while your practice
+        retains direction
+        and oversight.
+      </p>
+    </div>
+
+    <div class="avw-after-grid">
+
+      <div class="avw-after-card">
+        <div class="avw-after-icon">
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <rect x="4" y="3" width="16" height="18" rx="2"/>
+            <path d="M8 8h8M8 12h8M8 16h5"/>
+          </svg>
+        </div>
+
+        <h3>Daily Administrative Tasks</h3>
+
+        <p>
+          Your assistant handles
+          approved work such as
+          insurance verification,
+          authorization follow-ups,
+          referrals, scheduling,
+          billing administration,
+          or other assigned tasks.
+        </p>
+      </div>
+
+      <div class="avw-after-card">
+        <div class="avw-after-icon">
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <path d="M4 6h16v12H4z"/>
+            <path d="M8 10h8M8 14h5"/>
+          </svg>
+        </div>
+
+        <h3>Communication &amp; Escalation</h3>
+
+        <p>
+          Your team establishes
+          how tasks are assigned,
+          how updates are shared,
+          and when an issue
+          should be escalated
+          for review or a
+          practice-level decision.
+        </p>
+      </div>
+
+      <div class="avw-after-card">
+        <div class="avw-after-icon">
+          <svg class="avw-icon" viewBox="0 0 24 24">
+            <path d="M3 17 9 11l4 4 8-9"/>
+            <path d="M15 6h6v6"/>
+          </svg>
+        </div>
+
+        <h3>Adjusting Priorities</h3>
+
+        <p>
+          As your workload
+          changes, you can
+          review responsibilities
+          and discuss adjustments
+          to the agreed scope
+          of administrative support.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="avw-after-note">
+      <p>
+        <strong>Your practice remains in control.</strong>
+        Avora's Medical Virtual Assistants
+        provide administrative support;
+        clinical decisions, medical judgment,
+        and final practice approvals
+        remain with authorized
+        healthcare professionals
+        and practice personnel.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================================================
+ SECTION 06 — FAQ
+================================================== -->
+
+<section class="avw-section avw-faq-section">
+  <div class="avw-container avw-faq-grid">
+
+    <div class="avw-faq-intro">
+      <span class="avw-label">
+        FREQUENTLY ASKED QUESTIONS
+      </span>
+
+      <h2 class="avw-title">
+        Before You
+        <span>Get Started</span>
+      </h2>
+
+      <p>
+        Practical answers to
+        questions practice
+        owners and managers
+        commonly ask before
+        bringing on a Medical
+        Virtual Assistant.
+      </p>
+
+      <a class="avw-btn"
+         href="https://www.avorasolutions.com/contact">
+        Ask Our Team
+      </a>
+    </div>
+
+    <div class="avw-faq-list">
+
+      <div class="avw-faq-item">
+        <button type="button"
+                class="avw-faq-question"
+                id="avw-q1"
+                aria-controls="avw-a1"
+                aria-expanded="false">
+          <span>
+            What happens after I contact Avora?
+          </span>
+          <span class="avw-faq-plus"
+                aria-hidden="true">+</span>
+        </button>
+
+        <div class="avw-faq-answer"
+             id="avw-a1"
+             role="region"
+             aria-labelledby="avw-q1"
+             hidden>
+          <p>
+            We begin with a discovery
+            conversation to understand
+            your practice, administrative
+            workload, staffing needs,
+            and the responsibilities
+            you want to delegate.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-faq-item">
+        <button type="button"
+                class="avw-faq-question"
+                id="avw-q2"
+                aria-controls="avw-a2"
+                aria-expanded="false">
+          <span>
+            Can our practice interview
+            the Medical Virtual Assistant?
+          </span>
+          <span class="avw-faq-plus"
+                aria-hidden="true">+</span>
+        </button>
+
+        <div class="avw-faq-answer"
+             id="avw-a2"
+             role="region"
+             aria-labelledby="avw-q2"
+             hidden>
+          <p>
+            Yes. Your practice can
+            interview the matched
+            candidate, discuss
+            expectations, and
+            participate directly
+            in selecting the
+            assistant before
+            onboarding begins.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-faq-item">
+        <button type="button"
+                class="avw-faq-question"
+                id="avw-q3"
+                aria-controls="avw-a3"
+                aria-expanded="false">
+          <span>
+            How long does onboarding take?
+          </span>
+          <span class="avw-faq-plus"
+                aria-hidden="true">+</span>
+        </button>
+
+        <div class="avw-faq-answer"
+             id="avw-a3"
+             role="region"
+             aria-labelledby="avw-q3"
+             hidden>
+          <p>
+            Standard onboarding
+            typically takes around
+            1–2 weeks. Timing
+            can vary depending
+            on candidate selection,
+            system permissions,
+            workflow complexity,
+            and practice readiness.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-faq-item">
+        <button type="button"
+                class="avw-faq-question"
+                id="avw-q4"
+                aria-controls="avw-a4"
+                aria-expanded="false">
+          <span>
+            Will the assistant use
+            our existing EMR and systems?
+          </span>
+          <span class="avw-faq-plus"
+                aria-hidden="true">+</span>
+        </button>
+
+        <div class="avw-faq-answer"
+             id="avw-a4"
+             role="region"
+             aria-labelledby="avw-q4"
+             hidden>
+          <p>
+            The goal is to work
+            within your practice's
+            established systems
+            and procedures.
+            Access to an EMR,
+            payer portal, or
+            other application
+            depends on approved
+            permissions, compatibility,
+            and onboarding requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-faq-item">
+        <button type="button"
+                class="avw-faq-question"
+                id="avw-q5"
+                aria-controls="avw-a5"
+                aria-expanded="false">
+          <span>
+            How is access to patient
+            information managed?
+          </span>
+          <span class="avw-faq-plus"
+                aria-hidden="true">+</span>
+        </button>
+
+        <div class="avw-faq-answer"
+             id="avw-a5"
+             role="region"
+             aria-labelledby="avw-q5"
+             hidden>
+          <p>
+            Avora uses a
+            controlled U.S.-based
+            virtual workspace
+            with credential
+            protection and
+            access controls
+            aligned with
+            approved responsibilities.
+            Specific safeguards
+            and obligations
+            are addressed
+            through the
+            applicable engagement.
+          </p>
+        </div>
+      </div>
+
+      <div class="avw-faq-item">
+        <button type="button"
+                class="avw-faq-question"
+                id="avw-q6"
+                aria-controls="avw-a6"
+                aria-expanded="false">
+          <span>
+            What if our administrative
+            needs change over time?
+          </span>
+          <span class="avw-faq-plus"
+                aria-hidden="true">+</span>
+        </button>
+
+        <div class="avw-faq-answer"
+             id="avw-a6"
+             role="region"
+             aria-labelledby="avw-q6"
+             hidden>
+          <p>
+            You can discuss
+            changes in workload,
+            priorities, or
+            responsibilities
+            with Avora.
+            Any adjustments
+            should be reviewed
+            against the assistant's
+            role, training,
+            access permissions,
+            and agreed service scope.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================
+ FINAL CTA
+================================================== -->
+
+<section class="avw-cta">
+  <div class="avw-container avw-cta-grid">
+
+    <div>
+      <span class="avw-label">
+        YOUR NEXT STEP
+      </span>
+
+      <h2>
+        Let's Find the Right Support
+        for Your Medical Practice.
+      </h2>
+
+      <p>
+        Tell us which administrative
+        tasks are taking up your
+        team's time. We'll discuss
+        your needs and explain
+        the next steps.
+      </p>
+    </div>
+
+    <div class="avw-cta-actions">
+      <a class="avw-btn avw-btn-white"
+         href="https://www.avorasolutions.com/contact">
+        Schedule a Discovery Call
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2">
+          <path d="M5 12h14m-6-6 6 6-6 6"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================================================
+ BACK TO TOP
+================================================== -->
+
+<button type="button"
+        class="avw-back-top"
+        aria-label="Back to top"
+        tabindex="-1">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  function initAvoraHowWeWork() {
+    const root = document.getElementById("av-how");
+
+    if (!root || root.dataset.avwInit === "true") {
+      return;
+    }
+
+    root.dataset.avwInit = "true";
+
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+
+    /* =====================================
+       SMOOTH INTERNAL NAVIGATION
+    ===================================== */
+
+    root.querySelectorAll('a[href^="#"]').forEach(
+      function(link) {
+        link.addEventListener("click", function(event) {
+          const href = link.getAttribute("href");
+
+          if (!href || href === "#") return;
+
+          const target = root.querySelector(href);
+
+          if (!target) return;
+
+          event.preventDefault();
+
+          const headerOffset = 105;
+
+          const top =
+            target.getBoundingClientRect().top +
+            window.scrollY -
+            headerOffset;
+
+          window.scrollTo({
+            top:Math.max(0,top),
+            behavior:reducedMotion.matches
+              ? "auto"
+              : "smooth"
+          });
+        });
+      }
+    );
+
+    /* =====================================
+       ACCESSIBLE FAQ ACCORDION
+       One question open at a time
+    ===================================== */
+
+    const faqItems = Array.from(
+      root.querySelectorAll(".avw-faq-item")
+    );
+
+    faqItems.forEach(function(item) {
+      const button = item.querySelector(
+        ".avw-faq-question"
+      );
+
+      const answer = item.querySelector(
+        ".avw-faq-answer"
+      );
+
+      if (!button || !answer) return;
+
+      button.addEventListener("click", function() {
+        const wasOpen =
+          button.getAttribute("aria-expanded") === "true";
+
+        faqItems.forEach(function(otherItem) {
+          const otherButton = otherItem.querySelector(
+            ".avw-faq-question"
+          );
+
+          const otherAnswer = otherItem.querySelector(
+            ".avw-faq-answer"
+          );
+
+          otherItem.classList.remove("open");
+
+          otherButton.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          otherAnswer.hidden = true;
+        });
+
+        if (!wasOpen) {
+          item.classList.add("open");
+
+          button.setAttribute(
+            "aria-expanded",
+            "true"
+          );
+
+          answer.hidden = false;
+        }
+      });
+    });
+
+    /* =====================================
+       BACK TO TOP
+    ===================================== */
+
+    const backTop = root.querySelector(
+      ".avw-back-top"
+    );
+
+    if (backTop) {
+      let ticking = false;
+
+      function updateBackTop() {
+        const visible = window.scrollY > 450;
+
+        backTop.classList.toggle(
+          "show",
+          visible
+        );
+
+        backTop.tabIndex = visible ? 0 : -1;
+      }
+
+      window.addEventListener(
+        "scroll",
+        function() {
+          if (ticking) return;
+
+          ticking = true;
+
+          window.requestAnimationFrame(function() {
+            updateBackTop();
+            ticking = false;
+          });
+        },
+        {passive:true}
+      );
+
+      backTop.addEventListener(
+        "click",
+        function() {
+          window.scrollTo({
+            top:0,
+            behavior:reducedMotion.matches
+              ? "auto"
+              : "smooth"
+          });
+        }
+      );
+
+      updateBackTop();
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener(
+      "DOMContentLoaded",
+      initAvoraHowWeWork,
+      {once:true}
+    );
+  } else {
+    initAvoraHowWeWork();
+  }
+})();
+</script>
