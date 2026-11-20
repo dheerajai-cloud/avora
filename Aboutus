@@ -1,0 +1,2535 @@
+
+<!-- =============================================
+ AVORA SOLUTIONS | ABOUT US
+ Complete Elementor HTML Widget
+ Open Sans | Navy + Teal | Responsive
+ HTML + CSS + Vanilla JS
+============================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+#avora-about {
+  --navy:#102F46;
+  --navy2:#19475A;
+  --teal:#168B87;
+  --teal-dark:#11746F;
+  --mint:#E7F5F2;
+  --ice:#F4F9FA;
+  --white:#FFFFFF;
+  --heading:#15384A;
+  --text:#526774;
+  --border:#DFE9E9;
+  --shadow:0 18px 55px rgba(16,47,70,.08);
+  font-family:'Open Sans',sans-serif;
+  color:var(--text);
+  background:#fff;
+  font-size:16px;
+  line-height:1.8;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+#avora-about *,
+#avora-about *::before,
+#avora-about *::after {
+  box-sizing:border-box;
+}
+
+#avora-about h1,
+#avora-about h2,
+#avora-about h3,
+#avora-about h4,
+#avora-about p,
+#avora-about ul {
+  margin-top:0;
+}
+
+#avora-about h1,
+#avora-about h2,
+#avora-about h3,
+#avora-about h4 {
+  font-family:'Open Sans',sans-serif;
+  color:var(--heading);
+  line-height:1.3;
+}
+
+#avora-about p,
+#avora-about li {
+  font-size:16px;
+  line-height:1.85;
+}
+
+#avora-about a {
+  text-decoration:none;
+  transition:.25s ease;
+}
+
+#avora-about button {
+  font-family:inherit;
+}
+
+#avora-about button:focus-visible,
+#avora-about a:focus-visible {
+  outline:3px solid var(--teal);
+  outline-offset:4px;
+}
+
+#avora-about .av-container {
+  width:min(100% - 40px,1200px);
+  margin-inline:auto;
+}
+
+#avora-about .av-section {
+  padding:100px 0;
+}
+
+#avora-about .av-kicker {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:var(--teal);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+
+#avora-about .av-kicker::before {
+  content:"";
+  width:22px;
+  height:2px;
+  background:currentColor;
+}
+
+#avora-about .av-heading {
+  font-size:clamp(30px,3.5vw,45px);
+  letter-spacing:-1.4px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+#avora-about .av-heading span {
+  color:var(--teal);
+}
+
+#avora-about .av-lead {
+  max-width:760px;
+  font-size:17px;
+  line-height:1.85;
+}
+
+#avora-about .av-section-head {
+  text-align:center;
+  max-width:790px;
+  margin:0 auto 48px;
+}
+
+#avora-about .av-section-head .av-kicker {
+  justify-content:center;
+}
+
+#avora-about .av-section-head p {
+  margin:0 auto;
+}
+
+#avora-about .av-btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:11px;
+  min-height:51px;
+  padding:13px 25px;
+  background:var(--teal);
+  border:1px solid var(--teal);
+  border-radius:7px;
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  line-height:1.5;
+}
+
+#avora-about .av-btn:hover {
+  background:var(--teal-dark);
+  border-color:var(--teal-dark);
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+#avora-about .av-btn-light {
+  background:#fff;
+  border-color:#fff;
+  color:var(--navy);
+}
+
+#avora-about .av-btn-light:hover {
+  background:var(--mint);
+  border-color:var(--mint);
+  color:var(--navy);
+}
+
+#avora-about .av-btn-outline {
+  background:transparent;
+  color:var(--navy);
+  border-color:#CBDAD9;
+}
+
+#avora-about .av-btn-outline:hover {
+  background:var(--mint);
+  color:var(--navy);
+  border-color:var(--teal);
+}
+
+#avora-about .av-btn svg {
+  width:17px;
+  height:17px;
+  flex-shrink:0;
+}
+
+#avora-about .av-icon {
+  width:27px;
+  height:27px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+/* =============================================
+   01 HERO
+============================================= */
+
+#avora-about .av-hero {
+  position:relative;
+  padding:115px 0 155px;
+  background:
+    radial-gradient(circle at 80% 25%,rgba(44,158,151,.17),transparent 36%),
+    radial-gradient(circle at 10% 90%,rgba(255,255,255,.055),transparent 35%),
+    linear-gradient(125deg,#102F46,#19475A);
+  overflow:hidden;
+}
+
+#avora-about .av-hero::before {
+  content:"";
+  position:absolute;
+  width:620px;
+  height:620px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:50%;
+  right:-210px;
+  top:-230px;
+}
+
+#avora-about .av-hero::after {
+  content:"";
+  position:absolute;
+  width:450px;
+  height:450px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:50%;
+  right:-120px;
+  top:-140px;
+}
+
+#avora-about .av-hero-grid {
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:70px;
+  align-items:center;
+}
+
+#avora-about .av-hero .av-kicker {
+  color:#87D8D0;
+}
+
+#avora-about .av-hero h1 {
+  font-size:clamp(40px,4.8vw,64px);
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-2.4px;
+  color:#fff;
+  margin-bottom:25px;
+}
+
+#avora-about .av-hero h1 span {
+  color:#83D9D0;
+}
+
+#avora-about .av-hero p {
+  color:#D2E2E8;
+  font-size:17px;
+  max-width:630px;
+  margin-bottom:31px;
+}
+
+#avora-about .av-hero-actions {
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+}
+
+#avora-about .av-hero-visual {
+  position:relative;
+  min-height:380px;
+  display:grid;
+  place-items:center;
+}
+
+#avora-about .av-visual-orbit {
+  width:min(100%,420px);
+  aspect-ratio:1;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.14);
+  display:grid;
+  place-items:center;
+  position:relative;
+}
+
+#avora-about .av-visual-orbit::before {
+  content:"";
+  position:absolute;
+  inset:40px;
+  border:1px dashed rgba(136,220,211,.25);
+  border-radius:50%;
+}
+
+#avora-about .av-visual-core {
+  width:235px;
+  min-height:235px;
+  border-radius:28px;
+  background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.035));
+  border:1px solid rgba(255,255,255,.2);
+  backdrop-filter:blur(8px);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:30px;
+  box-shadow:0 25px 80px rgba(0,0,0,.1);
+}
+
+#avora-about .av-visual-core svg {
+  width:65px;
+  height:65px;
+  margin-bottom:18px;
+  color:#9CE1D9;
+  stroke-width:1.3;
+}
+
+#avora-about .av-visual-core strong {
+  color:#fff;
+  font-size:20px;
+  line-height:1.35;
+}
+
+#avora-about .av-visual-core small {
+  color:#C6E1E2;
+  font-size:12px;
+  margin-top:8px;
+}
+
+#avora-about .av-float-pill {
+  position:absolute;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 15px 40px rgba(0,0,0,.15);
+  padding:13px 17px;
+  color:var(--heading);
+  font-size:13px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+
+#avora-about .av-float-pill svg {
+  width:19px;
+  height:19px;
+  color:var(--teal);
+}
+
+#avora-about .av-pill-one {
+  top:18%;
+  left:-8%;
+}
+
+#avora-about .av-pill-two {
+  bottom:14%;
+  right:-5%;
+}
+
+/* =============================================
+   02 OVERLAP HIGHLIGHTS
+============================================= */
+
+#avora-about .av-highlights {
+  position:relative;
+  z-index:3;
+  margin-top:-73px;
+}
+
+#avora-about .av-highlights-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+#avora-about .av-highlight-card {
+  background:#fff;
+  padding:30px 27px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+#avora-about .av-highlight-icon {
+  width:52px;
+  height:52px;
+  border-radius:11px;
+  background:var(--mint);
+  color:var(--teal);
+  display:grid;
+  place-items:center;
+  margin-bottom:18px;
+}
+
+#avora-about .av-highlight-card h3 {
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:9px;
+}
+
+#avora-about .av-highlight-card p {
+  margin:0;
+  font-size:15px;
+}
+
+/* =============================================
+   03 ABOUT
+============================================= */
+
+#avora-about .av-about-grid {
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:80px;
+  align-items:center;
+}
+
+#avora-about .av-about-art {
+  position:relative;
+  min-height:480px;
+  border-radius:20px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 70% 20%,rgba(255,255,255,.8),transparent 40%),
+    linear-gradient(145deg,#E5F3F0,#CDE6E2);
+  display:grid;
+  place-items:center;
+}
+
+#avora-about .av-about-art::before {
+  content:"";
+  position:absolute;
+  width:350px;
+  height:350px;
+  border:1px solid rgba(22,139,135,.15);
+  border-radius:50%;
+  top:-150px;
+  left:-120px;
+}
+
+#avora-about .av-about-art::after {
+  content:"";
+  position:absolute;
+  width:280px;
+  height:280px;
+  border:1px solid rgba(22,139,135,.14);
+  border-radius:50%;
+  right:-90px;
+  bottom:-100px;
+}
+
+#avora-about .av-about-graphic {
+  position:relative;
+  z-index:1;
+  width:72%;
+  aspect-ratio:1;
+  max-width:320px;
+  background:#fff;
+  border-radius:28px;
+  box-shadow:0 25px 75px rgba(20,83,83,.12);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:35px;
+}
+
+#avora-about .av-about-graphic svg {
+  width:90px;
+  height:90px;
+  stroke:var(--teal);
+  fill:none;
+  stroke-width:1.3;
+  margin-bottom:20px;
+}
+
+#avora-about .av-about-graphic strong {
+  font-size:22px;
+  color:var(--navy);
+  line-height:1.4;
+}
+
+#avora-about .av-about-graphic span {
+  font-size:13px;
+  margin-top:9px;
+}
+
+#avora-about .av-about-copy p {
+  margin-bottom:19px;
+}
+
+#avora-about .av-check-list {
+  list-style:none;
+  padding:0;
+  margin:24px 0 28px;
+}
+
+#avora-about .av-check-list li {
+  display:flex;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+#avora-about .av-check-list svg {
+  flex-shrink:0;
+  width:21px;
+  height:21px;
+  color:var(--teal);
+  margin-top:5px;
+}
+
+/* =============================================
+   04 MISSION / VALUES
+============================================= */
+
+#avora-about .av-mission {
+  background:var(--ice);
+}
+
+#avora-about .av-values-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+#avora-about .av-value-card {
+  padding:34px 30px;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:#fff;
+  transition:transform .25s,box-shadow .25s;
+}
+
+#avora-about .av-value-card:hover {
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+}
+
+#avora-about .av-value-card .av-highlight-icon {
+  margin-bottom:22px;
+}
+
+#avora-about .av-value-card h3 {
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+#avora-about .av-value-card p {
+  margin:0;
+}
+
+/* =============================================
+   05 SECURITY
+============================================= */
+
+#avora-about .av-security-grid {
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:70px;
+  align-items:start;
+}
+
+#avora-about .av-security-copy {
+  position:sticky;
+  top:110px;
+}
+
+#avora-about .av-security-copy p {
+  margin-bottom:20px;
+}
+
+#avora-about .av-security-list {
+  display:grid;
+  gap:15px;
+}
+
+#avora-about .av-security-item {
+  display:flex;
+  gap:18px;
+  padding:25px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+  transition:.25s;
+}
+
+#avora-about .av-security-item:hover {
+  border-color:#A9D7D0;
+  background:#FCFEFD;
+  transform:translateX(4px);
+}
+
+#avora-about .av-security-item .av-highlight-icon {
+  flex-shrink:0;
+  margin:0;
+}
+
+#avora-about .av-security-item h3 {
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+#avora-about .av-security-item p {
+  margin:0;
+  font-size:15px;
+}
+
+#avora-about .av-security-note {
+  background:var(--mint);
+  border-left:3px solid var(--teal);
+  padding:18px 20px;
+  border-radius:0 9px 9px 0;
+  margin-top:24px;
+  font-size:14px;
+}
+
+/* =============================================
+   06 WORKFLOWS
+============================================= */
+
+#avora-about .av-workflows {
+  background:var(--ice);
+}
+
+#avora-about .av-workflow-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+#avora-about .av-workflow-card {
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:13px;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  min-height:250px;
+}
+
+#avora-about .av-workflow-card .av-highlight-icon {
+  margin-bottom:19px;
+}
+
+#avora-about .av-workflow-card h3 {
+  font-size:19px;
+  margin-bottom:10px;
+}
+
+#avora-about .av-workflow-card p {
+  font-size:15px;
+  margin-bottom:0;
+}
+
+#avora-about .av-workflow-card a {
+  color:var(--teal);
+  font-size:14px;
+  font-weight:800;
+  margin-top:auto;
+  padding-top:18px;
+}
+
+#avora-about .av-workflow-card a:hover {
+  color:var(--teal-dark);
+}
+
+/* =============================================
+   07 PROCESS
+============================================= */
+
+#avora-about .av-process-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+#avora-about .av-process-step {
+  position:relative;
+  padding:26px 22px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+}
+
+#avora-about .av-step-num {
+  width:43px;
+  height:43px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--mint);
+  color:var(--teal);
+  font-weight:800;
+  font-size:15px;
+  margin-bottom:20px;
+}
+
+#avora-about .av-process-step h3 {
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+#avora-about .av-process-step p {
+  font-size:15px;
+  margin:0;
+}
+
+/* =============================================
+   08 LEADERSHIP
+============================================= */
+
+#avora-about .av-leadership {
+  background:var(--ice);
+}
+
+#avora-about .av-leader {
+  display:grid;
+  grid-template-columns:390px minmax(0,1fr);
+  gap:60px;
+  align-items:center;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px;
+  margin-bottom:26px;
+  box-shadow:0 10px 35px rgba(16,47,70,.035);
+}
+
+#avora-about .av-leader.reverse {
+  grid-template-columns:minmax(0,1fr) 390px;
+}
+
+#avora-about .av-leader.reverse .av-leader-photo {
+  order:2;
+}
+
+#avora-about .av-leader-photo {
+  position:relative;
+  width:100%;
+  aspect-ratio:4/4.7;
+  border-radius:12px;
+  background:linear-gradient(145deg,#D7EDE9,#B9DAD5);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#avora-about .av-leader-photo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  position:relative;
+  z-index:2;
+}
+
+#avora-about .av-photo-fallback {
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  color:var(--teal-dark);
+}
+
+#avora-about .av-photo-fallback svg {
+  width:92px;
+  height:92px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:1.1;
+}
+
+#avora-about .av-photo-fallback span {
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.6px;
+}
+
+#avora-about .av-leader-role {
+  display:inline-block;
+  color:var(--teal);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+#avora-about .av-leader h3 {
+  font-size:clamp(27px,3vw,36px);
+  letter-spacing:-1px;
+  margin-bottom:20px;
+}
+
+#avora-about .av-leader-content p {
+  margin-bottom:17px;
+}
+
+#avora-about .av-leader-link {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+  font-weight:800;
+  color:var(--teal);
+  margin-top:10px;
+}
+
+#avora-about .av-leader-link:hover {
+  color:var(--teal-dark);
+}
+
+/* =============================================
+   09 COMMITMENT
+============================================= */
+
+#avora-about .av-commitment {
+  position:relative;
+  padding:95px 20px;
+  background:linear-gradient(135deg,#102F46,#19475A);
+  text-align:center;
+  overflow:hidden;
+}
+
+#avora-about .av-commitment::before {
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  top:-330px;
+  right:-100px;
+}
+
+#avora-about .av-commitment-inner {
+  position:relative;
+  max-width:850px;
+  margin:auto;
+}
+
+#avora-about .av-commitment .av-kicker {
+  color:#93DED6;
+}
+
+#avora-about .av-commitment h2 {
+  color:#fff;
+  font-size:clamp(31px,3.7vw,45px);
+  font-weight:800;
+  letter-spacing:-1.3px;
+  margin-bottom:24px;
+}
+
+#avora-about .av-commitment p {
+  color:#D7E7EB;
+  font-size:17px;
+  margin-bottom:18px;
+}
+
+/* =============================================
+   10 FAQ
+============================================= */
+
+#avora-about .av-faq {
+  background:#fff;
+}
+
+#avora-about .av-faq-inner {
+  max-width:900px;
+  margin:auto;
+}
+
+#avora-about .av-faq-item {
+  border:1px solid var(--border);
+  border-radius:10px;
+  margin-bottom:12px;
+  overflow:hidden;
+  background:#fff;
+}
+
+#avora-about .av-faq-item.open {
+  border-color:#ACD6D0;
+}
+
+#avora-about .av-faq-question {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  width:100%;
+  padding:21px 23px;
+  background:#fff;
+  border:0;
+  text-align:left;
+  cursor:pointer;
+  color:var(--heading);
+  font-size:16px;
+  font-weight:700;
+  line-height:1.6;
+}
+
+#avora-about .av-faq-icon {
+  flex-shrink:0;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--mint);
+  color:var(--teal);
+  font-size:23px;
+  font-weight:400;
+  transition:transform .2s;
+}
+
+#avora-about .av-faq-item.open .av-faq-icon {
+  transform:rotate(45deg);
+}
+
+#avora-about .av-faq-answer {
+  padding:0 23px 22px;
+}
+
+#avora-about .av-faq-answer[hidden] {
+  display:none!important;
+}
+
+#avora-about .av-faq-answer p {
+  margin:0;
+}
+
+/* =============================================
+   11 FINAL CTA
+============================================= */
+
+#avora-about .av-final-cta {
+  background:var(--mint);
+  padding:85px 0;
+}
+
+#avora-about .av-cta-grid {
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:35px;
+  align-items:center;
+}
+
+#avora-about .av-final-cta h2 {
+  font-size:clamp(29px,3.2vw,41px);
+  font-weight:800;
+  letter-spacing:-1px;
+  margin-bottom:13px;
+}
+
+#avora-about .av-final-cta p {
+  margin:0;
+  max-width:670px;
+}
+
+#avora-about .av-cta-actions {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* =============================================
+   12 BACK TO TOP
+============================================= */
+
+#avora-about .av-back-top {
+  position:fixed;
+  z-index:999;
+  right:25px;
+  bottom:25px;
+  width:47px;
+  height:47px;
+  border:0;
+  border-radius:50%;
+  background:var(--teal);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  box-shadow:0 7px 20px rgba(22,139,135,.28);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(10px);
+  transition:.25s;
+}
+
+#avora-about .av-back-top.show {
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+#avora-about .av-back-top:hover {
+  background:var(--navy);
+}
+
+#avora-about .av-back-top svg {
+  width:21px;
+  height:21px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2;
+}
+
+/* =============================================
+   13 SCROLL REVEAL
+============================================= */
+
+#avora-about .av-reveal {
+  opacity:1;
+  transform:none;
+}
+
+#avora-about.av-js-ready .av-reveal {
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .65s ease,transform .65s ease;
+}
+
+#avora-about.av-js-ready .av-reveal.visible {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* =============================================
+   14 RESPONSIVE
+============================================= */
+
+@media(max-width:1100px) {
+  #avora-about .av-hero-grid {
+    gap:35px;
+  }
+
+  #avora-about .av-about-grid,
+  #avora-about .av-security-grid {
+    gap:45px;
+  }
+
+  #avora-about .av-leader,
+  #avora-about .av-leader.reverse {
+    grid-template-columns:330px minmax(0,1fr);
+    gap:35px;
+  }
+
+  #avora-about .av-leader.reverse {
+    grid-template-columns:minmax(0,1fr) 330px;
+  }
+}
+
+@media(max-width:900px) {
+  #avora-about .av-section {
+    padding:75px 0;
+  }
+
+  #avora-about .av-hero {
+    padding:85px 0 125px;
+  }
+
+  #avora-about .av-hero-grid,
+  #avora-about .av-about-grid,
+  #avora-about .av-security-grid {
+    grid-template-columns:1fr;
+  }
+
+  #avora-about .av-hero-visual {
+    min-height:310px;
+  }
+
+  #avora-about .av-visual-orbit {
+    width:320px;
+  }
+
+  #avora-about .av-highlights-grid,
+  #avora-about .av-values-grid,
+  #avora-about .av-workflow-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #avora-about .av-security-copy {
+    position:static;
+  }
+
+  #avora-about .av-process-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #avora-about .av-leader,
+  #avora-about .av-leader.reverse {
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  #avora-about .av-leader.reverse .av-leader-photo {
+    order:0;
+  }
+
+  #avora-about .av-leader-photo {
+    max-height:420px;
+    aspect-ratio:4/3;
+  }
+
+  #avora-about .av-cta-grid {
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px) {
+  #avora-about .av-container {
+    width:min(100% - 34px,1200px);
+  }
+
+  #avora-about .av-section {
+    padding:60px 0;
+  }
+
+  #avora-about .av-heading {
+    font-size:30px;
+    letter-spacing:-.8px;
+  }
+
+  #avora-about .av-hero {
+    padding:70px 0 115px;
+  }
+
+  #avora-about .av-hero h1 {
+    font-size:39px;
+    letter-spacing:-1.5px;
+  }
+
+  #avora-about .av-hero p {
+    font-size:16px;
+  }
+
+  #avora-about .av-hero-visual {
+    min-height:260px;
+  }
+
+  #avora-about .av-visual-orbit {
+    width:270px;
+  }
+
+  #avora-about .av-visual-core {
+    width:190px;
+    min-height:190px;
+    padding:20px;
+  }
+
+  #avora-about .av-visual-core strong {
+    font-size:17px;
+  }
+
+  #avora-about .av-float-pill {
+    font-size:11px;
+    padding:10px;
+  }
+
+  #avora-about .av-pill-one {
+    left:-4%;
+  }
+
+  #avora-about .av-pill-two {
+    right:-4%;
+  }
+
+  #avora-about .av-highlights-grid,
+  #avora-about .av-values-grid,
+  #avora-about .av-workflow-grid,
+  #avora-about .av-process-grid {
+    grid-template-columns:1fr;
+  }
+
+  #avora-about .av-highlight-card,
+  #avora-about .av-value-card,
+  #avora-about .av-workflow-card {
+    padding:25px;
+  }
+
+  #avora-about .av-about-art {
+    min-height:350px;
+  }
+
+  #avora-about .av-security-item {
+    padding:20px;
+  }
+
+  #avora-about .av-leader {
+    padding:17px;
+  }
+
+  #avora-about .av-leader-photo {
+    aspect-ratio:4/4;
+  }
+
+  #avora-about .av-leader h3 {
+    font-size:28px;
+  }
+
+  #avora-about .av-leader-content {
+    padding:5px;
+  }
+
+  #avora-about .av-commitment {
+    padding:70px 17px;
+  }
+
+  #avora-about .av-commitment h2 {
+    font-size:30px;
+  }
+
+  #avora-about .av-faq-question {
+    padding:18px;
+  }
+
+  #avora-about .av-faq-answer {
+    padding:0 18px 19px;
+  }
+
+  #avora-about .av-final-cta {
+    padding:65px 0;
+  }
+
+  #avora-about .av-cta-actions,
+  #avora-about .av-hero-actions {
+    align-items:stretch;
+  }
+
+  #avora-about .av-back-top {
+    right:15px;
+    bottom:15px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  #avora-about *,
+  #avora-about *::before,
+  #avora-about *::after {
+    scroll-behavior:auto!important;
+    transition:none!important;
+    animation:none!important;
+  }
+
+  #avora-about.av-js-ready .av-reveal {
+    opacity:1;
+    transform:none;
+  }
+}
+</style>
+
+<div id="avora-about">
+
+<!-- =============================================
+ 01 HERO
+============================================= -->
+
+<section class="av-hero">
+  <div class="av-container av-hero-grid">
+
+    <div class="av-hero-copy">
+      <span class="av-kicker">ABOUT AVORA SOLUTIONS</span>
+
+      <h1>
+        Built for Secure
+        <span>Healthcare Operations.</span>
+      </h1>
+
+      <p>
+        Helping independent medical practices
+        reduce administrative workload with
+        dedicated Medical Virtual Assistants,
+        healthcare-focused workflows, and a
+        security-first operating approach.
+      </p>
+
+      <div class="av-hero-actions">
+        <a class="av-btn" href="https://www.avorasolutions.com/contact">
+          Let's Talk
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14m-6-6 6 6-6 6"/>
+          </svg>
+        </a>
+
+        <a class="av-btn av-btn-light" href="#avora-leadership">
+          Meet Our Leadership
+        </a>
+      </div>
+    </div>
+
+    <div class="av-hero-visual" aria-hidden="true">
+      <div class="av-visual-orbit">
+        <div class="av-visual-core">
+
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor">
+            <path d="M40 7 66 17v19c0 18-10 29-26 37C24 65 14 54 14 36V17L40 7Z"/>
+            <path d="M40 24v29M25.5 38.5h29"/>
+          </svg>
+
+          <strong>Healthcare-Focused Support</strong>
+          <small>Security • People • Process</small>
+
+        </div>
+      </div>
+
+      <div class="av-float-pill av-pill-one">
+        <svg class="av-icon" viewBox="0 0 24 24">
+          <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+        Secure Workflows
+      </div>
+
+      <div class="av-float-pill av-pill-two">
+        <svg class="av-icon" viewBox="0 0 24 24">
+          <circle cx="9" cy="8" r="3"/>
+          <path d="M3 20v-2a6 6 0 0 1 12 0v2M17 8h5M19.5 5.5v5"/>
+        </svg>
+        Dedicated Assistants
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+ 02 HIGHLIGHT CARDS
+============================================= -->
+
+<div class="av-highlights">
+  <div class="av-container av-highlights-grid">
+
+    <div class="av-highlight-card av-reveal">
+      <div class="av-highlight-icon">
+        <svg class="av-icon" viewBox="0 0 24 24">
+          <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+      </div>
+      <h3>Secure by Design</h3>
+      <p>
+        A controlled U.S.-based virtual
+        workspace with safeguards intended
+        to protect practice information
+        and access credentials.
+      </p>
+    </div>
+
+    <div class="av-highlight-card av-reveal">
+      <div class="av-highlight-icon">
+        <svg class="av-icon" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="3"/>
+          <path d="M12 7v10M7 12h10"/>
+        </svg>
+      </div>
+      <h3>Built for Healthcare</h3>
+      <p>
+        Administrative support aligned with
+        medical scheduling, payer workflows,
+        referrals, billing, and EMR tasks.
+      </p>
+    </div>
+
+    <div class="av-highlight-card av-reveal">
+      <div class="av-highlight-icon">
+        <svg class="av-icon" viewBox="0 0 24 24">
+          <circle cx="8" cy="8" r="3"/>
+          <circle cx="17" cy="9" r="2"/>
+          <path d="M2 20v-2a6 6 0 0 1 12 0v2M15 15a5 5 0 0 1 7 5"/>
+        </svg>
+      </div>
+      <h3>Practice-Focused Partnership</h3>
+      <p>
+        Dedicated administrative support
+        designed around each practice's
+        workflows, priorities, and needs.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- =============================================
+ 03 ABOUT AVORA
+============================================= -->
+
+<section class="av-section" id="avora-story">
+  <div class="av-container av-about-grid">
+
+    <div class="av-about-art av-reveal">
+      <div class="av-about-graphic">
+        <svg viewBox="0 0 100 100">
+          <rect x="14" y="25" width="72" height="60" rx="8"/>
+          <path d="M38 25V15h24v10M50 40v29M35.5 54.5h29"/>
+        </svg>
+        <strong>Built Around the Needs of Medical Practices</strong>
+        <span>Healthcare operations, thoughtfully supported</span>
+      </div>
+    </div>
+
+    <div class="av-about-copy av-reveal">
+      <span class="av-kicker">WHO WE ARE</span>
+
+      <h2 class="av-heading">
+        A Better Approach to
+        <span>Medical Virtual Staffing.</span>
+      </h2>
+
+      <p>
+        Avora Solutions is based in
+        Cary, North Carolina, and was
+        created to address a fundamental
+        healthcare operations challenge:
+        how can medical practices expand
+        administrative capacity while
+        protecting sensitive patient
+        information?
+      </p>
+
+      <p>
+        Traditional remote staffing
+        arrangements can introduce
+        concerns about personal devices,
+        local data storage, and shared
+        system credentials. Avora was
+        built around a different model:
+        dedicated Medical Virtual
+        Assistants working through a
+        controlled U.S.-based virtual
+        environment.
+      </p>
+
+      <p>
+        Our focus is on independent
+        medical practices that need
+        reliable support for complex
+        administrative workflows,
+        without losing oversight of
+        their operations.
+      </p>
+
+      <ul class="av-check-list">
+        <li>
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+          Specialty-aware support without limiting
+          our services to a single specialty.
+        </li>
+
+        <li>
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+          Administrative assistance aligned with
+          existing practice systems.
+        </li>
+
+        <li>
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+          A security-conscious approach to
+          remote healthcare operations.
+        </li>
+      </ul>
+
+      <a class="av-btn" href="https://www.avorasolutions.com/contact">
+        Discover How We Can Help
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+ 04 MISSION & VALUES
+============================================= -->
+
+<section class="av-section av-mission">
+  <div class="av-container">
+
+    <div class="av-section-head av-reveal">
+      <span class="av-kicker">WHAT GUIDES US</span>
+      <h2 class="av-heading">
+        Our Mission &amp;
+        <span>Core Principles</span>
+      </h2>
+      <p>
+        We believe independent medical
+        practices deserve operational
+        support that understands the
+        realities of healthcare.
+      </p>
+    </div>
+
+    <div class="av-values-grid">
+
+      <div class="av-value-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="12" cy="12" r="1"/>
+          </svg>
+        </div>
+        <h3>Our Mission</h3>
+        <p>
+          To help medical practices
+          reduce administrative burden
+          through dedicated virtual
+          support, practical workflows,
+          and thoughtful technology.
+        </p>
+      </div>
+
+      <div class="av-value-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <h3>Trust &amp; Security</h3>
+        <p>
+          To make responsible information
+          handling, controlled access,
+          and accountability central
+          to how remote support is delivered.
+        </p>
+      </div>
+
+      <div class="av-value-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="M3 17 9 11l4 4 8-9"/>
+            <path d="M15 6h6v6"/>
+          </svg>
+        </div>
+        <h3>Operational Excellence</h3>
+        <p>
+          To support better-organized
+          workflows so physicians and
+          practice teams can spend
+          more attention on patient care.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+ 05 SECURITY MODEL
+============================================= -->
+
+<section class="av-section" id="avora-security">
+  <div class="av-container av-security-grid">
+
+    <div class="av-security-copy av-reveal">
+      <span class="av-kicker">SECURITY AT AVORA</span>
+
+      <h2 class="av-heading">
+        Built to Protect
+        <span>Patient Information.</span>
+      </h2>
+
+      <p>
+        Healthcare practices need more
+        than administrative capacity.
+        They also need confidence in
+        how their systems, credentials,
+        and sensitive records are handled.
+      </p>
+
+      <p>
+        Avora's operating model is
+        designed to reduce the risks
+        commonly associated with
+        traditional remote staffing,
+        including work performed on
+        personal devices and the
+        uncontrolled sharing of
+        login credentials.
+      </p>
+
+      <div class="av-security-note">
+        <strong>Healthcare-Focused Safeguards</strong>
+        <div>
+          Our approach emphasizes
+          controlled access and
+          HIPAA-aligned operations.
+          Specific contractual and
+          regulatory obligations
+          depend on each engagement.
+        </div>
+      </div>
+
+      <div style="margin-top:25px">
+        <a class="av-btn" href="https://www.avorasolutions.com/contact">
+          Schedule a Security Walkthrough
+        </a>
+      </div>
+    </div>
+
+    <div class="av-security-list">
+
+      <div class="av-security-item av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="14" rx="2"/>
+            <path d="M8 22h8M12 18v4"/>
+          </svg>
+        </div>
+        <div>
+          <h3>U.S.-Based Virtual Environment</h3>
+          <p>
+            Assistants work through
+            controlled virtual desktops,
+            with restrictions designed
+            to prevent local storage,
+            downloads, and remote printing.
+          </p>
+        </div>
+      </div>
+
+      <div class="av-security-item av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <rect x="4" y="10" width="16" height="11" rx="2"/>
+            <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+            <circle cx="12" cy="15" r="1"/>
+          </svg>
+        </div>
+        <div>
+          <h3>No Direct Password Sharing</h3>
+          <p>
+            Avora describes an encrypted
+            credential vault with auto-fill
+            functionality to help keep
+            login credentials protected
+            from direct exposure.
+          </p>
+        </div>
+      </div>
+
+      <div class="av-security-item av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4z"/>
+            <path d="m8 12 3 3 5-6"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Controlled Data Handling</h3>
+          <p>
+            The model is designed
+            to keep administrative work
+            within approved infrastructure
+            rather than storing
+            practice information on
+            assistants' personal devices.
+          </p>
+        </div>
+      </div>
+
+      <div class="av-security-item av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Practice Oversight</h3>
+          <p>
+            Healthcare clients retain
+            oversight of their workflows,
+            authorized responsibilities,
+            and access permissions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+ 06 HEALTHCARE WORKFLOWS
+============================================= -->
+
+<section class="av-section av-workflows" id="avora-workflows">
+  <div class="av-container">
+
+    <div class="av-section-head av-reveal">
+      <span class="av-kicker">WHAT WE SUPPORT</span>
+      <h2 class="av-heading">
+        Designed for
+        <span>Healthcare Workflows</span>
+      </h2>
+      <p>
+        Our Medical Virtual Assistants
+        help practices manage recurring
+        administrative tasks across
+        scheduling, payer coordination,
+        referrals, billing, and
+        back-office operations.
+      </p>
+    </div>
+
+    <div class="av-workflow-grid">
+
+      <div class="av-workflow-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <rect x="3" y="5" width="18" height="16" rx="2"/>
+            <path d="M7 3v4M17 3v4M3 10h18"/>
+          </svg>
+        </div>
+        <h3>Patient Scheduling</h3>
+        <p>
+          Appointment coordination,
+          scheduling updates,
+          and administrative
+          communication support.
+        </p>
+      </div>
+
+      <div class="av-workflow-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <rect x="4" y="3" width="16" height="18" rx="2"/>
+            <path d="M8 8h8M8 12h8M8 16h5"/>
+          </svg>
+        </div>
+        <h3>Prior Authorizations</h3>
+        <p>
+          Payer follow-ups,
+          documentation coordination,
+          and authorization
+          status tracking.
+        </p>
+        <a href="https://www.avorasolutions.com/solutions/prior-authorizations">
+          Explore Support →
+        </a>
+      </div>
+
+      <div class="av-workflow-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="M4 7h16M4 12h16M4 17h10"/>
+            <circle cx="19" cy="17" r="2"/>
+          </svg>
+        </div>
+        <h3>Insurance Verification</h3>
+        <p>
+          Eligibility checks,
+          benefit information,
+          payer portal tasks,
+          and verification follow-ups.
+        </p>
+      </div>
+
+      <div class="av-workflow-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <path d="M4 12h15M14 7l5 5-5 5"/>
+            <path d="M4 5v14"/>
+          </svg>
+        </div>
+        <h3>Referral Coordination</h3>
+        <p>
+          Referral documentation,
+          communication,
+          scheduling coordination,
+          and status follow-ups.
+        </p>
+      </div>
+
+      <div class="av-workflow-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="16" rx="2"/>
+            <path d="M7 9h10M7 13h5M15 16h3"/>
+          </svg>
+        </div>
+        <h3>Medical Billing Support</h3>
+        <p>
+          Billing-related
+          administrative tasks,
+          claims follow-ups,
+          and documentation assistance.
+        </p>
+      </div>
+
+      <div class="av-workflow-card av-reveal">
+        <div class="av-highlight-icon">
+          <svg class="av-icon" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="16" rx="2"/>
+            <path d="M7 9h10M7 13h6M7 17h9"/>
+          </svg>
+        </div>
+        <h3>Administrative Support</h3>
+        <p>
+          EMR-related administrative
+          workflows, task coordination,
+          document organization,
+          and back-office assistance.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+ 07 HOW WE WORK
+============================================= -->
+
+<section class="av-section" id="avora-process">
+  <div class="av-container">
+
+    <div class="av-section-head av-reveal">
+      <span class="av-kicker">OUR APPROACH</span>
+      <h2 class="av-heading">
+        A Simple, Practice-Focused
+        <span>Onboarding Process</span>
+      </h2>
+      <p>
+        Our process is structured
+        to understand your practice,
+        match appropriate talent,
+        and coordinate a secure start.
+      </p>
+    </div>
+
+    <div class="av-process-grid">
+
+      <div class="av-process-step av-reveal">
+        <div class="av-step-num">01</div>
+        <h3>Discover</h3>
+        <p>
+          We discuss your
+          administrative challenges,
+          workflow needs, and
+          staffing requirements.
+        </p>
+      </div>
+
+      <div class="av-process-step av-reveal">
+        <div class="av-step-num">02</div>
+        <h3>Match</h3>
+        <p>
+          Suitable Medical Virtual
+          Assistant candidates
+          are identified based
+          on your needs.
+        </p>
+      </div>
+
+      <div class="av-process-step av-reveal">
+        <div class="av-step-num">03</div>
+        <h3>Select</h3>
+        <p>
+          Your practice can
+          interview candidates
+          and participate in
+          the selection process.
+        </p>
+      </div>
+
+      <div class="av-process-step av-reveal">
+        <div class="av-step-num">04</div>
+        <h3>Onboard Securely</h3>
+        <p>
+          We coordinate access,
+          instructions, and
+          onboarding. A typical
+          setup may take 1–2 weeks.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+ 08 LEADERSHIP
+============================================= -->
+
+<section class="av-section av-leadership" id="avora-leadership">
+  <div class="av-container">
+
+    <div class="av-section-head av-reveal">
+      <span class="av-kicker">OUR LEADERSHIP</span>
+      <h2 class="av-heading">
+        Healthcare Is Built
+        <span>on Trust.</span>
+      </h2>
+      <p>
+        Our leadership brings
+        experience across the
+        payer, provider, and
+        technology sides of healthcare,
+        united by a commitment
+        to reduce administrative
+        burden for medical practices.
+      </p>
+    </div>
+
+    <!-- FOUNDER & CEO -->
+    <div class="av-leader av-reveal">
+
+      <div class="av-leader-photo">
+        <!--
+          Replace the image below with the approved
+          Nishant Munjal photograph URL.
+
+          Example:
+          <img src="YOUR-IMAGE-URL" alt="Nishant Munjal, Founder and CEO of Avora Solutions">
+        -->
+
+        <div class="av-photo-fallback">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="32" r="17"/>
+            <path d="M17 91V79c0-18 15-31 33-31s33 13 33 31v12"/>
+          </svg>
+          <span>FOUNDER &amp; CEO PHOTO</span>
+        </div>
+      </div>
+
+      <div class="av-leader-content">
+        <span class="av-leader-role">
+          FOUNDER &amp; CEO
+        </span>
+
+        <h3>Nishant Munjal</h3>
+
+        <p>
+          Nishant Munjal believes
+          that strong healthcare
+          operations play an
+          essential role in
+          supporting better
+          patient experiences.
+          When physicians and
+          practice teams spend
+          less time navigating
+          administrative complexity,
+          they can devote more
+          attention to patient care.
+        </p>
+
+        <p>
+          With nearly two decades
+          of experience on the
+          payer side of healthcare,
+          along with his continued
+          role as a Board Member
+          and Practice Administrator
+          at NCIAP – People's
+          Medical Care, Nishant
+          understands the challenges
+          facing medical practices
+          from both payer and
+          provider perspectives.
+        </p>
+
+        <p>
+          Those experiences inspired
+          Avora Solutions. His vision
+          is to help independent
+          practices strengthen
+          their operations through
+          secure Medical Virtual
+          Assistants, practical
+          workflow improvements,
+          and thoughtful innovation.
+        </p>
+
+        <a
+          class="av-leader-link"
+          href="https://www.linkedin.com/in/nishantmunjal/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Connect with Nishant on LinkedIn →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- CTO -->
+    <div class="av-leader reverse av-reveal">
+
+      <div class="av-leader-content">
+        <span class="av-leader-role">
+          CHIEF TECHNOLOGY OFFICER
+        </span>
+
+        <h3>Naveen Deshwal</h3>
+
+        <p>
+          Naveen Deshwal believes
+          that technology should
+          make healthcare operations
+          simpler, more secure,
+          and easier for medical
+          practices to manage.
+        </p>
+
+        <p>
+          As Avora's Chief
+          Technology Officer,
+          Naveen shapes the
+          technology foundation
+          behind client engagements.
+          His focus is on building
+          secure systems that
+          help protect patient
+          information while
+          supporting efficient
+          administrative workflows.
+        </p>
+
+        <p>
+          By bringing together
+          secure infrastructure
+          and thoughtful automation,
+          Naveen works toward
+          reducing operational
+          friction without
+          adding unnecessary
+          complexity for
+          healthcare teams.
+          His approach is
+          grounded in the
+          belief that effective
+          technology should
+          quietly support
+          the people delivering
+          patient care.
+        </p>
+
+        <a
+          class="av-leader-link"
+          href="https://www.linkedin.com/in/deshwal/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Connect with Naveen on LinkedIn →
+        </a>
+      </div>
+
+      <div class="av-leader-photo">
+        <!--
+          Replace with approved Naveen Deshwal
+          photograph URL.
+
+          Example:
+          <img src="YOUR-IMAGE-URL" alt="Naveen Deshwal, CTO of Avora Solutions">
+        -->
+
+        <div class="av-photo-fallback">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="32" r="17"/>
+            <path d="M17 91V79c0-18 15-31 33-31s33 13 33 31v12"/>
+          </svg>
+          <span>CHIEF TECHNOLOGY OFFICER PHOTO</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+ 09 COMMITMENT
+============================================= -->
+
+<section class="av-commitment">
+  <div class="av-commitment-inner av-reveal">
+
+    <span class="av-kicker">OUR COMMITMENT</span>
+
+    <h2>
+      More Than Administrative Support.
+      A Partner Built Around Healthcare.
+    </h2>
+
+    <p>
+      Avora was founded on a
+      simple belief: medical
+      practices deserve
+      operational partners
+      who genuinely understand
+      healthcare and the
+      pressures their teams face.
+    </p>
+
+    <p>
+      Our ambition goes beyond
+      completing tasks. We
+      want to earn the trust
+      of physicians and
+      practice teams through
+      responsible operations,
+      reliable support,
+      and an ongoing
+      commitment to the
+      patients they serve.
+    </p>
+
+  </div>
+</section>
+
+<!-- =============================================
+ 10 FAQ
+============================================= -->
+
+<section class="av-section av-faq">
+  <div class="av-container av-faq-inner">
+
+    <div class="av-section-head av-reveal">
+      <span class="av-kicker">COMMON QUESTIONS</span>
+      <h2 class="av-heading">
+        Get to Know
+        <span>Avora Better</span>
+      </h2>
+      <p>
+        Answers to common questions
+        about our company, approach,
+        and Medical Virtual Assistant
+        services.
+      </p>
+    </div>
+
+    <div class="av-faq-item">
+      <button class="av-faq-question" type="button"
+        id="avora-faq-q1" aria-expanded="false"
+        aria-controls="avora-faq-a1">
+        <span>Where is Avora Solutions based?</span>
+        <span class="av-faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="av-faq-answer" id="avora-faq-a1"
+        role="region" aria-labelledby="avora-faq-q1" hidden>
+        <p>
+          Avora Solutions is based
+          in Cary, North Carolina,
+          and supports independent
+          medical practices across
+          the United States.
+        </p>
+      </div>
+    </div>
+
+    <div class="av-faq-item">
+      <button class="av-faq-question" type="button"
+        id="avora-faq-q2" aria-expanded="false"
+        aria-controls="avora-faq-a2">
+        <span>What makes Avora different from traditional virtual staffing?</span>
+        <span class="av-faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="av-faq-answer" id="avora-faq-a2"
+        role="region" aria-labelledby="avora-faq-q2" hidden>
+        <p>
+          Avora focuses on
+          healthcare-specific
+          administrative workflows
+          and a controlled
+          U.S.-based virtual
+          working environment,
+          with safeguards
+          designed to reduce
+          risks associated with
+          local data storage
+          and direct password sharing.
+        </p>
+      </div>
+    </div>
+
+    <div class="av-faq-item">
+      <button class="av-faq-question" type="button"
+        id="avora-faq-q3" aria-expanded="false"
+        aria-controls="avora-faq-a3">
+        <span>Which medical specialties does Avora support?</span>
+        <span class="av-faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="av-faq-answer" id="avora-faq-a3"
+        role="region" aria-labelledby="avora-faq-q3" hidden>
+        <p>
+          Avora is designed
+          to support independent
+          medical practices
+          across different
+          specialties. The
+          exact responsibilities
+          are matched to
+          each practice's
+          administrative needs
+          and workflows.
+        </p>
+      </div>
+    </div>
+
+    <div class="av-faq-item">
+      <button class="av-faq-question" type="button"
+        id="avora-faq-q4" aria-expanded="false"
+        aria-controls="avora-faq-a4">
+        <span>Who leads Avora Solutions?</span>
+        <span class="av-faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="av-faq-answer" id="avora-faq-a4"
+        role="region" aria-labelledby="avora-faq-q4" hidden>
+        <p>
+          Nishant Munjal is
+          Avora's Founder
+          and CEO, while
+          Naveen Deshwal
+          serves as Chief
+          Technology Officer.
+          Their backgrounds
+          span healthcare
+          operations and
+          technology infrastructure.
+        </p>
+      </div>
+    </div>
+
+    <div class="av-faq-item">
+      <button class="av-faq-question" type="button"
+        id="avora-faq-q5" aria-expanded="false"
+        aria-controls="avora-faq-a5">
+        <span>How does Avora approach patient data security?</span>
+        <span class="av-faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="av-faq-answer" id="avora-faq-a5"
+        role="region" aria-labelledby="avora-faq-q5" hidden>
+        <p>
+          Avora describes a
+          controlled virtual
+          desktop model,
+          restrictions on
+          local storage
+          and downloads,
+          and an encrypted
+          credential vault.
+          Specific security
+          and HIPAA-related
+          obligations depend
+          on the engagement
+          and applicable agreements.
+        </p>
+      </div>
+    </div>
+
+    <div class="av-faq-item">
+      <button class="av-faq-question" type="button"
+        id="avora-faq-q6" aria-expanded="false"
+        aria-controls="avora-faq-a6">
+        <span>How can my practice get started?</span>
+        <span class="av-faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="av-faq-answer" id="avora-faq-a6"
+        role="region" aria-labelledby="avora-faq-q6" hidden>
+        <p>
+          Start by contacting
+          Avora to discuss
+          your practice's
+          requirements. The
+          process typically
+          includes discovery,
+          candidate matching,
+          selection, and
+          secure onboarding.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+ 11 FINAL CTA
+============================================= -->
+
+<section class="av-final-cta">
+  <div class="av-container av-cta-grid">
+
+    <div class="av-reveal">
+      <span class="av-kicker">LET'S WORK TOGETHER</span>
+
+      <h2>
+        Give Your Practice More
+        Room to Focus on Patients.
+      </h2>
+
+      <p>
+        Explore dedicated Medical
+        Virtual Assistant support
+        built around your
+        practice's administrative
+        needs and security priorities.
+      </p>
+    </div>
+
+    <div class="av-cta-actions av-reveal">
+      <a class="av-btn" href="https://www.avorasolutions.com/contact">
+        Schedule a Discovery Call
+      </a>
+
+      <a class="av-btn av-btn-outline"
+        href="mailto:info@avorasolutions.com">
+        Email Our Team
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================
+ BACK TO TOP
+============================================= -->
+
+<button type="button"
+  class="av-back-top"
+  aria-label="Back to top"
+  tabindex="-1">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  function initAvoraAbout() {
+    const root = document.getElementById('avora-about');
+
+    if (!root || root.dataset.initialized === 'true') {
+      return;
+    }
+
+    root.dataset.initialized = 'true';
+
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    );
+
+    /* =====================================
+       SMOOTH ANCHOR SCROLL
+    ===================================== */
+
+    root.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        const selector = link.getAttribute('href');
+
+        if (!selector || selector === '#') return;
+
+        const target = root.querySelector(selector);
+
+        if (!target) return;
+
+        event.preventDefault();
+
+        const offset = 110;
+
+        const top =
+          target.getBoundingClientRect().top +
+          window.scrollY - offset;
+
+        window.scrollTo({
+          top:Math.max(0,top),
+          behavior:prefersReducedMotion.matches
+            ? 'auto'
+            : 'smooth'
+        });
+      });
+    });
+
+    /* =====================================
+       FAQ ACCORDION
+       One open item at a time
+    ===================================== */
+
+    const faqItems = Array.from(
+      root.querySelectorAll('.av-faq-item')
+    );
+
+    faqItems.forEach(function(item) {
+      const button = item.querySelector('.av-faq-question');
+      const panel = item.querySelector('.av-faq-answer');
+
+      if (!button || !panel) return;
+
+      button.addEventListener('click', function() {
+        const wasOpen =
+          button.getAttribute('aria-expanded') === 'true';
+
+        faqItems.forEach(function(other) {
+          const otherButton =
+            other.querySelector('.av-faq-question');
+
+          const otherPanel =
+            other.querySelector('.av-faq-answer');
+
+          other.classList.remove('open');
+          otherButton.setAttribute('aria-expanded','false');
+          otherPanel.hidden = true;
+        });
+
+        if (!wasOpen) {
+          item.classList.add('open');
+          button.setAttribute('aria-expanded','true');
+          panel.hidden = false;
+        }
+      });
+    });
+
+    /* =====================================
+       SCROLL REVEAL
+    ===================================== */
+
+    const revealElements = Array.from(
+      root.querySelectorAll('.av-reveal')
+    );
+
+    if (
+      'IntersectionObserver' in window &&
+      !prefersReducedMotion.matches
+    ) {
+      const observer = new IntersectionObserver(
+        function(entries,obs) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold:0.08,
+          rootMargin:'0px 0px -30px 0px'
+        }
+      );
+
+      root.classList.add('av-js-ready');
+
+      revealElements.forEach(function(el) {
+        observer.observe(el);
+      });
+    } else {
+      revealElements.forEach(function(el) {
+        el.classList.add('visible');
+      });
+    }
+
+    /* =====================================
+       BACK TO TOP
+    ===================================== */
+
+    const backTop = root.querySelector('.av-back-top');
+
+    function updateBackTop() {
+      if (!backTop) return;
+
+      const visible = window.scrollY > 450;
+
+      backTop.classList.toggle('show',visible);
+      backTop.tabIndex = visible ? 0 : -1;
+    }
+
+    let ticking = false;
+
+    window.addEventListener(
+      'scroll',
+      function() {
+        if (ticking) return;
+
+        ticking = true;
+
+        window.requestAnimationFrame(function() {
+          updateBackTop();
+          ticking = false;
+        });
+      },
+      {passive:true}
+    );
+
+    if (backTop) {
+      backTop.addEventListener('click',function() {
+        window.scrollTo({
+          top:0,
+          behavior:prefersReducedMotion.matches
+            ? 'auto'
+            : 'smooth'
+        });
+      });
+    }
+
+    updateBackTop();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener(
+      'DOMContentLoaded',
+      initAvoraAbout,
+      {once:true}
+    );
+  } else {
+    initAvoraAbout();
+  }
+
+})();
+</script>
