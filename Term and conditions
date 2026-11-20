@@ -1,0 +1,3114 @@
+
+<!-- ==========================================
+ AVORA SOLUTIONS - TERMS & CONDITIONS
+ Complete Elementor HTML Widget
+ HTML5 + CSS3 + Vanilla JavaScript
+========================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ==========================================
+   01. ROOT & BRAND STYLING
+========================================== */
+
+#avora-terms {
+  --navy: #153D56;
+  --dark: #102F44;
+  --teal: #247C80;
+  --mint: #E9F3F2;
+  --light: #F5F8F7;
+  --heading: #17394E;
+  --body: #586B75;
+  --border: #E4ECEA;
+  --white: #FFFFFF;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--body);
+  background: #fff;
+  isolation: isolate;
+}
+
+#avora-terms *,
+#avora-terms *::before,
+#avora-terms *::after {
+  box-sizing: border-box;
+}
+
+#avora-terms h1,
+#avora-terms h2,
+#avora-terms h3,
+#avora-terms h4,
+#avora-terms p,
+#avora-terms ul {
+  margin-top: 0;
+}
+
+#avora-terms h1,
+#avora-terms h2,
+#avora-terms h3,
+#avora-terms h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--heading);
+  line-height: 1.35;
+}
+
+#avora-terms p,
+#avora-terms li {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+#avora-terms a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+#avora-terms a:hover {
+  text-decoration: underline;
+}
+
+#avora-terms button {
+  font-family: inherit;
+}
+
+#avora-terms a:focus-visible,
+#avora-terms button:focus-visible {
+  outline: 3px solid #247C80;
+  outline-offset: 3px;
+}
+
+#avora-terms [id^="avt-"] {
+  scroll-margin-top: 110px;
+}
+
+/* ==========================================
+   02. HERO SECTION
+========================================== */
+
+#avora-terms .terms-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 95px 20px 88px;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      ellipse at 10% 10%,
+      rgba(36,124,128,.12),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 90% 90%,
+      rgba(36,124,128,.10),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #F8FBFA,
+      #EAF4F2 55%,
+      #F9FCFB
+    );
+}
+
+#avora-terms .terms-hero::before,
+#avora-terms .terms-hero::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(36,124,128,.14);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#avora-terms .terms-hero::before {
+  width: 420px;
+  height: 420px;
+  top: -290px;
+  left: -120px;
+}
+
+#avora-terms .terms-hero::after {
+  width: 500px;
+  height: 500px;
+  bottom: -390px;
+  right: -130px;
+}
+
+#avora-terms .hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  margin: auto;
+}
+
+#avora-terms .hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 16px;
+  margin-bottom: 23px;
+
+  border: 1px solid #D7E8E4;
+  background: #fff;
+  border-radius: 30px;
+
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .8px;
+}
+
+#avora-terms .hero-label::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--teal);
+  border-radius: 50%;
+}
+
+#avora-terms .terms-hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  letter-spacing: -1.7px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
+
+#avora-terms .terms-hero h1 span {
+  color: var(--teal);
+}
+
+#avora-terms .terms-hero p {
+  max-width: 710px;
+  margin: 0 auto 27px;
+  font-size: 16px;
+}
+
+#avora-terms .hero-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#avora-terms .hero-meta span {
+  padding: 8px 15px;
+  background: rgba(255,255,255,.9);
+  border: 1px solid #DCE9E6;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #536A73;
+}
+
+/* ==========================================
+   03. TWO COLUMN LAYOUT
+========================================== */
+
+#avora-terms .terms-layout {
+  max-width: 1240px;
+  margin: auto;
+  padding: 65px 25px 95px;
+
+  display: grid;
+  grid-template-columns: 270px minmax(0,1fr);
+  gap: 55px;
+  align-items: start;
+}
+
+/* ==========================================
+   04. STICKY TABLE OF CONTENTS
+========================================== */
+
+#avora-terms .terms-sidebar {
+  position: sticky;
+  top: 110px;
+  min-width: 0;
+}
+
+#avora-terms .toc-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 22px 16px;
+
+  box-shadow: 0 12px 35px rgba(16,47,68,.045);
+}
+
+#avora-terms .toc-heading {
+  padding: 0 10px 14px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+
+  color: var(--heading);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+#avora-terms .toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  max-height: 65vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  scrollbar-width: thin;
+  scrollbar-color: #B2D2CD transparent;
+}
+
+#avora-terms .toc-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#avora-terms .toc-list a {
+  display: block;
+  padding: 9px 11px;
+
+  border-left: 3px solid transparent;
+  border-radius: 0 5px 5px 0;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #60747E;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+
+#avora-terms .toc-list a:hover,
+#avora-terms .toc-list a.active {
+  color: var(--teal);
+  background: var(--mint);
+  border-left-color: var(--teal);
+  text-decoration: none;
+}
+
+#avora-terms .toc-list a.active {
+  font-weight: 800;
+}
+
+#avora-terms .sidebar-note {
+  margin-top: 17px;
+  padding: 19px;
+
+  background: var(--mint);
+  border-radius: 12px;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+#avora-terms .sidebar-note strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--heading);
+  font-size: 14px;
+}
+
+#avora-terms .sidebar-note a {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   05. CONTENT STYLING
+========================================== */
+
+#avora-terms .terms-content {
+  min-width: 0;
+}
+
+#avora-terms .intro-card {
+  padding: 27px 29px;
+  margin-bottom: 38px;
+
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+#avora-terms .intro-card h2 {
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+#avora-terms .intro-card p {
+  margin-bottom: 0;
+}
+
+#avora-terms .terms-section {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid var(--border);
+}
+
+#avora-terms .section-number {
+  display: block;
+  margin-bottom: 9px;
+
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#avora-terms .terms-section h2 {
+  font-size: clamp(23px, 2.4vw, 29px);
+  font-weight: 800;
+  letter-spacing: -.5px;
+  margin-bottom: 17px;
+}
+
+#avora-terms .terms-section h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 25px 0 10px;
+}
+
+#avora-terms .terms-section p {
+  margin-bottom: 15px;
+}
+
+#avora-terms .terms-section ul {
+  margin: 11px 0 19px;
+  padding-left: 23px;
+}
+
+#avora-terms .terms-section li {
+  padding: 2px 0 2px 3px;
+  margin-bottom: 7px;
+}
+
+#avora-terms .terms-section li::marker {
+  color: var(--teal);
+}
+
+#avora-terms .terms-section strong {
+  color: var(--heading);
+}
+
+/* ==========================================
+   06. INFORMATION BOXES
+========================================== */
+
+#avora-terms .info-box {
+  margin: 21px 0;
+  padding: 19px 22px;
+
+  background: var(--mint);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 9px 9px 0;
+}
+
+#avora-terms .info-box strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+
+#avora-terms .info-box p {
+  margin-bottom: 0;
+}
+
+#avora-terms .info-box.neutral {
+  background: #F3F6F7;
+  border-left-color: #9CB6B9;
+}
+
+/* ==========================================
+   07. CONTACT CARD
+========================================== */
+
+#avora-terms .contact-card {
+  background: linear-gradient(
+    135deg,
+    var(--dark),
+    var(--navy)
+  );
+
+  border-radius: 16px;
+  padding: 32px;
+  margin: 26px 0;
+
+  color: #fff;
+}
+
+#avora-terms .contact-card h3 {
+  color: #fff;
+  font-size: 23px;
+  margin: 0 0 12px;
+}
+
+#avora-terms .contact-card p {
+  color: #D9E7EB;
+  margin-bottom: 15px;
+}
+
+#avora-terms .contact-card strong {
+  color: #fff;
+}
+
+#avora-terms .contact-card a {
+  color: #A9E5DC;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   08. FAQ SECTION
+========================================== */
+
+#avora-terms .faq-area {
+  padding: 78px 20px;
+  background: var(--light);
+  border-top: 1px solid var(--border);
+}
+
+#avora-terms .faq-inner {
+  max-width: 880px;
+  margin: auto;
+}
+
+#avora-terms .faq-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#avora-terms .faq-heading .eyebrow {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+#avora-terms .faq-heading h2 {
+  font-size: clamp(27px, 3vw, 35px);
+  font-weight: 800;
+  margin: 8px 0 10px;
+}
+
+#avora-terms .faq-heading p {
+  margin: 0;
+}
+
+#avora-terms .faq-item {
+  margin-bottom: 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+#avora-terms .faq-item.open {
+  border-color: #ACD0CB;
+}
+
+#avora-terms .faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  padding: 20px 22px;
+  border: 0;
+  background: #fff;
+
+  color: var(--heading);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+#avora-terms .faq-icon {
+  flex-shrink: 0;
+  width: 31px;
+  height: 31px;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--mint);
+  color: var(--teal);
+  border-radius: 50%;
+
+  font-size: 23px;
+  font-weight: 400;
+  transition: transform .2s ease;
+}
+
+#avora-terms .faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+#avora-terms .faq-answer {
+  padding: 0 22px 21px;
+}
+
+#avora-terms .faq-answer[hidden] {
+  display: none !important;
+}
+
+#avora-terms .faq-answer p {
+  margin: 0;
+}
+
+/* ==========================================
+   09. FOOTER NOTE
+========================================== */
+
+#avora-terms .footer-note {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+#avora-terms .footer-note p {
+  font-size: 13px;
+  color: #82939A;
+  margin: 0;
+}
+
+/* ==========================================
+   10. BACK TO TOP
+========================================== */
+
+#avora-terms .back-top {
+  position: fixed;
+  z-index: 999;
+  right: 25px;
+  bottom: 25px;
+
+  width: 47px;
+  height: 47px;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--teal);
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+
+  box-shadow: 0 7px 20px rgba(36,124,128,.25);
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px);
+
+  transition:
+    opacity .25s,
+    visibility .25s,
+    transform .25s,
+    background .25s;
+}
+
+#avora-terms .back-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#avora-terms .back-top:hover {
+  background: var(--dark);
+}
+
+#avora-terms .back-top svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ==========================================
+   11. RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+  #avora-terms .terms-layout {
+    grid-template-columns: 235px minmax(0,1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  #avora-terms .terms-layout {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding-top: 35px;
+  }
+
+  #avora-terms .terms-sidebar {
+    position: static;
+  }
+
+  #avora-terms .toc-list {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 2px 7px;
+    max-height: 210px;
+  }
+
+  #avora-terms .sidebar-note {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #avora-terms .terms-hero {
+    padding: 70px 18px 62px;
+  }
+
+  #avora-terms .terms-hero h1 {
+    font-size: 37px;
+    letter-spacing: -1px;
+  }
+
+  #avora-terms .terms-layout {
+    padding: 30px 17px 60px;
+  }
+
+  #avora-terms .toc-list {
+    grid-template-columns: 1fr;
+    max-height: 210px;
+  }
+
+  #avora-terms .intro-card {
+    padding: 23px 21px;
+  }
+
+  #avora-terms .terms-section h2 {
+    font-size: 23px;
+  }
+
+  #avora-terms .contact-card {
+    padding: 24px;
+  }
+
+  #avora-terms .faq-area {
+    padding: 58px 17px;
+  }
+
+  #avora-terms .faq-question {
+    padding: 18px;
+  }
+
+  #avora-terms .faq-answer {
+    padding: 0 18px 19px;
+  }
+
+  #avora-terms .back-top {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #avora-terms * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+</style>
+
+<div id="avora-terms">
+
+<!-- ==========================================
+     HERO SECTION
+========================================== -->
+
+<header class="terms-hero" id="avt-top">
+  <div class="hero-inner">
+
+    <div class="hero-label">
+      WEBSITE & SERVICE TERMS
+    </div>
+
+    <h1>
+      Terms <span>&amp; Conditions</span>
+    </h1>
+
+    <p>
+      Please review the terms governing your use
+      of the Avora Solutions website, enquiries
+      about our services, and our dedicated
+      Medical Virtual Assistant arrangements
+      for healthcare practices.
+    </p>
+
+    <div class="hero-meta">
+      <span>Effective Date: [Confirm publication date]</span>
+      <span>Last Updated: [Confirm revision date]</span>
+    </div>
+
+  </div>
+</header>
+
+<!-- ==========================================
+     MAIN TWO COLUMN LAYOUT
+========================================== -->
+
+<main class="terms-layout">
+
+<!-- SIDEBAR -->
+<aside class="terms-sidebar"
+       aria-label="Terms and conditions navigation">
+
+  <div class="toc-card">
+
+    <div class="toc-heading">
+      On This Page
+    </div>
+
+    <nav aria-label="Terms sections">
+      <ul class="toc-list">
+
+        <li><a href="#avt-introduction">01. Introduction</a></li>
+        <li><a href="#avt-acceptance">02. Acceptance of Terms</a></li>
+        <li><a href="#avt-eligibility">03. Eligibility & Use</a></li>
+        <li><a href="#avt-services">04. Our Services</a></li>
+        <li><a href="#avt-engagement">05. Service Engagements</a></li>
+        <li><a href="#avt-onboarding">06. Onboarding Process</a></li>
+        <li><a href="#avt-client">07. Client Responsibilities</a></li>
+        <li><a href="#avt-medical">08. Medical & Clinical Limitations</a></li>
+        <li><a href="#avt-hipaa">09. HIPAA & Patient Information</a></li>
+        <li><a href="#avt-security">10. Security & System Access</a></li>
+        <li><a href="#avt-staffing">11. Staffing & Supervision</a></li>
+        <li><a href="#avt-fees">12. Pricing & Payments</a></li>
+        <li><a href="#avt-cancellation">13. Changes & Cancellation</a></li>
+        <li><a href="#avt-confidentiality">14. Confidentiality</a></li>
+        <li><a href="#avt-intellectual">15. Intellectual Property</a></li>
+        <li><a href="#avt-prohibited">16. Prohibited Activities</a></li>
+        <li><a href="#avt-thirdparty">17. Third-Party Systems</a></li>
+        <li><a href="#avt-disclaimer">18. Disclaimers</a></li>
+        <li><a href="#avt-liability">19. Liability</a></li>
+        <li><a href="#avt-disputes">20. Disputes & Governing Law</a></li>
+        <li><a href="#avt-termination">21. Suspension & Termination</a></li>
+        <li><a href="#avt-changes">22. Changes to Terms</a></li>
+        <li><a href="#avt-contact">23. Contact Information</a></li>
+        <li><a href="#avt-faq">Frequently Asked Questions</a></li>
+
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="sidebar-note">
+    <strong>Need clarification?</strong>
+    Contact our team at
+    <a href="mailto:info@avorasolutions.com">
+      info@avorasolutions.com
+    </a>.
+  </div>
+
+</aside>
+
+<!-- ==========================================
+     TERMS CONTENT
+========================================== -->
+
+<article class="terms-content">
+
+<!-- INTRODUCTION CARD -->
+<div class="intro-card">
+
+  <h2>Understanding These Terms</h2>
+
+  <p>
+    Avora Solutions LLC provides dedicated
+    Medical Virtual Assistants to support
+    the administrative operations of
+    independent healthcare practices.
+    These Terms &amp; Conditions explain
+    the general rules for using our website
+    and the framework for engaging with
+    our business. Specific staffing,
+    payment, confidentiality, and
+    healthcare data obligations may
+    be governed by separate written
+    agreements.
+  </p>
+
+</div>
+
+<!-- ==========================================
+     SECTION 01
+========================================== -->
+<section class="terms-section" id="avt-introduction">
+
+  <span class="section-number">SECTION 01</span>
+  <h2>Introduction</h2>
+
+  <p>
+    Welcome to Avora Solutions LLC
+    ("Avora," "we," "our," or "us").
+    Avora is a North Carolina-based
+    business providing Medical Virtual
+    Assistant services to healthcare
+    practices across the United States.
+  </p>
+
+  <p>
+    Our services focus on supporting
+    non-clinical administrative workflows
+    such as appointment scheduling,
+    insurance verification, prior
+    authorization coordination,
+    referral management, billing support,
+    and general practice administration.
+  </p>
+
+  <p>
+    These Terms &amp; Conditions
+    govern access to and use of
+    our public website and provide
+    general information about
+    how service engagements
+    are arranged.
+  </p>
+
+  <p>
+    Where a separate written service
+    agreement, statement of work,
+    or Business Associate Agreement
+    applies, that agreement governs
+    its specific subject matter.
+    In the event of a conflict,
+    the relevant signed agreement
+    will take precedence to the
+    extent stated in that agreement.
+  </p>
+
+</section>
+
+<!-- SECTION 02 -->
+<section class="terms-section" id="avt-acceptance">
+
+  <span class="section-number">SECTION 02</span>
+  <h2>Acceptance of Terms</h2>
+
+  <p>
+    By accessing or using the
+    Avora Solutions website,
+    you agree to comply with
+    these Terms &amp; Conditions
+    to the extent enforceable
+    under applicable law.
+  </p>
+
+  <p>
+    If you are using the website
+    on behalf of a healthcare
+    practice or organization,
+    you represent that you
+    are authorized to act
+    on its behalf when making
+    business enquiries or
+    entering agreements.
+  </p>
+
+  <p>
+    If you do not agree
+    with these terms,
+    please discontinue
+    use of the website.
+  </p>
+
+  <div class="info-box">
+    <strong>Important Distinction</strong>
+    <p>
+      Submitting an enquiry or
+      requesting a discovery call
+      does not automatically
+      create a staffing contract,
+      establish a service relationship,
+      or authorize access to
+      patient information.
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 03 -->
+<section class="terms-section" id="avt-eligibility">
+
+  <span class="section-number">SECTION 03</span>
+  <h2>Eligibility and Website Use</h2>
+
+  <p>
+    Our website is primarily
+    intended for healthcare
+    professionals, medical
+    practice administrators,
+    business representatives,
+    and other individuals
+    evaluating our services.
+  </p>
+
+  <p>
+    Users must provide accurate
+    information when contacting
+    our team and must not
+    impersonate another
+    person or organization.
+  </p>
+
+  <p>
+    You agree to use the
+    website only for lawful
+    purposes and in a manner
+    that does not interfere
+    with its operation,
+    security, or availability.
+  </p>
+
+  <p>
+    We may restrict access
+    to website features
+    where reasonably necessary
+    to address misuse,
+    security concerns,
+    or legal obligations.
+  </p>
+
+</section>
+
+<!-- SECTION 04 -->
+<section class="terms-section" id="avt-services">
+
+  <span class="section-number">SECTION 04</span>
+  <h2>Overview of Our Services</h2>
+
+  <p>
+    Avora provides dedicated
+    Medical Virtual Assistants
+    who support administrative
+    tasks within a healthcare
+    practice's existing workflows.
+  </p>
+
+  <p>
+    The scope of each engagement
+    depends on the practice's
+    requirements, the agreed
+    responsibilities, and
+    authorized system access.
+  </p>
+
+  <h3>4.1 Appointment Scheduling and Coordination</h3>
+  <p>
+    Administrative support
+    for appointment booking,
+    confirmations, rescheduling,
+    calendar management,
+    and related patient
+    coordination tasks.
+  </p>
+
+  <h3>4.2 Insurance Verification</h3>
+  <p>
+    Assistance with eligibility
+    checks, benefit verification,
+    payer communications,
+    and administrative
+    coverage follow-ups.
+  </p>
+
+  <h3>4.3 Prior Authorization Support</h3>
+  <p>
+    Administrative assistance
+    with documentation preparation,
+    payer submissions,
+    authorization tracking,
+    and status follow-ups
+    under practice direction.
+  </p>
+
+  <h3>4.4 Referral Coordination</h3>
+  <p>
+    Support for referral
+    documentation, scheduling,
+    communication between
+    relevant offices, and
+    referral status tracking.
+  </p>
+
+  <h3>4.5 Medical Billing Support</h3>
+  <p>
+    Assistance with billing
+    preparation, claims-related
+    administrative tasks,
+    payment tracking,
+    accounts receivable
+    follow-ups, and
+    related documentation.
+  </p>
+
+  <h3>4.6 General Administrative Support</h3>
+  <p>
+    Assistance with
+    practice communications,
+    document organization,
+    EMR data entry,
+    task tracking,
+    and other approved
+    back-office responsibilities.
+  </p>
+
+  <div class="info-box">
+    <strong>Our Service Model</strong>
+    <p>
+      Avora provides Medical Virtual
+      Assistant support, not
+      independent clinical services
+      or an unrestricted
+      full-service revenue
+      cycle management offering.
+      Specific tasks must be
+      agreed upon for
+      each engagement.
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 05 -->
+<section class="terms-section" id="avt-engagement">
+
+  <span class="section-number">SECTION 05</span>
+  <h2>Service Engagements and Agreements</h2>
+
+  <p>
+    A formal service engagement
+    is established through
+    the applicable written
+    agreement or other
+    mutually accepted
+    contractual documentation.
+  </p>
+
+  <p>
+    Engagement details
+    may include:
+  </p>
+
+  <ul>
+    <li>Assigned administrative responsibilities.</li>
+    <li>Staffing requirements and coverage hours.</li>
+    <li>Pricing and invoicing arrangements.</li>
+    <li>Onboarding and training responsibilities.</li>
+    <li>Authorized systems and access permissions.</li>
+    <li>Confidentiality and healthcare privacy obligations.</li>
+    <li>Procedures for changing or ending the engagement.</li>
+  </ul>
+
+  <p>
+    The final scope of
+    services should be
+    confirmed before
+    operational work begins.
+  </p>
+
+  <p>
+    Statements on the
+    website are general
+    descriptions and do
+    not independently
+    guarantee a particular
+    staffing arrangement
+    or service outcome.
+  </p>
+
+</section>
+
+<!-- SECTION 06 -->
+<section class="terms-section" id="avt-onboarding">
+
+  <span class="section-number">SECTION 06</span>
+  <h2>Onboarding and Implementation</h2>
+
+  <p>
+    Avora's onboarding
+    process is designed
+    to align a Medical
+    Virtual Assistant
+    with the healthcare
+    practice's approved
+    administrative workflows.
+  </p>
+
+  <h3>6.1 Discovery and Requirements</h3>
+  <p>
+    The practice discusses
+    its operational needs,
+    workflow challenges,
+    required experience,
+    and expected responsibilities.
+  </p>
+
+  <h3>6.2 Assistant Matching</h3>
+  <p>
+    Avora identifies
+    potentially suitable
+    professionals based
+    on the practice's
+    requirements and
+    available talent.
+  </p>
+
+  <h3>6.3 Selection and Coordination</h3>
+  <p>
+    The selection process
+    may include interviews,
+    role discussions,
+    and confirmation
+    of expectations.
+  </p>
+
+  <h3>6.4 Secure Setup</h3>
+  <p>
+    Authorized system
+    access, workflow
+    instructions, and
+    relevant operational
+    arrangements are
+    coordinated before
+    the assistant begins
+    assigned work.
+  </p>
+
+  <h3>6.5 Onboarding Timeframes</h3>
+  <p>
+    Avora describes a
+    typical onboarding
+    period of approximately
+    one to two weeks.
+    Actual timing may
+    vary depending on
+    staffing availability,
+    client approvals,
+    system access,
+    and implementation
+    requirements.
+  </p>
+
+</section>
+
+<!-- SECTION 07 -->
+<section class="terms-section" id="avt-client">
+
+  <span class="section-number">SECTION 07</span>
+  <h2>Client Responsibilities</h2>
+
+  <p>
+    Healthcare practice
+    clients remain responsible
+    for directing their
+    operations and ensuring
+    that assigned work
+    is appropriate for
+    their practice.
+  </p>
+
+  <p>
+    Client responsibilities
+    may include:
+  </p>
+
+  <ul>
+    <li>Providing accurate workflow instructions and operational requirements.</li>
+    <li>Identifying which tasks an assistant is authorized to perform.</li>
+    <li>Approving necessary access to practice systems.</li>
+    <li>Maintaining appropriate internal oversight and review procedures.</li>
+    <li>Ensuring that patient communications and clinical matters are escalated appropriately.</li>
+    <li>Maintaining required licenses, permissions, and payer relationships.</li>
+    <li>Reviewing the accuracy of information submitted or maintained on the practice's behalf.</li>
+    <li>Providing timely responses to questions, approvals, and access requests.</li>
+  </ul>
+
+  <p>
+    Clients should not
+    instruct assistants
+    to perform activities
+    that exceed their
+    authorized scope
+    or violate applicable
+    legal or professional
+    requirements.
+  </p>
+
+</section>
+
+<!-- SECTION 08 -->
+<section class="terms-section" id="avt-medical">
+
+  <span class="section-number">SECTION 08</span>
+  <h2>Medical and Clinical Limitations</h2>
+
+  <p>
+    Avora provides
+    non-clinical administrative
+    support to healthcare
+    practices.
+  </p>
+
+  <p>
+    Our Medical Virtual
+    Assistants are not
+    engaged through these
+    services to independently:
+  </p>
+
+  <ul>
+    <li>Diagnose medical conditions.</li>
+    <li>Prescribe medication.</li>
+    <li>Determine treatment plans.</li>
+    <li>Provide independent clinical advice.</li>
+    <li>Make medical necessity determinations.</li>
+    <li>Replace licensed healthcare professionals.</li>
+  </ul>
+
+  <p>
+    Clinical decisions,
+    patient treatment,
+    professional judgment,
+    and medical supervision
+    remain the responsibility
+    of the relevant
+    licensed healthcare
+    professionals and practices.
+  </p>
+
+  <div class="info-box">
+    <strong>No Doctor–Patient Relationship</strong>
+    <p>
+      Use of the Avora website
+      or engagement of our
+      administrative services
+      does not create a
+      doctor–patient relationship
+      between Avora and
+      any individual.
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 09 -->
+<section class="terms-section" id="avt-hipaa">
+
+  <span class="section-number">SECTION 09</span>
+  <h2>HIPAA, Privacy and Patient Information</h2>
+
+  <p>
+    Certain administrative
+    services may involve
+    access to protected
+    health information
+    or other sensitive
+    healthcare records.
+  </p>
+
+  <p>
+    Where HIPAA applies,
+    the parties must
+    evaluate their
+    respective obligations
+    under applicable
+    healthcare privacy
+    and security requirements.
+  </p>
+
+  <h3>9.1 Business Associate Agreements</h3>
+  <p>
+    Where legally required,
+    an appropriate Business
+    Associate Agreement
+    must be in place
+    before the relevant
+    processing of protected
+    health information begins.
+  </p>
+
+  <h3>9.2 Permitted Access</h3>
+  <p>
+    Assistants should
+    access information
+    only as necessary
+    for authorized tasks
+    and in accordance
+    with the applicable
+    agreement, instructions,
+    and legal requirements.
+  </p>
+
+  <h3>9.3 Practice Oversight</h3>
+  <p>
+    Healthcare clients
+    retain responsibility
+    for their own
+    patient care,
+    internal policies,
+    and applicable
+    regulatory obligations.
+  </p>
+
+  <h3>9.4 Healthcare Privacy Notices</h3>
+  <p>
+    A healthcare practice's
+    Notice of Privacy Practices
+    and patient-related
+    policies may apply
+    to records handled
+    during an engagement.
+  </p>
+
+  <div class="info-box">
+    <strong>HIPAA-Aligned Operations</strong>
+    <p>
+      Avora's operating
+      approach is designed
+      around healthcare
+      privacy and controlled
+      access. References
+      to HIPAA-aligned
+      operations should
+      not be interpreted
+      as a government
+      certification or
+      an unconditional
+      compliance guarantee.
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 10 -->
+<section class="terms-section" id="avt-security">
+
+  <span class="section-number">SECTION 10</span>
+  <h2>Security and System Access</h2>
+
+  <p>
+    Avora describes a
+    security-focused
+    virtual staffing model
+    that uses a controlled
+    U.S.-based virtual
+    workspace for
+    authorized healthcare
+    administrative activities.
+  </p>
+
+  <h3>10.1 Virtual Workspace</h3>
+  <p>
+    Authorized assistants
+    work through a
+    virtual desktop
+    environment intended
+    to reduce exposure
+    of practice information
+    on local devices.
+  </p>
+
+  <h3>10.2 Credential Protection</h3>
+  <p>
+    Avora describes
+    an encrypted
+    credential vault
+    approach intended
+    to avoid direct
+    password sharing
+    with virtual staff.
+  </p>
+
+  <h3>10.3 Restricted Data Handling</h3>
+  <p>
+    The published operating
+    model describes
+    restrictions on
+    local data storage,
+    downloads, printing,
+    and unauthorized
+    transfers.
+  </p>
+
+  <h3>10.4 Client Access Management</h3>
+  <p>
+    Clients should
+    coordinate appropriate
+    access permissions,
+    account administration,
+    and system requirements
+    for their engagement.
+  </p>
+
+  <h3>10.5 Security Limitations</h3>
+  <p>
+    No electronic system
+    is completely free
+    from risk. Specific
+    safeguards, responsibilities,
+    and incident procedures
+    should be established
+    through the applicable
+    agreements and
+    operating arrangements.
+  </p>
+
+</section>
+
+<!-- SECTION 11 -->
+<section class="terms-section" id="avt-staffing">
+
+  <span class="section-number">SECTION 11</span>
+  <h2>Staffing, Supervision and Service Delivery</h2>
+
+  <p>
+    Avora connects
+    healthcare practices
+    with trained remote
+    administrative
+    professionals.
+  </p>
+
+  <p>
+    The availability
+    of a particular
+    assistant, their
+    experience, working
+    hours, and assigned
+    responsibilities
+    depend on the
+    engagement terms.
+  </p>
+
+  <h3>11.1 Dedicated Support</h3>
+  <p>
+    A dedicated assistant
+    may be assigned
+    to support the
+    practice's approved
+    daily administrative
+    activities.
+  </p>
+
+  <h3>11.2 Scope of Responsibilities</h3>
+  <p>
+    Assistants should
+    perform only those
+    duties agreed upon
+    and authorized
+    for the engagement.
+  </p>
+
+  <h3>11.3 Staffing Changes</h3>
+  <p>
+    Requests for changes
+    in responsibilities,
+    coverage, or personnel
+    should be discussed
+    with Avora and
+    addressed under
+    the relevant agreement.
+  </p>
+
+  <h3>11.4 Service Continuity</h3>
+  <p>
+    Coverage arrangements,
+    absences, replacements,
+    and continuity
+    expectations should
+    be established
+    through the applicable
+    service documentation.
+  </p>
+
+  <p>
+    The use of
+    internationally sourced
+    talent does not
+    necessarily mean
+    that practice data
+    is stored on
+    overseas personal devices.
+    The actual access
+    arrangement is governed
+    by the applicable
+    security configuration.
+  </p>
+
+</section>
+
+<!-- SECTION 12 -->
+<section class="terms-section" id="avt-fees">
+
+  <span class="section-number">SECTION 12</span>
+  <h2>Pricing, Invoices and Payments</h2>
+
+  <p>
+    Pricing for Avora's
+    Medical Virtual Assistant
+    services depends
+    on the scope of work,
+    staffing requirements,
+    and agreed coverage.
+  </p>
+
+  <h3>12.1 Service Pricing</h3>
+  <p>
+    Avora describes
+    hourly or monthly
+    pricing arrangements
+    depending on
+    the engagement.
+    Applicable rates
+    should be confirmed
+    in the written
+    proposal or agreement.
+  </p>
+
+  <h3>12.2 Invoicing and Timesheets</h3>
+  <p>
+    Avora's published
+    service information
+    states that timesheets
+    accompany invoices
+    to support transparency
+    regarding work performed.
+  </p>
+
+  <h3>12.3 Payment Terms</h3>
+  <p>
+    Invoice due dates,
+    accepted payment
+    methods, applicable
+    taxes, and any
+    additional charges
+    are determined by
+    the applicable
+    service agreement
+    or invoice terms.
+  </p>
+
+  <h3>12.4 Billing Questions</h3>
+  <p>
+    Clients should
+    promptly contact
+    Avora about invoice
+    discrepancies or
+    billing concerns
+    so they can be
+    reviewed under
+    the agreed terms.
+  </p>
+
+  <h3>12.5 Refunds and Adjustments</h3>
+  <p>
+    Any refund,
+    credit, or billing
+    adjustment depends
+    on the relevant
+    agreement, circumstances,
+    and applicable law.
+    This website does
+    not establish a
+    separate universal
+    refund entitlement.
+  </p>
+
+  <div class="info-box neutral">
+    <strong>Contract-Specific Financial Terms</strong>
+    <p>
+      Exact rates,
+      payment deadlines,
+      late-payment charges,
+      refund conditions,
+      and any setup fees
+      must be confirmed
+      in the client's
+      agreement. No
+      unverified amounts
+      have been included.
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 13 -->
+<section class="terms-section" id="avt-cancellation">
+
+  <span class="section-number">SECTION 13</span>
+  <h2>Service Changes, Scaling and Cancellation</h2>
+
+  <p>
+    Avora describes
+    flexible staffing
+    arrangements without
+    mandatory long-term
+    contracts for its
+    Medical Virtual
+    Assistant offering.
+  </p>
+
+  <p>
+    Clients may discuss
+    adjustments to
+    staffing levels,
+    coverage, or
+    assigned responsibilities
+    as their operational
+    requirements change.
+  </p>
+
+  <p>
+    Any notice period,
+    cancellation procedure,
+    final invoice,
+    outstanding payment,
+    or transition
+    requirement is
+    governed by the
+    applicable agreement.
+  </p>
+
+  <p>
+    Requests to
+    discontinue services
+    should be communicated
+    through the agreed
+    business contact
+    or service channel.
+  </p>
+
+  <div class="info-box">
+    <strong>Flexible Does Not Mean Unconditional</strong>
+    <p>
+      The absence of
+      a mandatory
+      long-term commitment
+      does not automatically
+      eliminate agreed
+      notice requirements,
+      accrued charges,
+      or other lawful
+      contractual obligations.
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 14 -->
+<section class="terms-section" id="avt-confidentiality">
+
+  <span class="section-number">SECTION 14</span>
+  <h2>Confidentiality and Information Handling</h2>
+
+  <p>
+    During an engagement,
+    either party may
+    receive confidential
+    business, operational,
+    technical, or
+    patient-related
+    information.
+  </p>
+
+  <p>
+    The handling of
+    confidential information
+    is subject to
+    applicable agreements
+    and legal obligations.
+  </p>
+
+  <p>
+    Confidential information
+    may include:
+  </p>
+
+  <ul>
+    <li>Internal practice procedures and business records.</li>
+    <li>Patient-related information and administrative records.</li>
+    <li>System access details and operational instructions.</li>
+    <li>Pricing, proposals, and non-public commercial information.</li>
+    <li>Other information identified as confidential or reasonably understood to be confidential.</li>
+  </ul>
+
+  <p>
+    Confidentiality
+    responsibilities,
+    permitted disclosures,
+    exceptions, and
+    obligations following
+    termination should
+    be established in
+    the relevant agreement.
+  </p>
+
+</section>
+
+<!-- SECTION 15 -->
+<section class="terms-section" id="avt-intellectual">
+
+  <span class="section-number">SECTION 15</span>
+  <h2>Intellectual Property and Website Content</h2>
+
+  <p>
+    The Avora Solutions
+    website contains
+    text, graphics,
+    branding, design
+    elements, and
+    other materials
+    that may be
+    protected by
+    intellectual
+    property laws.
+  </p>
+
+  <p>
+    Unless authorized
+    or permitted by law,
+    users must not
+    reproduce, distribute,
+    modify, or commercially
+    exploit protected
+    website content.
+  </p>
+
+  <p>
+    Any ownership
+    or permitted use
+    of materials created
+    during a client
+    engagement should
+    be determined by
+    the applicable
+    service agreement.
+  </p>
+
+  <p>
+    Client-provided
+    materials and
+    third-party software
+    remain subject
+    to the relevant
+    ownership and
+    licensing rights.
+  </p>
+
+</section>
+
+<!-- SECTION 16 -->
+<section class="terms-section" id="avt-prohibited">
+
+  <span class="section-number">SECTION 16</span>
+  <h2>Prohibited Website and Service Activities</h2>
+
+  <p>
+    Users and clients
+    must not knowingly
+    use Avora's website
+    or services for
+    unlawful or
+    unauthorized purposes.
+  </p>
+
+  <p>
+    Prohibited conduct
+    includes:
+  </p>
+
+  <ul>
+    <li>Attempting unauthorized access to systems or accounts.</li>
+    <li>Introducing malicious code or interfering with website operation.</li>
+    <li>Misrepresenting professional credentials or authority.</li>
+    <li>Instructing assistants to access information outside approved permissions.</li>
+    <li>Requesting unlawful disclosure or misuse of patient information.</li>
+    <li>Using administrative personnel for unauthorized clinical decision-making.</li>
+    <li>Violating applicable privacy, security, or healthcare regulations.</li>
+  </ul>
+
+  <p>
+    Suspected misuse
+    may result in
+    appropriate protective
+    measures, subject
+    to applicable law
+    and agreements.
+  </p>
+
+</section>
+
+<!-- SECTION 17 -->
+<section class="terms-section" id="avt-thirdparty">
+
+  <span class="section-number">SECTION 17</span>
+  <h2>Third-Party Platforms and Practice Systems</h2>
+
+  <p>
+    Avora assistants
+    may work within
+    third-party systems
+    authorized by
+    healthcare clients.
+  </p>
+
+  <p>
+    These may include
+    electronic medical
+    record systems,
+    payer portals,
+    scheduling applications,
+    communication tools,
+    and billing platforms.
+  </p>
+
+  <p>
+    Clients remain
+    responsible for
+    ensuring that
+    their use of
+    third-party systems
+    and the permissions
+    they provide
+    comply with
+    applicable agreements,
+    licensing conditions,
+    and laws.
+  </p>
+
+  <p>
+    The availability,
+    performance,
+    policies, and
+    independent actions
+    of third-party
+    providers are
+    governed by
+    their own terms.
+  </p>
+
+  <p>
+    Avora cannot
+    guarantee the
+    uninterrupted
+    operation of
+    systems it does
+    not control.
+  </p>
+
+</section>
+
+<!-- SECTION 18 -->
+<section class="terms-section" id="avt-disclaimer">
+
+  <span class="section-number">SECTION 18</span>
+  <h2>Service Disclaimers and Operational Outcomes</h2>
+
+  <p>
+    Avora aims to
+    provide reliable
+    administrative
+    staffing support
+    aligned with
+    the agreed scope
+    of services.
+  </p>
+
+  <p>
+    However, operational
+    results depend
+    on numerous factors,
+    including client
+    instructions,
+    system availability,
+    payer decisions,
+    documentation quality,
+    staffing requirements,
+    and third-party
+    processes.
+  </p>
+
+  <p>
+    Unless expressly
+    stated in a
+    signed agreement,
+    website descriptions
+    should not be
+    understood as
+    guarantees of:
+  </p>
+
+  <ul>
+    <li>Specific insurance approval outcomes.</li>
+    <li>Guaranteed claim acceptance or payment.</li>
+    <li>Fixed revenue improvements or cost savings.</li>
+    <li>Elimination of all administrative errors.</li>
+    <li>Uninterrupted service or system availability.</li>
+    <li>Particular onboarding or task completion times.</li>
+  </ul>
+
+  <p>
+    Nothing in
+    these terms
+    excludes obligations
+    or warranties
+    that cannot
+    lawfully be
+    excluded.
+  </p>
+
+</section>
+
+<!-- SECTION 19 -->
+<section class="terms-section" id="avt-liability">
+
+  <span class="section-number">SECTION 19</span>
+  <h2>Responsibility and Limitation of Liability</h2>
+
+  <p>
+    Each party's
+    responsibilities
+    for a service
+    engagement should
+    be established
+    in the applicable
+    written agreement.
+  </p>
+
+  <p>
+    Such agreements
+    may address
+    operational errors,
+    confidentiality,
+    data security,
+    third-party failures,
+    remedies, and
+    allocation of risk.
+  </p>
+
+  <p>
+    Avora's public
+    website is provided
+    for general
+    business information.
+    Its content should
+    not be relied
+    upon as professional
+    medical, legal,
+    or regulatory advice.
+  </p>
+
+  <p>
+    Any contractual
+    limitation of
+    liability, financial
+    cap, exclusion
+    of damages,
+    or indemnification
+    obligation must
+    be determined
+    by the applicable
+    agreement and law.
+  </p>
+
+  <div class="info-box neutral">
+    <strong>Important Contractual Point</strong>
+    <p>
+      This page does
+      not invent a
+      liability cap,
+      mandatory indemnity,
+      or blanket waiver
+      of legal rights.
+      Those provisions
+      require review
+      of Avora's actual
+      contracts and
+      applicable law.
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 20 -->
+<section class="terms-section" id="avt-disputes">
+
+  <span class="section-number">SECTION 20</span>
+  <h2>Disputes and Governing Law</h2>
+
+  <p>
+    If a question
+    or dispute arises
+    regarding the
+    website or a
+    service engagement,
+    we encourage
+    the parties to
+    contact each other
+    promptly to
+    discuss the matter.
+  </p>
+
+  <p>
+    For contracted
+    services, dispute
+    resolution procedures,
+    governing law,
+    jurisdiction,
+    and any arbitration
+    requirements are
+    determined by
+    the applicable
+    written agreement.
+  </p>
+
+  <p>
+    Where no specific
+    contractual provision
+    applies, the
+    relevant legal
+    requirements and
+    applicable rules
+    determine the
+    parties' rights
+    and remedies.
+  </p>
+
+  <p>
+    Avora's business
+    location in
+    North Carolina
+    should not,
+    by itself,
+    be interpreted
+    as an agreement
+    to exclusive
+    court jurisdiction
+    or mandatory
+    arbitration.
+  </p>
+
+</section>
+
+<!-- SECTION 21 -->
+<section class="terms-section" id="avt-termination">
+
+  <span class="section-number">SECTION 21</span>
+  <h2>Suspension and Termination</h2>
+
+  <p>
+    A service engagement
+    may be changed,
+    suspended, or
+    terminated in
+    accordance with
+    the applicable
+    agreement and law.
+  </p>
+
+  <p>
+    Circumstances
+    requiring review
+    may include:
+  </p>
+
+  <ul>
+    <li>Mutual agreement to discontinue services.</li>
+    <li>Changes in the client's staffing requirements.</li>
+    <li>Material contractual breaches.</li>
+    <li>Unresolved payment matters.</li>
+    <li>Security or confidentiality concerns.</li>
+    <li>Legal or regulatory restrictions.</li>
+  </ul>
+
+  <p>
+    On termination,
+    the parties should
+    address outstanding
+    invoices, system
+    access, return
+    or handling of
+    information, and
+    any continuing
+    contractual duties.
+  </p>
+
+  <p>
+    The exact procedure
+    and timing are
+    determined by
+    the relevant
+    agreement.
+  </p>
+
+</section>
+
+<!-- SECTION 22 -->
+<section class="terms-section" id="avt-changes">
+
+  <span class="section-number">SECTION 22</span>
+  <h2>Changes to These Terms</h2>
+
+  <p>
+    Avora may update
+    these Terms &amp;
+    Conditions to
+    reflect changes
+    in its website,
+    services, business
+    practices, or
+    applicable legal
+    requirements.
+  </p>
+
+  <p>
+    The effective
+    and last-updated
+    dates should
+    reflect the
+    approved published
+    version.
+  </p>
+
+  <p>
+    Changes to
+    existing signed
+    service agreements
+    remain subject
+    to the amendment
+    provisions of
+    those agreements.
+  </p>
+
+  <p>
+    Where legally
+    required, appropriate
+    notice of
+    material changes
+    will be provided.
+  </p>
+
+</section>
+
+<!-- SECTION 23 -->
+<section class="terms-section" id="avt-contact">
+
+  <span class="section-number">SECTION 23</span>
+  <h2>Contact Avora Solutions</h2>
+
+  <p>
+    For questions
+    about these
+    Terms &amp; Conditions,
+    our services,
+    or an existing
+    business engagement,
+    please contact
+    Avora Solutions
+    using the
+    information below.
+  </p>
+
+  <div class="contact-card">
+
+    <h3>Have a Question About Our Terms?</h3>
+
+    <p>
+      Our team can
+      help clarify
+      general service
+      information
+      and direct
+      contractual
+      questions to
+      the appropriate
+      contact.
+    </p>
+
+    <p>
+      <strong>Business Name:</strong><br>
+      Avora Solutions LLC
+    </p>
+
+    <p>
+      <strong>Email Address:</strong><br>
+      <a href="mailto:info@avorasolutions.com">
+        info@avorasolutions.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Phone Number:</strong><br>
+      <a href="tel:+19194435604">
+        +1 (919) 443-5604
+      </a>
+    </p>
+
+    <p>
+      <strong>Business Location:</strong><br>
+      Raleigh–Durham Area,
+      North Carolina,
+      United States
+    </p>
+
+    <p>
+      <a href="https://www.avorasolutions.com/contact">
+        Visit Our Contact Page →
+      </a>
+    </p>
+
+  </div>
+
+  <p>
+    Please do not
+    submit sensitive
+    patient records
+    or protected
+    health information
+    through general
+    website enquiry
+    forms or
+    unapproved channels.
+  </p>
+
+</section>
+
+</article>
+</main>
+
+<!-- ==========================================
+     FAQ SECTION
+========================================== -->
+
+<section class="faq-area" id="avt-faq">
+
+  <div class="faq-inner">
+
+    <div class="faq-heading">
+
+      <span class="eyebrow">
+        COMMON QUESTIONS
+      </span>
+
+      <h2>Terms &amp; Conditions FAQs</h2>
+
+      <p>
+        Helpful answers about
+        our Medical Virtual
+        Assistant services
+        and engagement terms.
+      </p>
+
+    </div>
+
+    <!-- FAQ 01 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q1"
+        aria-expanded="false"
+        aria-controls="avt-a1">
+
+        <span>
+          Does submitting a discovery call request
+          create a service contract?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a1"
+        role="region"
+        aria-labelledby="avt-q1"
+        hidden>
+
+        <p>
+          No. Requesting
+          information or
+          scheduling a
+          discovery call
+          does not automatically
+          create a staffing
+          engagement. Service
+          arrangements are
+          confirmed through
+          the applicable
+          agreement.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FAQ 02 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q2"
+        aria-expanded="false"
+        aria-controls="avt-a2">
+
+        <span>
+          Does Avora require long-term contracts?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a2"
+        role="region"
+        aria-labelledby="avt-q2"
+        hidden>
+
+        <p>
+          Avora describes
+          flexible Medical
+          Virtual Assistant
+          arrangements without
+          mandatory long-term
+          contracts. Specific
+          cancellation notices,
+          billing obligations,
+          and service conditions
+          should be confirmed
+          in the applicable
+          agreement.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FAQ 03 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q3"
+        aria-expanded="false"
+        aria-controls="avt-a3">
+
+        <span>
+          What tasks can an Avora Medical Virtual
+          Assistant perform?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a3"
+        role="region"
+        aria-labelledby="avt-q3"
+        hidden>
+
+        <p>
+          Authorized tasks
+          may include scheduling,
+          insurance verification,
+          prior authorization
+          support, referral
+          coordination, billing
+          support, and other
+          administrative duties.
+          The final scope
+          depends on the
+          practice's requirements
+          and agreement.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FAQ 04 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q4"
+        aria-expanded="false"
+        aria-controls="avt-a4">
+
+        <span>
+          Can Avora assistants make clinical
+          decisions for my practice?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a4"
+        role="region"
+        aria-labelledby="avt-q4"
+        hidden>
+
+        <p>
+          No. Avora provides
+          non-clinical
+          administrative support.
+          Diagnosis, treatment,
+          prescribing, and
+          independent clinical
+          decisions remain
+          the responsibility
+          of qualified
+          healthcare professionals.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FAQ 05 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q5"
+        aria-expanded="false"
+        aria-controls="avt-a5">
+
+        <span>
+          How are pricing and payment terms determined?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a5"
+        role="region"
+        aria-labelledby="avt-q5"
+        hidden>
+
+        <p>
+          Pricing may be
+          hourly or monthly
+          depending on the
+          engagement. Exact
+          rates, invoice due
+          dates, payment
+          arrangements, and
+          any adjustments
+          are governed by
+          the agreed
+          commercial terms.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FAQ 06 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q6"
+        aria-expanded="false"
+        aria-controls="avt-a6">
+
+        <span>
+          Is a Business Associate Agreement required?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a6"
+        role="region"
+        aria-labelledby="avt-q6"
+        hidden>
+
+        <p>
+          A Business Associate
+          Agreement is required
+          when the parties'
+          roles and processing
+          activities trigger
+          that requirement
+          under HIPAA.
+          Appropriate agreements
+          should be completed
+          before the relevant
+          protected health
+          information is
+          processed.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FAQ 07 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q7"
+        aria-expanded="false"
+        aria-controls="avt-a7">
+
+        <span>
+          What happens if my practice needs to
+          change or cancel services?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a7"
+        role="region"
+        aria-labelledby="avt-q7"
+        hidden>
+
+        <p>
+          Contact Avora
+          to discuss the
+          requested change.
+          Staffing adjustments,
+          cancellation notice,
+          final invoices,
+          and transition
+          arrangements are
+          handled according
+          to the applicable
+          agreement.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- FAQ 08 -->
+    <div class="faq-item">
+
+      <button
+        type="button"
+        class="faq-question"
+        id="avt-q8"
+        aria-expanded="false"
+        aria-controls="avt-a8">
+
+        <span>
+          How can I contact Avora about
+          contractual questions?
+        </span>
+
+        <span class="faq-icon" aria-hidden="true">+</span>
+
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avt-a8"
+        role="region"
+        aria-labelledby="avt-q8"
+        hidden>
+
+        <p>
+          Contact
+          <a href="mailto:info@avorasolutions.com">
+            info@avorasolutions.com
+          </a>
+          or call
+          <a href="tel:+19194435604">
+            +1 (919) 443-5604
+          </a>.
+          You can also
+          use the contact
+          page on the
+          Avora Solutions
+          website.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-note">
+
+      <p>
+        © <span class="year">2026</span>
+        Avora Solutions LLC.
+        All rights reserved.
+        Please refer to
+        the latest approved
+        version of these terms.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ==========================================
+     FLOATING BACK TO TOP
+========================================== -->
+
+<button
+  type="button"
+  class="back-top"
+  aria-label="Back to top"
+  tabindex="-1">
+
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+
+</button>
+
+</div>
+
+<!-- ==========================================
+     VANILLA JAVASCRIPT
+========================================== -->
+
+<script>
+(function () {
+  'use strict';
+
+  function initAvoraTerms() {
+
+    const root = document.getElementById('avora-terms');
+
+    if (!root || root.dataset.ready === '1') {
+      return;
+    }
+
+    root.dataset.ready = '1';
+
+    const links = Array.from(
+      root.querySelectorAll('.toc-list a')
+    );
+
+    const list = root.querySelector('.toc-list');
+
+    const sections = links
+      .map(function (link) {
+        return root.querySelector(
+          link.getAttribute('href')
+        );
+      })
+      .filter(Boolean);
+
+    const backTop = root.querySelector('.back-top');
+
+    const reducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    );
+
+    let activeId = '';
+    let ticking = false;
+
+    /* ------------------------------------
+       SMOOTH SCROLL
+    ------------------------------------ */
+
+    function getScrollBehavior() {
+      return reducedMotion.matches
+        ? 'auto'
+        : 'smooth';
+    }
+
+    /* ------------------------------------
+       ELEMENTOR HEADER OFFSET
+    ------------------------------------ */
+
+    function getHeaderOffset() {
+
+      let offset = 20;
+
+      const selectors = [
+        '.elementor-location-header',
+        'header.site-header',
+        '#masthead'
+      ];
+
+      selectors.forEach(function (selector) {
+
+        const element = document.querySelector(selector);
+
+        if (!element) return;
+
+        const style = window.getComputedStyle(element);
+        const rect = element.getBoundingClientRect();
+
+        const isSticky =
+          style.position === 'sticky' ||
+          style.position === 'fixed';
+
+        if (
+          isSticky &&
+          rect.top <= 10 &&
+          rect.bottom > 0
+        ) {
+          offset = Math.max(
+            offset,
+            Math.min(rect.bottom, 180) + 14
+          );
+        }
+      });
+
+      return offset;
+    }
+
+    /* ------------------------------------
+       SET ACTIVE SIDEBAR LINK
+    ------------------------------------ */
+
+    function setActive(id) {
+
+      if (id === activeId) return;
+
+      activeId = id;
+
+      links.forEach(function (link) {
+
+        const isActive =
+          link.getAttribute('href') === '#' + id;
+
+        link.classList.toggle('active', isActive);
+
+        if (isActive) {
+          link.setAttribute(
+            'aria-current',
+            'location'
+          );
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+
+      /* Keep active link visible
+         inside scrollable sidebar */
+
+      const activeLink = links.find(function (link) {
+        return link.getAttribute('href') === '#' + id;
+      });
+
+      if (
+        activeLink &&
+        list &&
+        window.innerWidth > 900
+      ) {
+
+        const top =
+          activeLink.offsetTop - list.offsetTop;
+
+        const bottom =
+          top + activeLink.offsetHeight;
+
+        if (top < list.scrollTop) {
+
+          list.scrollTop = Math.max(0, top - 10);
+
+        } else if (
+          bottom > list.scrollTop + list.clientHeight
+        ) {
+
+          list.scrollTop =
+            bottom - list.clientHeight + 10;
+        }
+      }
+    }
+
+    /* ------------------------------------
+       SCROLL TO SECTION
+    ------------------------------------ */
+
+    function scrollToSection(target) {
+
+      const position =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        getHeaderOffset() -
+        12;
+
+      window.scrollTo({
+        top: Math.max(0, position),
+        behavior: getScrollBehavior()
+      });
+    }
+
+    /* ------------------------------------
+       TOC LINK CLICK
+    ------------------------------------ */
+
+    links.forEach(function (link) {
+
+      link.addEventListener('click', function (event) {
+
+        const href = link.getAttribute('href');
+        const target = root.querySelector(href);
+
+        if (!target) return;
+
+        event.preventDefault();
+
+        setActive(target.id);
+
+        scrollToSection(target);
+
+        if (window.history.replaceState) {
+          window.history.replaceState(
+            null,
+            '',
+            href
+          );
+        }
+      });
+    });
+
+    /* ------------------------------------
+       UPDATE ACTIVE LINK ON SCROLL
+    ------------------------------------ */
+
+    function updateOnScroll() {
+
+      const threshold = getHeaderOffset() + 70;
+
+      let current = sections[0];
+
+      sections.forEach(function (section) {
+
+        if (
+          section.getBoundingClientRect().top <=
+          threshold
+        ) {
+          current = section;
+        }
+      });
+
+      /* Detect bottom of page */
+
+      if (
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - 5
+      ) {
+        current = sections[sections.length - 1];
+      }
+
+      if (current) {
+        setActive(current.id);
+      }
+
+      /* Show back to top after 500px */
+
+      if (backTop) {
+
+        const visible = window.scrollY > 500;
+
+        backTop.classList.toggle(
+          'show',
+          visible
+        );
+
+        backTop.tabIndex = visible ? 0 : -1;
+      }
+    }
+
+    /* ------------------------------------
+       OPTIMIZED SCROLL EVENT
+    ------------------------------------ */
+
+    function handleScroll() {
+
+      if (ticking) return;
+
+      ticking = true;
+
+      window.requestAnimationFrame(function () {
+
+        updateOnScroll();
+
+        ticking = false;
+      });
+    }
+
+    window.addEventListener(
+      'scroll',
+      handleScroll,
+      { passive: true }
+    );
+
+    window.addEventListener(
+      'resize',
+      handleScroll,
+      { passive: true }
+    );
+
+    /* ------------------------------------
+       ACCESSIBLE FAQ ACCORDION
+    ------------------------------------ */
+
+    const faqItems = Array.from(
+      root.querySelectorAll('.faq-item')
+    );
+
+    faqItems.forEach(function (item) {
+
+      const button = item.querySelector('.faq-question');
+      const panel = item.querySelector('.faq-answer');
+
+      if (!button || !panel) return;
+
+      button.addEventListener('click', function () {
+
+        const wasOpen =
+          button.getAttribute('aria-expanded') === 'true';
+
+        /* Close all items */
+
+        faqItems.forEach(function (other) {
+
+          const otherButton =
+            other.querySelector('.faq-question');
+
+          const otherPanel =
+            other.querySelector('.faq-answer');
+
+          other.classList.remove('open');
+
+          otherButton.setAttribute(
+            'aria-expanded',
+            'false'
+          );
+
+          otherPanel.hidden = true;
+        });
+
+        /* Open clicked item */
+
+        if (!wasOpen) {
+
+          item.classList.add('open');
+
+          button.setAttribute(
+            'aria-expanded',
+            'true'
+          );
+
+          panel.hidden = false;
+        }
+      });
+    });
+
+    /* ------------------------------------
+       BACK TO TOP
+    ------------------------------------ */
+
+    if (backTop) {
+
+      backTop.addEventListener('click', function () {
+
+        window.scrollTo({
+          top: 0,
+          behavior: getScrollBehavior()
+        });
+      });
+    }
+
+    /* ------------------------------------
+       COPYRIGHT YEAR
+    ------------------------------------ */
+
+    const year = root.querySelector('.year');
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+
+    /* ------------------------------------
+       INITIAL STATE
+    ------------------------------------ */
+
+    updateOnScroll();
+
+    /* Direct URL anchor support */
+
+    if (window.location.hash.startsWith('#avt-')) {
+
+      const target = root.querySelector(
+        window.location.hash
+      );
+
+      if (target) {
+
+        window.requestAnimationFrame(function () {
+          scrollToSection(target);
+        });
+      }
+    }
+  }
+
+  /* ------------------------------------
+     DOM READY
+  ------------------------------------ */
+
+  if (document.readyState === 'loading') {
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      initAvoraTerms,
+      { once: true }
+    );
+
+  } else {
+
+    initAvoraTerms();
+
+  }
+
+})();
+</script>
