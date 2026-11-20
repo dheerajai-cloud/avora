@@ -1,0 +1,2369 @@
+
+<!-- AVORA SOLUTIONS PRIVACY POLICY -->
+<!-- Paste everything into ONE Elementor HTML widget -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ==============================
+   AVORA BRAND & TYPOGRAPHY
+============================== */
+#avora-policy {
+  --navy: #153D56;
+  --dark: #102F44;
+  --teal: #247C80;
+  --mint: #E9F3F2;
+  --light: #F5F8F7;
+  --ink: #17394E;
+  --text: #586B75;
+  --border: #E4ECEA;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 400;
+  color: var(--text);
+  background: #fff;
+  isolation: isolate;
+}
+
+#avora-policy *,
+#avora-policy *::before,
+#avora-policy *::after {
+  box-sizing: border-box;
+}
+
+#avora-policy h1,
+#avora-policy h2,
+#avora-policy h3,
+#avora-policy p,
+#avora-policy ul {
+  margin-top: 0;
+}
+
+#avora-policy h1,
+#avora-policy h2,
+#avora-policy h3 {
+  font-family: inherit;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+#avora-policy p,
+#avora-policy li {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+#avora-policy a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+#avora-policy a:hover {
+  text-decoration: underline;
+}
+
+#avora-policy button {
+  font-family: inherit;
+}
+
+#avora-policy a:focus-visible,
+#avora-policy button:focus-visible {
+  outline: 3px solid #36a6a6;
+  outline-offset: 3px;
+}
+
+#avora-policy [id^="avp-"] {
+  scroll-margin-top: 110px;
+}
+
+/* ==============================
+   HERO
+============================== */
+#avora-policy .hero {
+  position: relative;
+  overflow: hidden;
+  padding: 94px 20px 86px;
+  text-align: center;
+  background:
+    radial-gradient(circle at 8% 10%, #247c801a, transparent 37%),
+    radial-gradient(circle at 90% 90%, #247c8019, transparent 40%),
+    linear-gradient(135deg, #f8fbfa, #eaf4f2 58%, #f9fcfb);
+}
+
+#avora-policy .hero::before,
+#avora-policy .hero::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #247c8026;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#avora-policy .hero::before {
+  width: 420px;
+  height: 420px;
+  top: -285px;
+  left: -125px;
+}
+
+#avora-policy .hero::after {
+  width: 500px;
+  height: 500px;
+  bottom: -380px;
+  right: -130px;
+}
+
+#avora-policy .hero-inner {
+  position: relative;
+  max-width: 850px;
+  margin: auto;
+}
+
+#avora-policy .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 16px;
+  margin-bottom: 23px;
+  background: #fff;
+  border: 1px solid #d7e8e4;
+  border-radius: 30px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .7px;
+}
+
+#avora-policy .eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+#avora-policy .hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  margin-bottom: 20px;
+}
+
+#avora-policy .hero h1 span {
+  color: var(--teal);
+}
+
+#avora-policy .hero p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  font-size: 16px;
+}
+
+#avora-policy .meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#avora-policy .meta span {
+  padding: 8px 15px;
+  border: 1px solid #dae9e5;
+  border-radius: 8px;
+  background: #ffffffdb;
+  color: #536a73;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ==============================
+   MAIN LAYOUT
+============================== */
+#avora-policy .layout {
+  width: min(1240px, 100%);
+  margin: auto;
+  padding: 65px 25px 95px;
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 55px;
+  align-items: start;
+}
+
+/* ==============================
+   STICKY TABLE OF CONTENTS
+============================== */
+#avora-policy .sidebar {
+  position: sticky;
+  top: 110px;
+  min-width: 0;
+}
+
+#avora-policy .toc-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 16px;
+  box-shadow: 0 12px 34px #102f4409;
+}
+
+#avora-policy .toc-title {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 0 10px 13px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 10px;
+}
+
+#avora-policy .toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 65vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #b2d2cd transparent;
+}
+
+#avora-policy .toc-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#avora-policy .toc-list a {
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 9px 11px;
+  border-left: 3px solid transparent;
+  border-radius: 0 5px 5px 0;
+  color: #60747e;
+  font-weight: 600;
+  transition: background .2s, color .2s;
+}
+
+#avora-policy .toc-list a:hover,
+#avora-policy .toc-list a.active {
+  background: var(--mint);
+  border-left-color: var(--teal);
+  color: var(--teal);
+  text-decoration: none;
+}
+
+#avora-policy .toc-list a.active {
+  font-weight: 800;
+}
+
+#avora-policy .sidebar-note {
+  margin-top: 16px;
+  background: var(--mint);
+  border-radius: 11px;
+  padding: 19px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+#avora-policy .sidebar-note strong {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+#avora-policy .sidebar-note a {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   CONTENT & POLICY SECTIONS
+============================== */
+#avora-policy .content {
+  min-width: 0;
+}
+
+#avora-policy .intro {
+  padding: 27px 29px;
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  margin-bottom: 38px;
+}
+
+#avora-policy .intro h2 {
+  font-size: 21px;
+  margin-bottom: 9px;
+  font-weight: 800;
+}
+
+#avora-policy .intro p {
+  margin: 0;
+}
+
+#avora-policy .policy-section {
+  padding: 0 0 34px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid var(--border);
+}
+
+#avora-policy .section-no {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--teal);
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+#avora-policy .policy-section h2 {
+  font-size: clamp(23px, 2.4vw, 29px);
+  font-weight: 800;
+  letter-spacing: -.5px;
+  margin-bottom: 17px;
+}
+
+#avora-policy .policy-section h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 24px 0 10px;
+}
+
+#avora-policy .policy-section p {
+  margin-bottom: 15px;
+}
+
+#avora-policy .policy-section ul {
+  padding-left: 23px;
+  margin: 10px 0 19px;
+}
+
+#avora-policy .policy-section li {
+  padding: 2px 0 2px 3px;
+  margin-bottom: 7px;
+}
+
+#avora-policy .policy-section li::marker {
+  color: var(--teal);
+}
+
+#avora-policy .policy-section strong {
+  color: var(--ink);
+}
+
+/* ==============================
+   HIGHLIGHT BOXES
+============================== */
+#avora-policy .notice {
+  background: var(--mint);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 8px 8px 0;
+  padding: 19px 22px;
+  margin: 20px 0;
+}
+
+#avora-policy .notice strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#avora-policy .notice p {
+  margin: 0;
+}
+
+#avora-policy .notice.neutral {
+  background: #f3f6f7;
+  border-left-color: #9cb6b9;
+}
+
+/* ==============================
+   CONTACT CARD
+============================== */
+#avora-policy .contact-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--dark),
+    var(--navy)
+  );
+  color: #fff;
+  border-radius: 15px;
+  padding: 31px;
+  margin: 25px 0;
+}
+
+#avora-policy .contact-card h3 {
+  color: #fff;
+  margin: 0 0 10px;
+  font-size: 23px;
+}
+
+#avora-policy .contact-card p {
+  color: #d9e7eb;
+  margin-bottom: 14px;
+}
+
+#avora-policy .contact-card strong {
+  color: #fff;
+}
+
+#avora-policy .contact-card a {
+  color: #a9e5dc;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ==============================
+   FAQ ACCORDION
+============================== */
+#avora-policy .faq-area {
+  padding: 75px 20px;
+  background: var(--light);
+  border-top: 1px solid var(--border);
+}
+
+#avora-policy .faq-inner {
+  max-width: 880px;
+  margin: auto;
+}
+
+#avora-policy .faq-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#avora-policy .faq-heading .small {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  color: var(--teal);
+}
+
+#avora-policy .faq-heading h2 {
+  font-size: clamp(27px, 3vw, 35px);
+  font-weight: 800;
+  margin: 7px 0 10px;
+}
+
+#avora-policy .faq-heading p {
+  margin: 0;
+}
+
+#avora-policy .faq-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+#avora-policy .faq-item.open {
+  border-color: #acd0cb;
+}
+
+#avora-policy .faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 19px 22px;
+  border: 0;
+  background: #fff;
+  text-align: left;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1.6;
+}
+
+#avora-policy .faq-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--teal);
+  font-size: 23px;
+  font-weight: 400;
+  transition: transform .2s;
+}
+
+#avora-policy .faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+#avora-policy .faq-answer {
+  padding: 0 22px 20px;
+}
+
+#avora-policy .faq-answer[hidden] {
+  display: none !important;
+}
+
+#avora-policy .faq-answer p {
+  margin: 0;
+}
+
+/* ==============================
+   COPYRIGHT
+============================== */
+#avora-policy .footer-note {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding-top: 23px;
+  margin-top: 40px;
+}
+
+#avora-policy .footer-note p {
+  font-size: 13px;
+  color: #82939a;
+  margin: 0;
+}
+
+/* ==============================
+   BACK TO TOP
+============================== */
+#avora-policy .back-top {
+  position: fixed;
+  z-index: 999;
+  right: 24px;
+  bottom: 24px;
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  background: var(--teal);
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 7px 20px #247c8040;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: .25s;
+}
+
+#avora-policy .back-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#avora-policy .back-top:hover {
+  background: var(--dark);
+}
+
+#avora-policy .back-top svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 1000px) {
+  #avora-policy .layout {
+    grid-template-columns: 235px minmax(0, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  #avora-policy .layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 35px;
+  }
+
+  #avora-policy .sidebar {
+    position: static;
+  }
+
+  #avora-policy .toc-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: 210px;
+    gap: 2px 7px;
+  }
+
+  #avora-policy .sidebar-note {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #avora-policy .hero {
+    padding: 68px 18px 61px;
+  }
+
+  #avora-policy .hero h1 {
+    font-size: 37px;
+    letter-spacing: -1px;
+  }
+
+  #avora-policy .layout {
+    padding: 30px 17px 60px;
+  }
+
+  #avora-policy .toc-list {
+    grid-template-columns: 1fr;
+    max-height: 210px;
+  }
+
+  #avora-policy .intro {
+    padding: 23px 21px;
+  }
+
+  #avora-policy .policy-section h2 {
+    font-size: 23px;
+  }
+
+  #avora-policy .contact-card {
+    padding: 23px;
+  }
+
+  #avora-policy .faq-area {
+    padding: 58px 17px;
+  }
+
+  #avora-policy .faq-question {
+    padding: 18px;
+  }
+
+  #avora-policy .faq-answer {
+    padding: 0 18px 19px;
+  }
+
+  #avora-policy .back-top {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #avora-policy * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+</style>
+
+<div id="avora-policy">
+
+<!-- ==============================
+     HERO
+============================== -->
+<header class="hero" id="avp-top">
+  <div class="hero-inner">
+    <div class="eyebrow">YOUR PRIVACY MATTERS</div>
+
+    <h1>
+      Privacy Policy
+      <span>&amp; Data Practices</span>
+    </h1>
+
+    <p>
+      Learn how Avora Solutions handles information when
+      you visit our website, contact our team, or engage
+      our Medical Virtual Assistant services for
+      independent medical practices.
+    </p>
+
+    <div class="meta">
+      <span>Effective Date: [Confirm publication date]</span>
+      <span>Last Updated: [Confirm revision date]</span>
+    </div>
+  </div>
+</header>
+
+<!-- ==============================
+     TWO-COLUMN MAIN LAYOUT
+============================== -->
+<main class="layout">
+
+  <!-- STICKY SIDEBAR -->
+  <aside class="sidebar" aria-label="Privacy policy navigation">
+
+    <div class="toc-card">
+      <div class="toc-title">On This Page</div>
+
+      <nav aria-label="Privacy policy sections">
+        <ul class="toc-list">
+          <li><a href="#avp-introduction">01. Introduction</a></li>
+          <li><a href="#avp-scope">02. Scope &amp; Roles</a></li>
+          <li><a href="#avp-collection">03. Information We Collect</a></li>
+          <li><a href="#avp-sources">04. Sources of Information</a></li>
+          <li><a href="#avp-uses">05. How We Use Information</a></li>
+          <li><a href="#avp-healthcare">06. Healthcare &amp; PHI</a></li>
+          <li><a href="#avp-workflows">07. Authorized Service Workflows</a></li>
+          <li><a href="#avp-disclosures">08. Sharing &amp; Disclosures</a></li>
+          <li><a href="#avp-security">09. Security &amp; Access</a></li>
+          <li><a href="#avp-cookies">10. Cookies &amp; Analytics</a></li>
+          <li><a href="#avp-providers">11. Third-Party Services</a></li>
+          <li><a href="#avp-retention">12. Retention &amp; Deletion</a></li>
+          <li><a href="#avp-international">13. International Access</a></li>
+          <li><a href="#avp-rights">14. Rights &amp; Requests</a></li>
+          <li><a href="#avp-marketing">15. Communications</a></li>
+          <li><a href="#avp-children">16. Children's Information</a></li>
+          <li><a href="#avp-legal">17. Legal Disclosures</a></li>
+          <li><a href="#avp-links">18. External Websites</a></li>
+          <li><a href="#avp-updates">19. Policy Changes</a></li>
+          <li><a href="#avp-contact">20. Contact Us</a></li>
+          <li><a href="#avp-faq">Privacy FAQs</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sidebar-note">
+      <strong>Questions about privacy?</strong>
+      Contact Avora Solutions at
+      <a href="mailto:info@avorasolutions.com">
+        info@avorasolutions.com
+      </a>.
+    </div>
+  </aside>
+
+  <!-- MAIN POLICY CONTENT -->
+  <article class="content">
+
+    <div class="intro">
+      <h2>About This Privacy Policy</h2>
+      <p>
+        Avora Solutions LLC provides dedicated Medical
+        Virtual Assistant and healthcare operations support
+        to independent medical practices. We help practices
+        manage authorized administrative workflows within
+        their existing systems and under their oversight.
+        This policy explains the information relevant to
+        our website, business communications, and
+        client-directed services. It does not replace a
+        healthcare practice's Notice of Privacy Practices
+        or any applicable service or Business Associate Agreement.
+      </p>
+    </div>
+
+    <!-- SECTION 01 -->
+    <section class="policy-section" id="avp-introduction">
+      <span class="section-no">SECTION 01</span>
+      <h2>Introduction</h2>
+
+      <p>
+        Avora Solutions LLC ("Avora," "we," "us," or "our")
+        recognizes that privacy is important to medical
+        practices, their teams, website visitors, and
+        individuals whose information may be involved
+        in authorized healthcare administration.
+      </p>
+
+      <p>
+        This Privacy Policy describes categories of
+        information we may collect, receive, use,
+        disclose, and retain through our website
+        and business activities. Different rules
+        may apply when we work on behalf of a
+        healthcare client under an agreement
+        and the client's instructions.
+      </p>
+
+      <p>
+        Our services provide administrative staffing
+        support. Avora does not use this website to
+        provide clinical diagnosis, treatment, or
+        independent medical decision-making.
+      </p>
+    </section>
+
+    <!-- SECTION 02 -->
+    <section class="policy-section" id="avp-scope">
+      <span class="section-no">SECTION 02</span>
+      <h2>Scope of This Policy &amp; Our Role</h2>
+
+      <p>
+        This policy addresses website visits,
+        enquiries, discovery-call requests,
+        prospective-client discussions,
+        service onboarding, client communications,
+        and administrative services delivered
+        through authorized personnel.
+      </p>
+
+      <p>
+        When Avora supports a healthcare practice,
+        the practice ordinarily determines the
+        patient-related work to be performed,
+        the systems used, and the access
+        permissions provided. The practice's
+        own privacy notice, applicable law,
+        and contractual arrangements may
+        govern its patient records.
+      </p>
+
+      <div class="notice">
+        <strong>For patients</strong>
+        <p>
+          If you need copies of medical records,
+          a correction to a clinical record,
+          or information about your provider's
+          privacy practices, contact your
+          healthcare provider directly.
+          Avora is not the provider
+          of your medical care.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 03 -->
+    <section class="policy-section" id="avp-collection">
+      <span class="section-no">SECTION 03</span>
+      <h2>Information We May Collect</h2>
+
+      <h3>3.1 Contact and Professional Details</h3>
+      <ul>
+        <li>Name, email address, phone number, and professional role.</li>
+        <li>Practice or organization name, location, and contact information.</li>
+        <li>Questions, messages, and other information you choose to submit.</li>
+      </ul>
+
+      <h3>3.2 Practice and Service Information</h3>
+      <ul>
+        <li>Requested staffing support, administrative responsibilities, and workflow needs.</li>
+        <li>Information about practice systems, scheduling, payer processes, and onboarding requirements.</li>
+        <li>Business communications, proposals, and relevant service records.</li>
+      </ul>
+
+      <h3>3.3 Website and Technical Information</h3>
+      <p>
+        Depending on the website's actual configuration,
+        hosting and security services may process
+        IP addresses, browser and device details,
+        access times, pages viewed, referral
+        information, and diagnostic logs.
+      </p>
+
+      <h3>3.4 Information Involved in Client-Directed Healthcare Work</h3>
+      <p>
+        Where authorized for a particular assignment,
+        assistants may access patient identifiers,
+        appointment details, insurance and eligibility
+        information, referral or authorization status,
+        billing-related administrative records,
+        and other information necessary for
+        the assigned workflow.
+      </p>
+
+      <div class="notice">
+        <strong>
+          Do not submit patient records through general website forms
+        </strong>
+        <p>
+          Please avoid sending diagnoses, medical
+          records, insurance identification numbers,
+          or other sensitive patient details through
+          ordinary contact forms or unapproved
+          communication channels.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 04 -->
+    <section class="policy-section" id="avp-sources">
+      <span class="section-no">SECTION 04</span>
+      <h2>How We Receive Information</h2>
+
+      <ul>
+        <li>
+          <strong>Directly from you:</strong>
+          Contact forms, calls, emails, meetings,
+          and service enquiries.
+        </li>
+        <li>
+          <strong>From business representatives:</strong>
+          Information supplied during service evaluation,
+          contracting, and onboarding.
+        </li>
+        <li>
+          <strong>From healthcare clients:</strong>
+          Information and system access authorized
+          for assigned administrative work.
+        </li>
+        <li>
+          <strong>From technical systems:</strong>
+          Website logs and any enabled cookies,
+          analytics, or security technologies.
+        </li>
+        <li>
+          <strong>From approved third parties:</strong>
+          Information supplied or accessed where
+          permitted by applicable law and
+          contractual arrangements.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION 05 -->
+    <section class="policy-section" id="avp-uses">
+      <span class="section-no">SECTION 05</span>
+      <h2>How We Use Information</h2>
+
+      <p>
+        Depending on the context and applicable law,
+        information may be used to:
+      </p>
+
+      <ul>
+        <li>Respond to enquiries, arrange consultations, and explain available services.</li>
+        <li>Assess practice requirements and coordinate candidate matching, selection, and secure onboarding.</li>
+        <li>Provide dedicated administrative support according to the practice's approved responsibilities.</li>
+        <li>Coordinate service delivery, support requests, and authorized client communications.</li>
+        <li>Maintain necessary business, contractual, and operational records.</li>
+        <li>Operate, troubleshoot, and protect the website and related business systems.</li>
+        <li>Comply with applicable laws, contracts, and legitimate legal requests.</li>
+        <li>Send optional business updates or marketing where permitted.</li>
+      </ul>
+
+      <p>
+        We do not represent that patient information
+        is available for unrestricted business use.
+        Work involving patient records is subject
+        to the applicable client instructions
+        and legal requirements.
+      </p>
+    </section>
+
+    <!-- SECTION 06 -->
+    <section class="policy-section" id="avp-healthcare">
+      <span class="section-no">SECTION 06</span>
+      <h2>Healthcare Privacy &amp; Protected Health Information</h2>
+
+      <h3>6.1 Protected Health Information</h3>
+      <p>
+        Some administrative assignments may require
+        access to protected health information (PHI),
+        as defined under applicable healthcare privacy
+        laws. The categories of information involved
+        depend on the tasks authorized by the
+        healthcare practice.
+      </p>
+
+      <h3>6.2 HIPAA and Contractual Responsibilities</h3>
+      <p>
+        Where the Health Insurance Portability and
+        Accountability Act (HIPAA) applies, the
+        obligations of the healthcare practice,
+        Avora, and other involved parties depend
+        on their legal roles and the services
+        being performed.
+      </p>
+
+      <p>
+        A Business Associate Agreement may be
+        required when an engagement meets the
+        relevant HIPAA requirements. Such
+        agreements should address the parties'
+        applicable responsibilities, permitted
+        uses and disclosures, and required safeguards.
+      </p>
+
+      <h3>6.3 Client-Directed Administrative Access</h3>
+      <p>
+        Healthcare clients establish the scope
+        of work and the access required for
+        authorized assistants. Information
+        should be accessed and used only
+        as permitted for the assigned duties
+        and relevant legal requirements.
+      </p>
+
+      <h3>6.4 Clinical Responsibility</h3>
+      <p>
+        Avora provides administrative support
+        rather than clinical decision-making.
+        Healthcare professionals and their
+        practices remain responsible for
+        clinical judgments, treatment decisions,
+        and patient care.
+      </p>
+
+      <div class="notice">
+        <strong>About HIPAA-Aligned Operations</strong>
+        <p>
+          Avora describes a healthcare-focused,
+          HIPAA-aligned operating approach.
+          This description is not a claim of
+          government certification or a guarantee
+          that every service arrangement is
+          automatically HIPAA compliant.
+          Requirements must be evaluated
+          for the particular engagement.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 07 -->
+    <section class="policy-section" id="avp-workflows">
+      <span class="section-no">SECTION 07</span>
+      <h2>Information in Authorized Service Workflows</h2>
+
+      <p>
+        Avora provides dedicated Medical Virtual
+        Assistants to support the administrative
+        operations of independent medical practices.
+        The information involved depends on the
+        responsibilities approved by each client.
+      </p>
+
+      <h3>7.1 Appointment Scheduling</h3>
+      <p>
+        Authorized scheduling work may involve
+        patient names, contact details,
+        appointment availability, scheduling
+        preferences, and relevant administrative
+        information within the practice's systems.
+      </p>
+
+      <h3>7.2 Insurance Verification</h3>
+      <p>
+        Eligibility and benefits verification
+        may involve payer details, insurance
+        identifiers, coverage information,
+        benefit status, and information
+        necessary to complete the
+        practice's approved workflow.
+      </p>
+
+      <h3>7.3 Prior Authorization Support</h3>
+      <p>
+        Prior authorization activities may
+        involve payer requirements, request
+        details, supporting documentation,
+        submission status, and follow-up
+        information provided or approved
+        by the healthcare practice.
+      </p>
+
+      <h3>7.4 Referral Coordination</h3>
+      <p>
+        Referral support may involve
+        patient contact information,
+        referring and receiving provider
+        details, referral documentation,
+        scheduling information, and
+        referral status updates.
+      </p>
+
+      <h3>7.5 Medical Billing Support</h3>
+      <p>
+        Medical billing support may involve
+        claim information, billing records,
+        payment status, payer communications,
+        and administrative follow-up
+        within the practice's approved
+        processes and systems.
+      </p>
+
+      <p>
+        Avora's support should not be
+        interpreted as a representation
+        that it operates as an independent,
+        full-service revenue cycle
+        management company.
+      </p>
+
+      <h3>7.6 General Administrative Support</h3>
+      <p>
+        Other assigned tasks may involve
+        practice communications, document
+        organization, administrative
+        tracking, data entry, and
+        coordination activities.
+      </p>
+
+      <div class="notice">
+        <strong>Specialty-Aware, Not Specialty-Limited</strong>
+        <p>
+          Avora supports administrative workflows
+          across medical specialties. The
+          information accessed depends on
+          each practice's systems, approved
+          tasks, and operational requirements,
+          rather than a fixed specialty list.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 08 -->
+    <section class="policy-section" id="avp-disclosures">
+      <span class="section-no">SECTION 08</span>
+      <h2>Information Sharing &amp; Disclosures</h2>
+
+      <p>
+        Information may be shared or disclosed
+        when appropriate for authorized
+        business purposes and permitted
+        by applicable law.
+      </p>
+
+      <h3>8.1 Authorized Team Members</h3>
+      <p>
+        Information may be accessible to
+        personnel who need it to perform
+        assigned responsibilities, subject
+        to applicable permissions and
+        confidentiality requirements.
+      </p>
+
+      <h3>8.2 Healthcare Practice Clients</h3>
+      <p>
+        Information related to an assigned
+        administrative workflow may be
+        communicated to the relevant
+        healthcare practice or its
+        authorized representatives.
+      </p>
+
+      <h3>8.3 Operational and Technology Providers</h3>
+      <p>
+        External service providers may
+        support business communications,
+        website operations, infrastructure,
+        security, or other necessary
+        services depending on the
+        systems actually used.
+      </p>
+
+      <h3>8.4 Professional Advisers</h3>
+      <p>
+        Relevant information may be
+        disclosed to legal, accounting,
+        or other professional advisers
+        where necessary and permitted.
+      </p>
+
+      <h3>8.5 Legal Requirements</h3>
+      <p>
+        Information may be disclosed
+        when required or permitted
+        by applicable law or valid
+        legal process.
+      </p>
+
+      <div class="notice neutral">
+        <strong>Information Sharing Details</strong>
+        <p>
+          The final policy should reflect
+          Avora's actual third-party
+          arrangements, contractual
+          obligations, and any legally
+          required disclosures.
+          Unverified vendors and
+          information-sharing promises
+          have not been added.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 09 -->
+    <section class="policy-section" id="avp-security">
+      <span class="section-no">SECTION 09</span>
+      <h2>Data Security &amp; Access Controls</h2>
+
+      <p>
+        Avora's published operating model
+        describes security-conscious
+        healthcare administrative workflows
+        using a secure U.S.-based
+        virtual workspace.
+      </p>
+
+      <h3>9.1 Controlled Virtual Workspace</h3>
+      <p>
+        Avora describes the use of a
+        U.S.-based virtual desktop
+        environment intended to support
+        controlled access to practice systems.
+      </p>
+
+      <h3>9.2 Credential Protection</h3>
+      <p>
+        The operating model describes
+        credential protection through
+        an encrypted credential vault,
+        helping reduce unnecessary
+        exposure of login information.
+      </p>
+
+      <h3>9.3 Authorized System Access</h3>
+      <p>
+        Access to practice systems should
+        correspond to the responsibilities
+        approved for the relevant assistant
+        and engagement.
+      </p>
+
+      <h3>9.4 Local Data Restrictions</h3>
+      <p>
+        Avora's published security approach
+        describes restrictions intended
+        to prevent unnecessary local
+        storage or transfer of
+        patient information.
+      </p>
+
+      <h3>9.5 Security Limitations</h3>
+      <p>
+        No system or method of electronic
+        transmission or storage can be
+        guaranteed to be completely secure.
+        The safeguards applicable to a
+        specific engagement depend on
+        its configuration, agreements,
+        and operational procedures.
+      </p>
+
+      <h3>9.6 Reporting a Concern</h3>
+      <p>
+        If you believe information
+        associated with Avora has
+        been accessed or disclosed
+        improperly, contact our team
+        using the details provided
+        in this policy.
+      </p>
+    </section>
+
+    <!-- SECTION 10 -->
+    <section class="policy-section" id="avp-cookies">
+      <span class="section-no">SECTION 10</span>
+      <h2>Cookies &amp; Website Analytics</h2>
+
+      <p>
+        Depending on the website's
+        configuration, cookies and
+        similar technologies may
+        support website functionality,
+        security, preferences, and
+        performance measurement.
+      </p>
+
+      <h3>10.1 Essential Technologies</h3>
+      <p>
+        Essential technologies may support
+        core website operations, form
+        functionality, security, and
+        technical reliability.
+      </p>
+
+      <h3>10.2 Functional Technologies</h3>
+      <p>
+        Functional technologies may
+        remember preferences or
+        settings when enabled.
+      </p>
+
+      <h3>10.3 Analytics Technologies</h3>
+      <p>
+        Analytics tools, where enabled,
+        may collect information about
+        visits, pages viewed, referral
+        sources, and website interactions.
+      </p>
+
+      <h3>10.4 Embedded Third-Party Services</h3>
+      <p>
+        Embedded forms, scheduling tools,
+        videos, or other external services
+        may use technologies controlled
+        by their respective providers.
+      </p>
+
+      <h3>10.5 Managing Cookies</h3>
+      <p>
+        Most browsers provide controls
+        for restricting or deleting
+        cookies. Disabling certain
+        technologies may affect
+        website functionality.
+      </p>
+
+      <div class="notice neutral">
+        <strong>Cookie Configuration Requires Verification</strong>
+        <p>
+          The exact cookies, analytics tools,
+          advertising technologies, and
+          consent mechanisms active on
+          Avora's website should be
+          confirmed through a technical
+          audit before publication.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 11 -->
+    <section class="policy-section" id="avp-providers">
+      <span class="section-no">SECTION 11</span>
+      <h2>Third-Party Service Providers</h2>
+
+      <p>
+        Depending on the systems and
+        services actually used, Avora
+        may rely on external providers
+        for certain business and
+        technical functions.
+      </p>
+
+      <ul>
+        <li>Website hosting and infrastructure.</li>
+        <li>Business email and communications.</li>
+        <li>Contact forms and appointment scheduling.</li>
+        <li>Virtual desktop and access management.</li>
+        <li>Technical support and security-related services.</li>
+        <li>Other authorized operational services.</li>
+      </ul>
+
+      <p>
+        Any access to information
+        should be evaluated against
+        the provider's function,
+        the relevant contractual
+        arrangements, and
+        applicable privacy laws.
+      </p>
+
+      <p>
+        Independent third-party
+        services may maintain
+        their own privacy notices
+        and terms.
+      </p>
+    </section>
+
+    <!-- SECTION 12 -->
+    <section class="policy-section" id="avp-retention">
+      <span class="section-no">SECTION 12</span>
+      <h2>Data Retention &amp; Deletion</h2>
+
+      <p>
+        Personal information may be
+        retained for periods appropriate
+        to the purpose for which it
+        is processed, taking into
+        account applicable legal,
+        contractual, and operational
+        requirements.
+      </p>
+
+      <p>
+        Different retention
+        requirements may apply
+        to the following:
+      </p>
+
+      <ul>
+        <li>Website enquiries and contact records.</li>
+        <li>Business correspondence and service proposals.</li>
+        <li>Client agreements and onboarding information.</li>
+        <li>Operational and technical records.</li>
+        <li>Information handled within healthcare practice systems.</li>
+      </ul>
+
+      <p>
+        Patient information maintained
+        by a healthcare practice may
+        remain subject to that
+        practice's retention and
+        deletion policies.
+      </p>
+
+      <p>
+        Any return, deletion, or
+        continued retention of
+        information under a client
+        engagement should follow
+        the applicable agreement
+        and law.
+      </p>
+
+      <div class="notice neutral">
+        <strong>Publication Check: Retention Schedule</strong>
+        <p>
+          Specific retention periods,
+          backup deletion windows,
+          and documented disposal
+          procedures have not been
+          verified. Confirm these
+          internally before making
+          more definite promises.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 13 -->
+    <section class="policy-section" id="avp-international">
+      <span class="section-no">SECTION 13</span>
+      <h2>International Access and Processing</h2>
+
+      <p>
+        Avora's staffing model includes
+        globally sourced talent supported
+        through a secure U.S.-based
+        virtual workspace.
+      </p>
+
+      <p>
+        The physical location of an
+        assistant and the location
+        of the virtual desktop
+        may differ.
+      </p>
+
+      <p>
+        Accordingly, cross-border
+        access or processing may
+        be relevant to a particular
+        engagement.
+      </p>
+
+      <p>
+        Applicable legal, contractual,
+        client, and healthcare
+        requirements should be
+        evaluated for the
+        specific arrangement.
+      </p>
+
+      <p>
+        A U.S.-based workspace
+        should not be interpreted
+        as a representation that
+        all personnel are physically
+        located in the United States.
+      </p>
+    </section>
+
+    <!-- SECTION 14 -->
+    <section class="policy-section" id="avp-rights">
+      <span class="section-no">SECTION 14</span>
+      <h2>Your Privacy Rights and Requests</h2>
+
+      <p>
+        Depending on your jurisdiction,
+        the information involved,
+        and the law that applies,
+        you may have rights to:
+      </p>
+
+      <ul>
+        <li>Request access to certain personal information.</li>
+        <li>Request correction of inaccurate information.</li>
+        <li>Request deletion where legally available.</li>
+        <li>Request information about certain uses or disclosures.</li>
+        <li>Object to or restrict certain processing where applicable.</li>
+        <li>Withdraw consent in specified circumstances.</li>
+      </ul>
+
+      <h3>Submitting a Privacy Request</h3>
+      <p>
+        To submit a request about
+        information handled directly
+        by Avora, email
+        <a href="mailto:info@avorasolutions.com">
+          info@avorasolutions.com
+        </a>.
+        Identity verification and
+        legal exceptions may apply.
+      </p>
+
+      <h3>Requests Involving Patient Records</h3>
+      <p>
+        For records maintained by
+        a healthcare provider,
+        contact the responsible
+        medical practice.
+      </p>
+
+      <p>
+        Avora may assist the practice
+        with an authorized request
+        according to the relevant
+        agreement and instructions.
+      </p>
+    </section>
+
+    <!-- SECTION 15 -->
+    <section class="policy-section" id="avp-marketing">
+      <span class="section-no">SECTION 15</span>
+      <h2>Business Communications and Marketing</h2>
+
+      <p>
+        We may contact prospective
+        and existing business clients
+        about enquiries, consultations,
+        service arrangements, or
+        relevant operational matters.
+      </p>
+
+      <p>
+        Promotional messages,
+        where sent, should comply
+        with applicable consent
+        and opt-out requirements.
+      </p>
+
+      <p>
+        You may ask to stop optional
+        marketing communications by
+        contacting us or using any
+        unsubscribe method included
+        in the message.
+      </p>
+
+      <p>
+        Necessary service-related
+        or legal communications
+        may continue.
+      </p>
+    </section>
+
+    <!-- SECTION 16 -->
+    <section class="policy-section" id="avp-children">
+      <span class="section-no">SECTION 16</span>
+      <h2>Children's Information</h2>
+
+      <p>
+        Our public website and
+        business enquiry services
+        are directed toward
+        healthcare professionals
+        and business representatives,
+        not children.
+      </p>
+
+      <p>
+        However, authorized
+        administrative support
+        for a medical practice
+        may involve records
+        relating to minors.
+      </p>
+
+      <p>
+        Such records should be
+        handled under the practice's
+        instructions and applicable
+        healthcare privacy requirements.
+      </p>
+    </section>
+
+    <!-- SECTION 17 -->
+    <section class="policy-section" id="avp-legal">
+      <span class="section-no">SECTION 17</span>
+      <h2>Legal Requirements and Business Changes</h2>
+
+      <p>
+        Information may be retained
+        or disclosed as required
+        or permitted by law,
+        including in response
+        to lawful requests,
+        to investigate suspected
+        misuse, or to protect
+        rights and safety in
+        appropriate circumstances.
+      </p>
+
+      <p>
+        In a merger, acquisition,
+        restructuring, or
+        business-asset transaction,
+        relevant information
+        may be involved subject
+        to applicable law,
+        agreements, and any
+        required notice or protections.
+      </p>
+    </section>
+
+    <!-- SECTION 18 -->
+    <section class="policy-section" id="avp-links">
+      <span class="section-no">SECTION 18</span>
+      <h2>Links to Other Websites</h2>
+
+      <p>
+        Our website may link
+        to independent third-party
+        websites or services.
+      </p>
+
+      <p>
+        Their privacy practices
+        may differ from ours.
+        Please review their
+        policies before providing
+        personal information
+        through those websites.
+      </p>
+    </section>
+
+    <!-- SECTION 19 -->
+    <section class="policy-section" id="avp-updates">
+      <span class="section-no">SECTION 19</span>
+      <h2>Changes to This Privacy Policy</h2>
+
+      <p>
+        We may revise this policy
+        as our services, technology,
+        practices, or applicable
+        requirements change.
+      </p>
+
+      <p>
+        The effective and
+        last-updated dates
+        at the top of this
+        page should reflect
+        the approved
+        published version.
+      </p>
+
+      <p>
+        Where required by law
+        or agreement, additional
+        notice may be provided.
+      </p>
+    </section>
+
+    <!-- SECTION 20 -->
+    <section class="policy-section" id="avp-contact">
+      <span class="section-no">SECTION 20</span>
+      <h2>Contact Avora Solutions About Privacy</h2>
+
+      <p>
+        For privacy questions,
+        concerns, or requests
+        concerning information
+        handled by Avora,
+        please use the following
+        business contact details.
+      </p>
+
+      <p>
+        Do not include sensitive
+        patient records in
+        ordinary email enquiries.
+      </p>
+
+      <div class="contact-card">
+        <h3>We're Here to Help</h3>
+
+        <p>
+          For questions about
+          this policy, privacy
+          requests, or information-handling
+          concerns, contact our team.
+        </p>
+
+        <p>
+          <strong>Business:</strong><br>
+          Avora Solutions LLC
+        </p>
+
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:info@avorasolutions.com">
+            info@avorasolutions.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:+19194435604">
+            +1 (919) 443-5604
+          </a>
+        </p>
+
+        <p>
+          <strong>Location:</strong><br>
+          Based in North Carolina, USA.
+          Supporting practices nationwide.
+        </p>
+
+        <p>
+          <a href="https://www.avorasolutions.com/contact">
+            Visit Our Contact Page →
+          </a>
+        </p>
+      </div>
+    </section>
+
+  </article>
+</main>
+
+<!-- ==============================
+     FAQ SECTION
+============================== -->
+<section class="faq-area" id="avp-faq">
+  <div class="faq-inner">
+
+    <div class="faq-heading">
+      <span class="small">COMMON QUESTIONS</span>
+      <h2>Privacy Policy FAQs</h2>
+      <p>
+        Clear answers about Avora's
+        information practices and
+        healthcare administrative support.
+      </p>
+    </div>
+
+    <!-- FAQ 1 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-1"
+        id="avp-question-1">
+        <span>
+          What personal information does Avora collect
+          through its website?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-1"
+        role="region"
+        aria-labelledby="avp-question-1"
+        hidden>
+        <p>
+          Depending on your interaction,
+          Avora may receive contact details,
+          practice information, service
+          enquiries, communications, and
+          technical website data.
+          The exact technical collection
+          depends on the website configuration.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-2"
+        id="avp-question-2">
+        <span>
+          Do Avora's Medical Virtual Assistants
+          access patient information?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-2"
+        role="region"
+        aria-labelledby="avp-question-2"
+        hidden>
+        <p>
+          They may access information needed
+          for assigned administrative duties
+          when authorized by the healthcare
+          practice. Access and use should
+          follow the practice's approved
+          permissions, agreements, and
+          applicable privacy requirements.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-3"
+        id="avp-question-3">
+        <span>
+          Does Avora's HIPAA-aligned approach
+          guarantee compliance?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-3"
+        role="region"
+        aria-labelledby="avp-question-3"
+        hidden>
+        <p>
+          No. HIPAA-aligned describes
+          Avora's healthcare-focused
+          operating approach. Compliance
+          depends on the actual services,
+          safeguards, agreements, and
+          responsibilities of the parties
+          involved; it is not a
+          certification or absolute guarantee.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-4"
+        id="avp-question-4">
+        <span>
+          What does the U.S.-based
+          virtual workspace mean?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-4"
+        role="region"
+        aria-labelledby="avp-question-4"
+        hidden>
+        <p>
+          Avora describes a secure
+          U.S.-based virtual workspace
+          with controlled access and
+          credential protection.
+          This does not necessarily
+          mean every assistant is
+          physically located in
+          the United States.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 5 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-5"
+        id="avp-question-5">
+        <span>
+          Does Avora provide full
+          medical billing or clinical services?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-5"
+        role="region"
+        aria-labelledby="avp-question-5"
+        hidden>
+        <p>
+          No. Avora's Medical Virtual
+          Assistants provide authorized
+          administrative support within
+          the practice's established
+          processes. They do not replace
+          clinical decision-makers or
+          represent Avora as a full-service
+          revenue-cycle management provider.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 6 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-6"
+        id="avp-question-6">
+        <span>
+          How can I request access to
+          or correction of my information?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-6"
+        role="region"
+        aria-labelledby="avp-question-6"
+        hidden>
+        <p>
+          Email info@avorasolutions.com.
+          Your rights depend on applicable
+          law and Avora's role.
+          For patient medical records,
+          contact the responsible
+          healthcare practice directly.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 7 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-7"
+        id="avp-question-7">
+        <span>
+          Does the website use cookies
+          or analytics tools?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-7"
+        role="region"
+        aria-labelledby="avp-question-7"
+        hidden>
+        <p>
+          Cookies or similar technologies
+          may be present depending on
+          the website's configuration.
+          The exact active tools must
+          be confirmed by a technical
+          audit before a definitive
+          cookie disclosure is published.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 8 -->
+    <div class="faq-item">
+      <button
+        type="button"
+        class="faq-question"
+        aria-expanded="false"
+        aria-controls="avp-answer-8"
+        id="avp-question-8">
+        <span>
+          Who should patients contact
+          about their medical records?
+        </span>
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div
+        class="faq-answer"
+        id="avp-answer-8"
+        role="region"
+        aria-labelledby="avp-question-8"
+        hidden>
+        <p>
+          Patients should contact
+          their healthcare provider
+          or medical practice.
+          The practice generally
+          controls its medical
+          records and applicable
+          patient-rights processes.
+        </p>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-note">
+      <p>
+        © <span class="year">2026</span>
+        Avora Solutions LLC.
+        All rights reserved.
+        Refer to the latest approved
+        version of this policy.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==============================
+     FLOATING BACK TO TOP
+============================== -->
+<button
+  class="back-top"
+  type="button"
+  aria-label="Back to top"
+  tabindex="-1">
+
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+
+</button>
+
+</div>
+
+<!-- ==============================
+     JAVASCRIPT FUNCTIONALITY
+============================== -->
+<script>
+(function () {
+  'use strict';
+
+  function initAvoraPrivacy() {
+
+    const root = document.getElementById('avora-policy');
+
+    if (!root || root.dataset.ready === '1') {
+      return;
+    }
+
+    root.dataset.ready = '1';
+
+    const links = Array.from(
+      root.querySelectorAll('.toc-list a')
+    );
+
+    const list = root.querySelector('.toc-list');
+
+    const sections = links
+      .map(function (link) {
+        return root.querySelector(
+          link.getAttribute('href')
+        );
+      })
+      .filter(Boolean);
+
+    const back = root.querySelector('.back-top');
+
+    const reduce = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    );
+
+    let active = '';
+    let scheduled = false;
+
+    /* SMOOTH SCROLL PREFERENCE */
+    function motion() {
+      return reduce.matches ? 'auto' : 'smooth';
+    }
+
+    /* ELEMENTOR STICKY HEADER OFFSET */
+    function offset() {
+      let value = 20;
+
+      const selectors = [
+        '.elementor-location-header',
+        'header.site-header',
+        '#masthead'
+      ];
+
+      selectors.forEach(function (selector) {
+        const element = document.querySelector(selector);
+
+        if (!element) return;
+
+        const style = window.getComputedStyle(element);
+        const rect = element.getBoundingClientRect();
+
+        const sticky =
+          style.position === 'sticky' ||
+          style.position === 'fixed';
+
+        if (
+          sticky &&
+          rect.top <= 10 &&
+          rect.bottom > 0
+        ) {
+          value = Math.max(
+            value,
+            Math.min(rect.bottom, 180) + 14
+          );
+        }
+      });
+
+      return value;
+    }
+
+    /* ACTIVE TOC LINK */
+    function setActive(id) {
+
+      if (id === active) return;
+
+      active = id;
+
+      links.forEach(function (link) {
+        const isActive =
+          link.getAttribute('href') === '#' + id;
+
+        link.classList.toggle('active', isActive);
+
+        if (isActive) {
+          link.setAttribute('aria-current', 'location');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+
+      /* AUTO SCROLL ACTIVE LINK INSIDE SIDEBAR */
+      const activeLink = links.find(function (link) {
+        return link.getAttribute('href') === '#' + id;
+      });
+
+      if (activeLink && list && window.innerWidth > 900) {
+
+        const top =
+          activeLink.offsetTop - list.offsetTop;
+
+        const bottom =
+          top + activeLink.offsetHeight;
+
+        if (top < list.scrollTop) {
+          list.scrollTop = Math.max(0, top - 10);
+        } else if (
+          bottom > list.scrollTop + list.clientHeight
+        ) {
+          list.scrollTop =
+            bottom - list.clientHeight + 10;
+        }
+      }
+    }
+
+    /* SCROLL TO SELECTED SECTION */
+    function go(element) {
+
+      const position =
+        element.getBoundingClientRect().top +
+        window.scrollY -
+        offset() -
+        12;
+
+      window.scrollTo({
+        top: Math.max(0, position),
+        behavior: motion()
+      });
+    }
+
+    /* TOC CLICK HANDLERS */
+    links.forEach(function (link) {
+
+      link.addEventListener('click', function (event) {
+
+        const href = link.getAttribute('href');
+        const target = root.querySelector(href);
+
+        if (!target) return;
+
+        event.preventDefault();
+
+        setActive(target.id);
+        go(target);
+
+        if (window.history.replaceState) {
+          window.history.replaceState(
+            null,
+            '',
+            href
+          );
+        }
+      });
+    });
+
+    /* SCROLL POSITION UPDATE */
+    function update() {
+
+      const threshold = offset() + 70;
+
+      let current = sections[0];
+
+      sections.forEach(function (section) {
+
+        if (
+          section.getBoundingClientRect().top <=
+          threshold
+        ) {
+          current = section;
+        }
+      });
+
+      /* LAST SECTION AT PAGE BOTTOM */
+      if (
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - 5
+      ) {
+        current = sections[sections.length - 1];
+      }
+
+      if (current) {
+        setActive(current.id);
+      }
+
+      /* BACK TO TOP VISIBILITY */
+      if (back) {
+
+        const visible = window.scrollY > 500;
+
+        back.classList.toggle('show', visible);
+        back.tabIndex = visible ? 0 : -1;
+      }
+    }
+
+    /* OPTIMIZED SCROLL LISTENER */
+    function onScroll() {
+
+      if (scheduled) return;
+
+      scheduled = true;
+
+      window.requestAnimationFrame(function () {
+        update();
+        scheduled = false;
+      });
+    }
+
+    window.addEventListener(
+      'scroll',
+      onScroll,
+      { passive: true }
+    );
+
+    window.addEventListener(
+      'resize',
+      onScroll,
+      { passive: true }
+    );
+
+    /* ACCESSIBLE FAQ ACCORDION */
+    const faqItems = Array.from(
+      root.querySelectorAll('.faq-item')
+    );
+
+    faqItems.forEach(function (item) {
+
+      const button = item.querySelector('.faq-question');
+      const panel = item.querySelector('.faq-answer');
+
+      if (!button || !panel) return;
+
+      button.addEventListener('click', function () {
+
+        const wasOpen =
+          button.getAttribute('aria-expanded') === 'true';
+
+        /* CLOSE ALL FAQ ITEMS */
+        faqItems.forEach(function (other) {
+
+          const otherButton =
+            other.querySelector('.faq-question');
+
+          const otherPanel =
+            other.querySelector('.faq-answer');
+
+          other.classList.remove('open');
+
+          otherButton.setAttribute(
+            'aria-expanded',
+            'false'
+          );
+
+          otherPanel.hidden = true;
+        });
+
+        /* OPEN SELECTED ITEM */
+        if (!wasOpen) {
+
+          item.classList.add('open');
+
+          button.setAttribute(
+            'aria-expanded',
+            'true'
+          );
+
+          panel.hidden = false;
+        }
+      });
+    });
+
+    /* BACK TO TOP CLICK */
+    if (back) {
+
+      back.addEventListener('click', function () {
+
+        window.scrollTo({
+          top: 0,
+          behavior: motion()
+        });
+      });
+    }
+
+    /* DYNAMIC COPYRIGHT YEAR */
+    const year = root.querySelector('.year');
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+
+    /* INITIALIZE ACTIVE LINK AND BUTTON */
+    update();
+
+    /* HANDLE DIRECT SECTION URLS */
+    if (window.location.hash.startsWith('#avp-')) {
+
+      const target = root.querySelector(
+        window.location.hash
+      );
+
+      if (target) {
+
+        window.requestAnimationFrame(function () {
+          go(target);
+        });
+      }
+    }
+  }
+
+  /* INITIALIZE AFTER DOM LOAD */
+  if (document.readyState === 'loading') {
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      initAvoraPrivacy,
+      { once: true }
+    );
+
+  } else {
+
+    initAvoraPrivacy();
+
+  }
+
+})();
+</script>
