@@ -1,1284 +1,1825 @@
 
-<!-- =========================================================
- AVORA SOLUTIONS — ABOUT US
- Clean, balanced, SEO-friendly Elementor section
- One HTML widget | No extra plugin required
-
- SEO TITLE (set in Rank Math / Yoast):
- About Avora Solutions | Healthcare Operations & Medical VAs
-
- META DESCRIPTION:
- Learn about Avora Solutions, our secure Medical Virtual
- Assistant model, healthcare-focused approach, and the
- leadership behind our services for medical practices.
-========================================================= -->
+<!-- =====================================================
+ AVORA SOLUTIONS — COMPLETE ABOUT US PAGE
+ Elementor HTML Widget
+ Responsive | SEO Friendly | FAQ Accordion
+===================================================== -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-#avora-about-final{
-  --navy:#102d48;
-  --navy2:#173b57;
-  --teal:#168b94;
-  --teal-dark:#11747c;
-  --mint:#e5f4f3;
-  --ice:#f0f7fb;
-  --heading:#20384c;
-  --body:#607588;
-  --border:#d9e7ed;
-  font-family:"Open Sans",sans-serif;
-  color:var(--body);
-  font-size:16px;
-  line-height:1.8;
-  background:#fff;
-  overflow:hidden;
+/* ========== GLOBAL ========== */
+
+#avora-about-final {
+  --navy: #102d48;
+  --navy2: #173b57;
+  --teal: #168b94;
+  --teal-dark: #11747c;
+  --mint: #e5f4f3;
+  --ice: #f0f7fb;
+  --heading: #20384c;
+  --body: #607588;
+  --border: #d9e7ed;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--body);
+  background: #fff;
+  overflow: hidden;
 }
+
 #avora-about-final *,
 #avora-about-final *::before,
-#avora-about-final *::after{box-sizing:border-box}
+#avora-about-final *::after {
+  box-sizing: border-box;
+}
 
 #avora-about-final h1,
 #avora-about-final h2,
 #avora-about-final h3,
-#avora-about-final p,
-#avora-about-final ul{margin:0}
+#avora-about-final p {
+  margin: 0;
+}
 
 #avora-about-final h1,
 #avora-about-final h2,
-#avora-about-final h3{
-  font-family:"Open Sans",sans-serif;
-  font-weight:800;
-  color:var(--heading);
-  line-height:1.3;
+#avora-about-final h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: var(--heading);
+  line-height: 1.3;
 }
 
-#avora-about-final p,
-#avora-about-final li{
-  font-size:16px;
-  line-height:1.85;
+#avora-about-final p {
+  font-size: 16px;
+  line-height: 1.85;
 }
 
-#avora-about-final a{
-  text-decoration:none;
-  transition:all .25s ease;
+#avora-about-final a {
+  text-decoration: none;
+  transition: 0.25s ease;
 }
 
-#avora-about-final a:focus-visible{
-  outline:3px solid var(--teal);
-  outline-offset:4px;
+#avora-about-final a:focus-visible,
+#avora-about-final summary:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
 }
 
-#avora-about-final .aa-container{
-  width:min(1180px,calc(100% - 40px));
-  margin:0 auto;
+#avora-about-final .aa-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: auto;
 }
 
-#avora-about-final .aa-section{
-  padding:85px 0;
+#avora-about-final .aa-section {
+  padding: 85px 0;
 }
 
-#avora-about-final .aa-eyebrow{
-  display:block;
-  color:var(--teal);
-  font-size:12px;
-  font-weight:800;
-  line-height:1.5;
-  text-transform:uppercase;
-  letter-spacing:1.5px;
-  margin-bottom:14px;
+#avora-about-final .aa-eyebrow {
+  display: block;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 14px;
 }
 
-#avora-about-final .aa-title{
-  font-size:clamp(30px,3.4vw,43px);
-  letter-spacing:-1.2px;
-  margin-bottom:22px;
+#avora-about-final .aa-title {
+  font-size: clamp(30px, 3.4vw, 43px);
+  letter-spacing: -1.2px;
+  margin-bottom: 22px;
 }
 
-#avora-about-final .aa-title span{
-  color:var(--teal);
+#avora-about-final .aa-title span {
+  color: var(--teal);
 }
 
-#avora-about-final .aa-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  background:var(--teal);
-  color:#fff;
-  border:1px solid var(--teal);
-  border-radius:5px;
-  padding:14px 25px;
-  min-height:52px;
-  font-size:14px;
-  line-height:1.4;
-  font-weight:700;
+/* ========== BUTTONS ========== */
+
+#avora-about-final .aa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 14px 25px;
+  background: var(--teal);
+  border: 1px solid var(--teal);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#avora-about-final .aa-btn:hover {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#avora-about-final .aa-btn-light {
+  background: #fff;
+  border-color: #fff;
+  color: var(--navy);
+}
+
+#avora-about-final .aa-btn-light:hover {
+  background: var(--mint);
+  border-color: var(--mint);
+  color: var(--navy);
+}
+
+#avora-about-final .aa-btn-outline {
+  background: transparent;
+  border-color: #a4cbd0;
+  color: #fff;
+}
+
+#avora-about-final .aa-btn-outline:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--navy);
+}
+
+/* ========== HERO ========== */
+
+#avora-about-final .aa-hero {
+  background: linear-gradient(
+    115deg,
+    #102d48,
+    #173b57
+  );
+  padding: 90px 0;
+}
+
+#avora-about-final .aa-hero-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+  gap: 65px;
+  align-items: center;
+}
+
+#avora-about-final .aa-hero .aa-eyebrow {
+  color: #91dce0;
+}
+
+#avora-about-final .aa-hero h1 {
+  font-size: clamp(39px, 4.7vw, 58px);
+  line-height: 1.18;
+  letter-spacing: -1.8px;
+  color: #fff;
+}
+
+#avora-about-final .aa-hero h1 span {
+  color: #9be0df;
+}
+
+#avora-about-final .aa-hero-right {
+  border-left: 2px solid rgba(155, 224, 223, 0.55);
+  padding-left: 35px;
 }
 
-#avora-about-final .aa-btn:hover{
-  background:var(--teal-dark);
-  border-color:var(--teal-dark);
-  color:#fff;
-  transform:translateY(-2px);
+#avora-about-final .aa-hero-right p {
+  color: #dce8ee;
+  font-size: 17px;
+  margin-bottom: 24px;
 }
 
-#avora-about-final .aa-btn-light{
-  background:#fff;
-  border-color:#fff;
-  color:var(--navy);
+/* ========== TWO COLUMN SECTIONS ========== */
+
+#avora-about-final .aa-intro-grid,
+#avora-about-final .aa-mission-grid,
+#avora-about-final .aa-workflows-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+  gap: 60px;
+  align-items: center;
+}
+
+#avora-about-final .aa-intro-copy p,
+#avora-about-final .aa-mission-copy p,
+#avora-about-final .aa-workflows-copy p {
+  margin-bottom: 18px;
+}
+
+#avora-about-final .aa-intro-copy p:last-child,
+#avora-about-final .aa-mission-copy p:last-child,
+#avora-about-final .aa-workflows-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* ========== INTRO PANEL ========== */
+
+#avora-about-final .aa-intro-panel {
+  background: var(--ice);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 36px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#avora-about-final .aa-intro-panel h3 {
+  font-size: 22px;
+  margin-bottom: 19px;
+}
+
+#avora-about-final .aa-intro-detail {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
 }
 
-#avora-about-final .aa-btn-light:hover{
-  background:var(--mint);
-  border-color:var(--mint);
-  color:var(--navy);
+#avora-about-final .aa-intro-detail:first-of-type {
+  padding-top: 0;
 }
 
-/* -------------------------------------------
- 01 HERO — CLEAN BALANCED BANNER
-------------------------------------------- */
-#avora-about-final .aa-hero{
-  background:linear-gradient(115deg,#102d48,#173b57);
-  padding:90px 0;
+#avora-about-final .aa-intro-detail:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
-#avora-about-final .aa-hero-grid{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:65px;
-  align-items:center;
+#avora-about-final .aa-intro-detail strong {
+  display: block;
+  color: var(--heading);
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
-#avora-about-final .aa-hero .aa-eyebrow{
-  color:#91dce0;
+#avora-about-final .aa-intro-detail p {
+  font-size: 15px;
 }
 
-#avora-about-final .aa-hero h1{
-  font-size:clamp(39px,4.7vw,58px);
-  line-height:1.18;
-  letter-spacing:-1.8px;
-  color:#fff;
-  margin-bottom:0;
+/* ========== MISSION ========== */
+
+#avora-about-final .aa-mission {
+  background: var(--mint);
 }
 
-#avora-about-final .aa-hero h1 span{
-  color:#9be0df;
+/* ========== SECURITY ========== */
+
+#avora-about-final .aa-security-head {
+  max-width: 780px;
+  text-align: center;
+  margin: 0 auto 40px;
 }
 
-#avora-about-final .aa-hero-right{
-  border-left:2px solid rgba(155,224,223,.55);
-  padding-left:35px;
+#avora-about-final .aa-security-head p {
+  margin-top: 12px;
 }
 
-#avora-about-final .aa-hero-right p{
-  color:#dce8ee;
-  font-size:17px;
-  margin-bottom:24px;
+#avora-about-final .aa-security-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
 }
 
-/* -------------------------------------------
- 02 COMPANY INTRO
-------------------------------------------- */
-#avora-about-final .aa-intro-grid{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:60px;
-  align-items:stretch;
+#avora-about-final .aa-security-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 30px 25px;
+  height: 100%;
+  background: #fff;
 }
 
-#avora-about-final .aa-intro-copy{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+#avora-about-final .aa-security-number {
+  display: block;
+  color: var(--teal);
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 19px;
 }
 
-#avora-about-final .aa-intro-copy p{
-  margin-bottom:18px;
+#avora-about-final .aa-security-card h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
 }
 
-#avora-about-final .aa-intro-copy p:last-child{
-  margin-bottom:0;
+#avora-about-final .aa-security-card p {
+  font-size: 15px;
 }
 
-#avora-about-final .aa-intro-panel{
-  background:var(--ice);
-  border:1px solid var(--border);
-  border-radius:9px;
-  padding:36px;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+#avora-about-final .aa-security-bottom {
+  background: var(--ice);
+  border-left: 3px solid var(--teal);
+  padding: 23px 27px;
+  margin-top: 25px;
 }
 
-#avora-about-final .aa-intro-panel h3{
-  font-size:22px;
-  margin-bottom:19px;
+#avora-about-final .aa-security-bottom strong {
+  color: var(--heading);
 }
+
+/* ========== WORKFLOWS ========== */
 
-#avora-about-final .aa-intro-detail{
-  padding:16px 0;
-  border-bottom:1px solid var(--border);
+#avora-about-final .aa-workflows {
+  background: var(--ice);
 }
 
-#avora-about-final .aa-intro-detail:first-of-type{
-  padding-top:0;
+#avora-about-final .aa-workflow-list {
+  border-top: 1px solid var(--border);
 }
 
-#avora-about-final .aa-intro-detail:last-child{
-  border-bottom:0;
-  padding-bottom:0;
+#avora-about-final .aa-workflow-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
 }
 
-#avora-about-final .aa-intro-detail strong{
-  display:block;
-  color:var(--heading);
-  font-size:15px;
-  margin-bottom:5px;
+#avora-about-final .aa-workflow-check {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--teal);
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  font-weight: 800;
 }
 
-#avora-about-final .aa-intro-detail p{
-  font-size:15px;
+#avora-about-final .aa-workflow-row h3 {
+  font-size: 17px;
 }
 
-/* -------------------------------------------
- 03 MISSION
-------------------------------------------- */
-#avora-about-final .aa-mission{
-  background:var(--mint);
+/* ========== LEADERSHIP ========== */
+
+#avora-about-final .aa-leadership-head {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 45px;
 }
 
-#avora-about-final .aa-mission-grid{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:65px;
-  align-items:center;
+#avora-about-final .aa-leadership-head p {
+  margin-top: 10px;
 }
 
-#avora-about-final .aa-mission-copy p{
-  margin-bottom:18px;
+#avora-about-final .aa-leader {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 340px)
+    minmax(0, 1fr);
+  gap: 45px;
+  align-items: center;
+  padding: 35px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 25px;
 }
 
-#avora-about-final .aa-mission-copy p:last-child{
-  margin-bottom:0;
+#avora-about-final .aa-leader:last-child {
+  margin-bottom: 0;
 }
 
-/* -------------------------------------------
- 04 SECURITY
-------------------------------------------- */
-#avora-about-final .aa-security-head{
-  max-width:760px;
-  margin:0 auto 40px;
-  text-align:center;
+/* CTO REVERSE LAYOUT */
+
+#avora-about-final .aa-leader--reverse {
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 340px);
+  background: var(--ice);
 }
 
-#avora-about-final .aa-security-head p{
-  margin-top:12px;
+#avora-about-final .aa-leader--reverse .aa-leader-image {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-#avora-about-final .aa-security-grid{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:20px;
-  align-items:stretch;
+#avora-about-final .aa-leader--reverse .aa-leader-content {
+  grid-column: 1;
+  grid-row: 1;
 }
+
+/* LEADERSHIP IMAGES */
 
-#avora-about-final .aa-security-card{
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:8px;
-  padding:30px 25px;
-  height:100%;
+#avora-about-final .aa-leader-image {
+  position: relative;
+  background: var(--mint);
+  border-radius: 7px;
+  overflow: hidden;
+  min-height: 420px;
+  align-self: stretch;
 }
 
-#avora-about-final .aa-security-number{
-  display:block;
-  color:var(--teal);
-  font-size:24px;
-  font-weight:800;
-  margin-bottom:19px;
+#avora-about-final .aa-leader-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  position: absolute;
+  inset: 0;
 }
 
-#avora-about-final .aa-security-card h3{
-  font-size:19px;
-  margin-bottom:12px;
+#avora-about-final .aa-leader-image-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+  padding: 25px;
+  min-height: 420px;
+  height: 100%;
+  color: var(--teal-dark);
 }
 
-#avora-about-final .aa-security-card p{
-  font-size:15px;
+#avora-about-final .aa-leader-image-fallback svg {
+  width: 76px;
+  height: 76px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.3;
+  margin-bottom: 12px;
 }
 
-#avora-about-final .aa-security-bottom{
-  background:var(--ice);
-  border-left:3px solid var(--teal);
-  padding:23px 27px;
-  margin-top:25px;
+#avora-about-final .aa-leader-image-fallback strong {
+  font-size: 17px;
+  color: var(--heading);
 }
 
-#avora-about-final .aa-security-bottom strong{
-  color:var(--heading);
+#avora-about-final .aa-leader-image-fallback span {
+  font-size: 13px;
 }
 
-/* -------------------------------------------
- 05 WORKFLOWS
-------------------------------------------- */
-#avora-about-final .aa-workflows{
-  background:var(--ice);
+/* LEADERSHIP TEXT */
+
+#avora-about-final .aa-leader-content {
+  min-width: 0;
 }
 
-#avora-about-final .aa-workflows-grid{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:60px;
-  align-items:center;
+#avora-about-final .aa-leader-role {
+  display: block;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-bottom: 9px;
 }
 
-#avora-about-final .aa-workflows-copy p{
-  margin-bottom:18px;
+#avora-about-final .aa-leader-content h3 {
+  font-size: clamp(28px, 3vw, 38px);
+  margin-bottom: 21px;
+  letter-spacing: -0.8px;
 }
 
-#avora-about-final .aa-workflow-list{
-  border-top:1px solid var(--border);
+#avora-about-final .aa-leader-content p {
+  margin-bottom: 16px;
 }
 
-#avora-about-final .aa-workflow-row{
-  display:flex;
-  align-items:center;
-  gap:18px;
-  padding:22px 0;
-  border-bottom:1px solid var(--border);
+#avora-about-final .aa-leader-content p:last-of-type {
+  margin-bottom: 20px;
 }
 
-#avora-about-final .aa-workflow-check{
-  flex:0 0 36px;
-  width:36px;
-  height:36px;
-  border-radius:50%;
-  background:var(--mint);
-  color:var(--teal);
-  display:grid;
-  place-items:center;
-  font-size:19px;
-  font-weight:800;
+#avora-about-final .aa-leader-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--teal);
 }
 
-#avora-about-final .aa-workflow-row h3{
-  font-size:17px;
+#avora-about-final .aa-leader-link:hover {
+  color: var(--navy);
 }
 
-/* -------------------------------------------
- 06 LEADERSHIP
-------------------------------------------- */
-#avora-about-final .aa-leadership-head{
-  text-align:center;
-  max-width:800px;
-  margin:0 auto 45px;
+/* ========== COMMITMENT ========== */
+
+#avora-about-final .aa-commitment {
+  background: var(--mint);
 }
 
-#avora-about-final .aa-leadership-head p{
-  margin-top:10px;
+#avora-about-final .aa-commitment-inner {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
 }
 
-#avora-about-final .aa-leader{
-  display:grid;
-  grid-template-columns:minmax(0,340px) minmax(0,1fr);
-  gap:45px;
-  align-items:stretch;
-  padding:35px;
-  border:1px solid var(--border);
-  border-radius:10px;
-  background:#fff;
-  margin-bottom:25px;
+#avora-about-final .aa-commitment-inner p {
+  margin-bottom: 17px;
 }
 
-#avora-about-final .aa-leader:last-child{
-  margin-bottom:0;
+#avora-about-final .aa-commitment-inner p:last-child {
+  margin-bottom: 0;
 }
+
+/* ========== FAQ ========== */
 
-#avora-about-final .aa-leader-image{
-  position:relative;
-  background:var(--mint);
-  border-radius:7px;
-  min-height:410px;
-  overflow:hidden;
-  height:100%;
+#avora-about-final .aa-faq {
+  background: #fff;
 }
 
-#avora-about-final .aa-leader-image img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center top;
+#avora-about-final .aa-faq-head {
+  max-width: 780px;
+  text-align: center;
+  margin: 0 auto 40px;
 }
 
-#avora-about-final .aa-leader-image-fallback{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  text-align:center;
-  gap:8px;
-  padding:25px;
-  min-height:410px;
-  height:100%;
-  color:var(--teal-dark);
+#avora-about-final .aa-faq-head p {
+  margin-top: 12px;
 }
 
-#avora-about-final .aa-leader-image-fallback svg{
-  width:76px;
-  height:76px;
-  fill:none;
-  stroke:currentColor;
-  stroke-width:1.3;
-  margin-bottom:12px;
+#avora-about-final .aa-faq-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
 }
 
-#avora-about-final .aa-leader-image-fallback strong{
-  font-size:17px;
-  color:var(--heading);
+#avora-about-final .aa-faq-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
 }
 
-#avora-about-final .aa-leader-image-fallback span{
-  font-size:13px;
+#avora-about-final .aa-faq-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
 }
 
-#avora-about-final .aa-leader-content{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  min-width:0;
+#avora-about-final .aa-faq-item[open] {
+  border-color: #b7d7d8;
+  box-shadow: 0 8px 25px rgba(16, 45, 72, 0.05);
 }
 
-#avora-about-final .aa-leader-role{
-  display:block;
-  color:var(--teal);
-  font-size:12px;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:1.3px;
-  margin-bottom:9px;
+#avora-about-final .aa-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--heading);
 }
 
-#avora-about-final .aa-leader-content h3{
-  font-size:clamp(28px,3vw,38px);
-  margin-bottom:21px;
-  letter-spacing:-.8px;
+#avora-about-final .aa-faq-item summary::-webkit-details-marker {
+  display: none;
 }
 
-#avora-about-final .aa-leader-content p{
-  margin-bottom:16px;
+#avora-about-final .aa-faq-item summary::after {
+  content: "+";
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--mint);
+  color: var(--teal);
+  font-size: 20px;
+  font-weight: 600;
 }
 
-#avora-about-final .aa-leader-content p:last-of-type{
-  margin-bottom:20px;
+#avora-about-final .aa-faq-item[open] summary::after {
+  content: "−";
 }
 
-#avora-about-final .aa-leader-link{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  align-self:flex-start;
-  font-size:14px;
-  font-weight:800;
-  color:var(--teal);
+#avora-about-final .aa-faq-answer {
+  padding: 0 22px 22px;
 }
 
-#avora-about-final .aa-leader-link:hover{
-  color:var(--navy);
+#avora-about-final .aa-faq-answer p {
+  font-size: 15px;
 }
 
-/* -------------------------------------------
- 07 COMMITMENT
-------------------------------------------- */
-#avora-about-final .aa-commitment{
-  background:var(--mint);
+#avora-about-final .aa-faq-answer a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-#avora-about-final .aa-commitment-inner{
-  text-align:center;
-  max-width:850px;
-  margin:auto;
+/* ========== CTA ========== */
+
+#avora-about-final .aa-cta {
+  background: var(--navy);
+  padding: 70px 0;
 }
 
-#avora-about-final .aa-commitment-inner p{
-  margin-bottom:17px;
+#avora-about-final .aa-cta-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 45px;
 }
 
-#avora-about-final .aa-commitment-inner p:last-child{
-  margin-bottom:0;
+#avora-about-final .aa-cta .aa-eyebrow {
+  color: #9be0df;
 }
 
-/* -------------------------------------------
- 08 CTA
-------------------------------------------- */
-#avora-about-final .aa-cta{
-  background:var(--navy);
-  padding:70px 0;
+#avora-about-final .aa-cta h2 {
+  color: #fff;
+  font-size: clamp(29px, 3.2vw, 40px);
+  letter-spacing: -1px;
+  margin-bottom: 14px;
 }
 
-#avora-about-final .aa-cta-grid{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
-  align-items:center;
-  gap:45px;
+#avora-about-final .aa-cta p {
+  color: #d5e4eb;
+  max-width: 700px;
 }
 
-#avora-about-final .aa-cta .aa-eyebrow{
-  color:#9be0df;
+#avora-about-final .aa-cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-width: 245px;
 }
 
-#avora-about-final .aa-cta h2{
-  color:#fff;
-  font-size:clamp(29px,3.2vw,40px);
-  letter-spacing:-1px;
-  margin-bottom:14px;
+#avora-about-final .aa-cta-actions .aa-btn {
+  width: 100%;
 }
 
-#avora-about-final .aa-cta p{
-  color:#d5e4eb;
-  max-width:700px;
+#avora-about-final .aa-cta-phone {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #c3dbe3;
+  margin-top: 1px;
 }
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1024px) {
 
-/* -------------------------------------------
- RESPONSIVE
-------------------------------------------- */
-@media(max-width:1024px){
   #avora-about-final .aa-hero-grid,
   #avora-about-final .aa-intro-grid,
   #avora-about-final .aa-mission-grid,
-  #avora-about-final .aa-workflows-grid{
-    gap:38px;
+  #avora-about-final .aa-workflows-grid {
+    gap: 38px;
   }
 
-  #avora-about-final .aa-leader{
-    grid-template-columns:280px minmax(0,1fr);
-    gap:30px;
-    padding:25px;
+  #avora-about-final .aa-leader {
+    grid-template-columns:
+      minmax(0, 280px)
+      minmax(0, 1fr);
+    gap: 30px;
+    padding: 25px;
+  }
+
+  #avora-about-final .aa-leader--reverse {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 280px);
   }
 }
 
-@media(max-width:767px){
-  #avora-about-final .aa-section{
-    padding:65px 0;
+@media (max-width: 767px) {
+
+  #avora-about-final .aa-section {
+    padding: 65px 0;
   }
 
-  #avora-about-final .aa-hero{
-    padding:70px 0;
+  #avora-about-final .aa-hero {
+    padding: 70px 0;
   }
 
   #avora-about-final .aa-hero-grid,
   #avora-about-final .aa-intro-grid,
   #avora-about-final .aa-mission-grid,
   #avora-about-final .aa-workflows-grid,
-  #avora-about-final .aa-cta-grid{
-    grid-template-columns:1fr;
-    gap:30px;
+  #avora-about-final .aa-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  #avora-about-final .aa-hero-right{
-    padding-left:22px;
+  #avora-about-final .aa-hero-right {
+    padding-left: 22px;
   }
 
-  #avora-about-final .aa-security-grid{
-    grid-template-columns:1fr;
-    gap:15px;
+  #avora-about-final .aa-security-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
-  #avora-about-final .aa-security-card{
-    padding:25px;
+  #avora-about-final .aa-security-card {
+    padding: 25px;
   }
 
-  #avora-about-final .aa-leader{
-    grid-template-columns:1fr;
-    gap:25px;
+  #avora-about-final .aa-leader,
+  #avora-about-final .aa-leader--reverse {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
-  #avora-about-final .aa-leader-image{
-    height:340px;
-    min-height:340px;
-    max-width:420px;
+  #avora-about-final .aa-leader--reverse .aa-leader-image,
+  #avora-about-final .aa-leader--reverse .aa-leader-content {
+    grid-column: auto;
+    grid-row: auto;
   }
 
-  #avora-about-final .aa-leader-image-fallback{
-    min-height:340px;
+  #avora-about-final .aa-leader--reverse .aa-leader-image {
+    order: 0;
   }
 
-  #avora-about-final .aa-cta-grid{
-    align-items:start;
-  }
-}
-
-@media(max-width:480px){
-  #avora-about-final .aa-container{
-    width:calc(100% - 34px);
+  #avora-about-final .aa-leader--reverse .aa-leader-content {
+    order: 1;
   }
 
-  #avora-about-final .aa-hero{
-    padding:58px 0;
+  #avora-about-final .aa-leader-image {
+    min-height: 340px;
+    height: 340px;
+    max-width: 100%;
   }
 
-  #avora-about-final .aa-hero h1{
-    font-size:37px;
-    letter-spacing:-1.1px;
+  #avora-about-final .aa-leader-image-fallback {
+    min-height: 340px;
   }
 
-  #avora-about-final .aa-hero-right p{
-    font-size:16px;
+  #avora-about-final .aa-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
-  #avora-about-final .aa-title{
-    font-size:30px;
-    letter-spacing:-.7px;
+  #avora-about-final .aa-cta-grid {
+    align-items: start;
   }
 
-  #avora-about-final .aa-section{
-    padding:55px 0;
-  }
-
-  #avora-about-final .aa-intro-panel{
-    padding:25px;
-  }
-
-  #avora-about-final .aa-leader{
-    padding:18px;
-  }
-
-  #avora-about-final .aa-leader-image{
-    height:310px;
-    min-height:310px;
-  }
-
-  #avora-about-final .aa-leader-image-fallback{
-    min-height:310px;
-  }
-
-  #avora-about-final .aa-leader-content h3{
-    font-size:29px;
-  }
-
-  #avora-about-final .aa-cta{
-    padding:60px 0;
-  }
-
-  #avora-about-final .aa-cta .aa-btn{
-    width:100%;
+  #avora-about-final .aa-cta-actions {
+    width: 100%;
+    max-width: 340px;
   }
 }
 
-@media(prefers-reduced-motion:reduce){
-  #avora-about-final *{
-    transition:none!important;
+@media (max-width: 480px) {
+
+  #avora-about-final .aa-container {
+    width: calc(100% - 34px);
+  }
+
+  #avora-about-final .aa-hero {
+    padding: 58px 0;
+  }
+
+  #avora-about-final .aa-hero h1 {
+    font-size: 37px;
+    letter-spacing: -1.1px;
+  }
+
+  #avora-about-final .aa-hero-right p {
+    font-size: 16px;
+  }
+
+  #avora-about-final .aa-title {
+    font-size: 30px;
+    letter-spacing: -0.7px;
+  }
+
+  #avora-about-final .aa-section {
+    padding: 55px 0;
+  }
+
+  #avora-about-final .aa-intro-panel {
+    padding: 25px;
+  }
+
+  #avora-about-final .aa-leader {
+    padding: 18px;
+  }
+
+  #avora-about-final .aa-leader-image {
+    min-height: 310px;
+    height: 310px;
+  }
+
+  #avora-about-final .aa-leader-image-fallback {
+    min-height: 310px;
+  }
+
+  #avora-about-final .aa-leader-content h3 {
+    font-size: 29px;
+  }
+
+  #avora-about-final .aa-faq-item summary {
+    padding: 17px;
+    font-size: 15px;
+  }
+
+  #avora-about-final .aa-faq-answer {
+    padding: 0 17px 18px;
+  }
+
+  #avora-about-final .aa-cta {
+    padding: 60px 0;
+  }
+
+  #avora-about-final .aa-cta-actions {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #avora-about-final * {
+    transition: none !important;
   }
 }
 </style>
 
-<main id="avora-about-final">
+<div id="avora-about-final">
 
-  <!-- ==========================================
-       SECTION 01: HERO
-  =========================================== -->
-  <section class="aa-hero">
-    <div class="aa-container aa-hero-grid">
+<!-- ==========================================
+ SECTION 01 — HERO
+========================================== -->
 
-      <div>
-        <span class="aa-eyebrow">
-          ABOUT AVORA SOLUTIONS
-        </span>
+<section class="aa-hero">
+  <div class="aa-container aa-hero-grid">
 
-        <h1>
-          Built for Secure
-          <span>Healthcare Operations.</span>
-        </h1>
-      </div>
-
-      <div class="aa-hero-right">
-        <p>
-          Avora Solutions helps medical practices
-          reduce administrative workload with
-          secure Medical Virtual Assistants,
-          designed around healthcare workflows,
-          patient information protection,
-          and the needs of independent practices.
-        </p>
-
-        <a class="aa-btn aa-btn-light"
-           href="https://www.avorasolutions.com/contact">
-          Schedule a Discovery Call
-          <span aria-hidden="true">→</span>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================
-       SECTION 02: ABOUT AVORA
-  =========================================== -->
-  <section class="aa-section" id="about-avora">
-    <div class="aa-container aa-intro-grid">
-
-      <div class="aa-intro-copy">
-        <span class="aa-eyebrow">
-          WHO WE ARE
-        </span>
-
-        <h2 class="aa-title">
-          About <span>Avora Solutions</span>
-        </h2>
-
-        <p>
-          Avora Solutions is based in Cary,
-          North Carolina, and was built to
-          address a critical challenge in
-          healthcare: how to scale
-          administrative support without
-          unnecessarily exposing patient data.
-        </p>
-
-        <p>
-          Traditional virtual assistants may
-          work from personal devices, creating
-          concerns around patient information,
-          local storage, and credential access.
-          Avora's approach uses a controlled
-          U.S.-based virtual working environment
-          designed to reduce those risks.
-        </p>
-
-        <p>
-          We help medical practices handle
-          administrative responsibilities
-          through dedicated Medical Virtual
-          Assistants familiar with healthcare
-          workflows and the systems practices
-          rely on every day.
-        </p>
-      </div>
-
-      <div class="aa-intro-panel">
-        <h3>What Makes Our Approach Different?</h3>
-
-        <div class="aa-intro-detail">
-          <strong>Secure by Design</strong>
-          <p>
-            Administrative work is performed
-            within a controlled virtual
-            environment, with safeguards
-            intended to restrict downloads,
-            local storage, and credential exposure.
-          </p>
-        </div>
-
-        <div class="aa-intro-detail">
-          <strong>Built for Healthcare Workflows</strong>
-          <p>
-            Our assistants support scheduling,
-            prior authorizations, billing
-            administration, and EMR-related
-            tasks used by medical practices.
-          </p>
-        </div>
-
-        <div class="aa-intro-detail">
-          <strong>Focused on Independent Practices</strong>
-          <p>
-            Our support is aligned with the
-            operational requirements, existing
-            systems, and administrative
-            priorities of each practice.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================
-       SECTION 03: OUR PURPOSE
-  =========================================== -->
-  <section class="aa-section aa-mission">
-    <div class="aa-container aa-mission-grid">
-
-      <div>
-        <span class="aa-eyebrow">
-          OUR PURPOSE
-        </span>
-
-        <h2 class="aa-title">
-          Less Administrative Work.
-          <span>More Focus on Patient Care.</span>
-        </h2>
-      </div>
-
-      <div class="aa-mission-copy">
-        <p>
-          Avora was created around the belief
-          that medical practices deserve
-          operational support from people
-          who understand healthcare.
-        </p>
-
-        <p>
-          We aim to help physicians and
-          practice teams spend less time
-          navigating recurring administrative
-          work and more time focusing
-          on their patients.
-        </p>
-
-        <p>
-          By combining healthcare workflow
-          experience, dedicated administrative
-          support, and security-conscious
-          technology, we work to make
-          practice operations more manageable
-          without adding unnecessary complexity.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================
-       SECTION 04: SECURITY AT AVORA
-  =========================================== -->
-  <section class="aa-section" id="security-at-avora">
-    <div class="aa-container">
-
-      <div class="aa-security-head">
-        <span class="aa-eyebrow">
-          SECURITY AT AVORA SOLUTIONS
-        </span>
-
-        <h2 class="aa-title">
-          Built to Protect Patient Data
-          <span>at Every Step.</span>
-        </h2>
-
-        <p>
-          Our operating model is designed to
-          help practices expand administrative
-          support while maintaining appropriate
-          controls over patient information,
-          credentials, and system access.
-        </p>
-      </div>
-
-      <div class="aa-security-grid">
-
-        <article class="aa-security-card">
-          <span class="aa-security-number">01</span>
-
-          <h3>U.S.-Based Virtual Environment</h3>
-
-          <p>
-            Avora assistants work through
-            secure virtual desktops with
-            restrictions on local storage,
-            downloading, and remote printing.
-            The environment is designed
-            to keep administrative work
-            within controlled infrastructure.
-          </p>
-        </article>
-
-        <article class="aa-security-card">
-          <span class="aa-security-number">02</span>
-
-          <h3>Protected Login Credentials</h3>
-
-          <p>
-            An encrypted credential vault
-            with auto-fill technology
-            supports system access without
-            requiring assistants to view
-            or directly handle the
-            practice's passwords.
-          </p>
-        </article>
-
-        <article class="aa-security-card">
-          <span class="aa-security-number">03</span>
-
-          <h3>Controlled Access &amp; Oversight</h3>
-
-          <p>
-            Assistants operate within
-            approved administrative workflows.
-            Practice-defined responsibilities
-            and access permissions help
-            support oversight of the
-            systems being used.
-          </p>
-        </article>
-
-      </div>
-
-      <div class="aa-security-bottom">
-        <p>
-          <strong>Why this matters:</strong>
-          Traditional remote staffing may
-          introduce risks involving personal
-          devices, credentials shared through
-          email, and limited oversight.
-          Avora's model is designed to
-          reduce these risks through
-          controlled infrastructure and
-          protected access. Specific
-          safeguards and obligations
-          should be confirmed during
-          the client engagement.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================
-       SECTION 05: HEALTHCARE WORKFLOWS
-  =========================================== -->
-  <section class="aa-section aa-workflows">
-    <div class="aa-container aa-workflows-grid">
-
-      <div class="aa-workflows-copy">
-        <span class="aa-eyebrow">
-          DESIGNED FOR HEALTHCARE WORKFLOWS
-        </span>
-
-        <h2 class="aa-title">
-          Built Around the Systems
-          <span>Your Practice Already Uses.</span>
-        </h2>
-
-        <p>
-          Medical practices rely on multiple
-          systems to manage appointments,
-          patient records, insurance
-          requirements, and billing activities.
-        </p>
-
-        <p>
-          Avora's Medical Virtual Assistants
-          are matched to administrative
-          responsibilities and work
-          within approved systems
-          and practice procedures.
-        </p>
-
-        <p>
-          This helps practices add support
-          without requiring an entirely
-          new operational process.
-        </p>
-      </div>
-
-      <div class="aa-workflow-list">
-
-        <div class="aa-workflow-row">
-          <span class="aa-workflow-check"
-                aria-hidden="true">✓</span>
-          <h3>EMRs &amp; Practice Systems</h3>
-        </div>
-
-        <div class="aa-workflow-row">
-          <span class="aa-workflow-check"
-                aria-hidden="true">✓</span>
-          <h3>Insurance &amp; Payer Portals</h3>
-        </div>
-
-        <div class="aa-workflow-row">
-          <span class="aa-workflow-check"
-                aria-hidden="true">✓</span>
-          <h3>Billing &amp; Administrative Workflows</h3>
-        </div>
-
-        <div class="aa-workflow-row">
-          <span class="aa-workflow-check"
-                aria-hidden="true">✓</span>
-          <h3>Patient Scheduling &amp; Coordination</h3>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==========================================
-       SECTION 06: OUR LEADERSHIP
-  =========================================== -->
-  <section class="aa-section" id="avora-leadership">
-    <div class="aa-container">
-
-      <div class="aa-leadership-head">
-        <span class="aa-eyebrow">
-          OUR LEADERSHIP
-        </span>
-
-        <h2 class="aa-title">
-          Healthcare Is Built
-          <span>on Trust.</span>
-        </h2>
-
-        <p>
-          At Avora, our leadership brings
-          experience from the payer, provider,
-          and technology sides of healthcare.
-          Every decision is guided by one goal:
-          helping medical practices reduce
-          administrative burden so physicians
-          and their teams can focus on
-          delivering exceptional patient care.
-        </p>
-      </div>
-
-      <!-- FOUNDER & CEO -->
-      <article class="aa-leader">
-
-        <div class="aa-leader-image">
-          <!--
-          To use an approved founder photo,
-          replace the fallback div below with:
-
-          <img
-            src="PASTE-NISHANT-PHOTO-URL"
-            alt="Nishant Munjal, Founder and CEO of Avora Solutions"
-            loading="lazy"
-            decoding="async">
-          -->
-
-          <div class="aa-leader-image-fallback">
-            <svg viewBox="0 0 100 100"
-                 aria-hidden="true">
-              <circle cx="50" cy="30" r="17"/>
-              <path d="M16 90V78c0-18 15-31 34-31s34 13 34 31v12"/>
-            </svg>
-
-            <strong>Nishant Munjal</strong>
-            <span>Founder &amp; CEO</span>
-            <span>Insert approved photo</span>
-          </div>
-        </div>
-
-        <div class="aa-leader-content">
-          <span class="aa-leader-role">
-            FOUNDER &amp; CEO
-          </span>
-
-          <h3>Nishant Munjal</h3>
-
-          <p>
-            Nishant Munjal believes operational
-            excellence is one of the most
-            overlooked drivers of better patient
-            care. When physicians and their teams
-            spend less time navigating
-            administrative complexity, they gain
-            more time to focus on the people who
-            matter most: their patients.
-          </p>
-
-          <p>
-            After nearly two decades working
-            on the payer side of healthcare
-            and through his continued leadership
-            as Board Member and Practice
-            Administrator at NCIAP – People's
-            Medical Care, Nishant has experienced
-            healthcare from both the payer
-            and provider perspectives.
-          </p>
-
-          <p>
-            Those experiences gave him a deep
-            understanding of the operational
-            challenges independent medical
-            practices face every day and
-            shaped a simple conviction:
-            healthcare organizations deserve
-            operational partners who genuinely
-            understand their world.
-          </p>
-
-          <p>
-            That conviction became
-            Avora Solutions.
-          </p>
-
-          <p>
-            Today, Nishant is building Avora
-            to help independent medical
-            practices strengthen operations
-            through secure Medical Virtual
-            Assistants, thoughtful workflow
-            improvements, and practical
-            innovation that allows physicians
-            to spend less time managing
-            administrative work and more
-            time caring for patients.
-          </p>
-
-          <a class="aa-leader-link"
-             href="https://www.linkedin.com/in/nishantmunjal/"
-             target="_blank"
-             rel="noopener noreferrer">
-            Connect with Nishant on LinkedIn
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-
-      </article>
-
-      <!-- CTO -->
-      <article class="aa-leader">
-
-        <div class="aa-leader-image">
-          <!--
-          To use an approved CTO photo,
-          replace the fallback div below with:
-
-          <img
-            src="PASTE-NAVEEN-PHOTO-URL"
-            alt="Naveen Deshwal, Chief Technology Officer of Avora Solutions"
-            loading="lazy"
-            decoding="async">
-          -->
-
-          <div class="aa-leader-image-fallback">
-            <svg viewBox="0 0 100 100"
-                 aria-hidden="true">
-              <circle cx="50" cy="30" r="17"/>
-              <path d="M16 90V78c0-18 15-31 34-31s34 13 34 31v12"/>
-            </svg>
-
-            <strong>Naveen Deshwal</strong>
-            <span>Chief Technology Officer</span>
-            <span>Insert approved photo</span>
-          </div>
-        </div>
-
-        <div class="aa-leader-content">
-          <span class="aa-leader-role">
-            CHIEF TECHNOLOGY OFFICER
-          </span>
-
-          <h3>Naveen Deshwal</h3>
-
-          <p>
-            Naveen Deshwal believes technology
-            should make healthcare operations
-            simpler, more secure, and easier
-            for medical practices to manage.
-          </p>
-
-          <p>
-            As Avora's Chief Technology Officer,
-            Naveen designs the technology
-            foundation behind every client
-            engagement. His focus is building
-            secure systems that protect patient
-            information while allowing healthcare
-            teams to work efficiently and
-            confidently without adding
-            unnecessary complexity to their day.
-          </p>
-
-          <p>
-            He believes the best technology
-            is the kind that quietly supports
-            great healthcare. By combining
-            secure infrastructure with thoughtful
-            automation, Naveen is helping build
-            a future where technology removes
-            administrative friction, allowing
-            medical practices to operate more
-            efficiently while physicians and
-            their teams remain focused on
-            what matters most: caring for patients.
-          </p>
-
-          <a class="aa-leader-link"
-             href="https://www.linkedin.com/in/deshwal/"
-             target="_blank"
-             rel="noopener noreferrer">
-            Connect with Naveen on LinkedIn
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ==========================================
-       SECTION 07: OUR COMMITMENT
-  =========================================== -->
-  <section class="aa-section aa-commitment">
-    <div class="aa-container aa-commitment-inner">
-
+    <div>
       <span class="aa-eyebrow">
-        OUR COMMITMENT
+        ABOUT AVORA SOLUTIONS
       </span>
 
-      <h2 class="aa-title">
-        A Partner Who
-        <span>Understands Healthcare.</span>
-      </h2>
-
-      <p>
-        We built Avora with a simple belief:
-        medical practices deserve operational
-        partners who understand healthcare
-        as deeply as they do.
-      </p>
-
-      <p>
-        Our goal is not simply to provide
-        support. It is to earn the trust
-        of every physician, every practice,
-        and every patient we have the
-        privilege to serve.
-      </p>
-
+      <h1>
+        Built for Secure
+        <span>Healthcare Operations.</span>
+      </h1>
     </div>
-  </section>
 
-  <!-- ==========================================
-       SECTION 08: FINAL CTA
-  =========================================== -->
-  <section class="aa-cta">
-    <div class="aa-container aa-cta-grid">
+    <div class="aa-hero-right">
 
-      <div>
-        <span class="aa-eyebrow">
-          WORK WITH AVORA
-        </span>
+      <p>
+        Avora Solutions helps medical practices
+        reduce administrative workload with
+        secure Medical Virtual Assistants,
+        designed around healthcare workflows,
+        patient information protection,
+        and the needs of independent practices.
+      </p>
 
-        <h2>
-          Reduce Administrative Work
-          Without Compromising Security.
-        </h2>
-
-        <p>
-          Learn how dedicated Medical
-          Virtual Assistant support can
-          help your practice manage
-          scheduling, authorizations,
-          billing administration,
-          and other back-office workflows.
-        </p>
-      </div>
-
-      <a class="aa-btn aa-btn-light"
-         href="https://www.avorasolutions.com/contact">
+      <a
+        href="https://www.avorasolutions.com/contact"
+        class="aa-btn aa-btn-light"
+      >
         Schedule a Discovery Call
         <span aria-hidden="true">→</span>
       </a>
 
     </div>
-  </section>
 
-</main>
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 02 — WHO WE ARE
+========================================== -->
+
+<section class="aa-section" id="about-avora">
+
+  <div class="aa-container aa-intro-grid">
+
+    <div class="aa-intro-copy">
+
+      <span class="aa-eyebrow">
+        WHO WE ARE
+      </span>
+
+      <h2 class="aa-title">
+        About <span>Avora Solutions</span>
+      </h2>
+
+      <p>
+        Avora Solutions is based in Cary,
+        North Carolina, and was built to
+        address a critical challenge in
+        healthcare: how to scale administrative
+        support without unnecessarily
+        exposing patient data.
+      </p>
+
+      <p>
+        Traditional virtual assistants may
+        work from personal devices, creating
+        concerns around patient information,
+        local storage, and credential access.
+        Avora's approach uses a controlled
+        U.S.-based virtual working environment
+        designed to reduce those risks.
+      </p>
+
+      <p>
+        We help medical practices handle
+        administrative responsibilities
+        through dedicated Medical Virtual
+        Assistants familiar with healthcare
+        workflows and the systems practices
+        rely on every day.
+      </p>
+
+    </div>
+
+    <div class="aa-intro-panel">
+
+      <h3>
+        What Makes Our Approach Different?
+      </h3>
+
+      <div class="aa-intro-detail">
+        <strong>Secure by Design</strong>
+        <p>
+          Administrative work is performed
+          within a controlled virtual
+          environment, with safeguards
+          intended to restrict downloads,
+          local storage, and credential exposure.
+        </p>
+      </div>
+
+      <div class="aa-intro-detail">
+        <strong>Built for Healthcare Workflows</strong>
+        <p>
+          Our assistants support scheduling,
+          prior authorizations, billing
+          administration, and EMR-related
+          tasks used by medical practices.
+        </p>
+      </div>
+
+      <div class="aa-intro-detail">
+        <strong>Focused on Independent Practices</strong>
+        <p>
+          Our support is aligned with the
+          operational requirements, existing
+          systems, and administrative priorities
+          of each practice.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 03 — OUR PURPOSE
+========================================== -->
+
+<section class="aa-section aa-mission">
+
+  <div class="aa-container aa-mission-grid">
+
+    <div>
+
+      <span class="aa-eyebrow">
+        OUR PURPOSE
+      </span>
+
+      <h2 class="aa-title">
+        Less Administrative Work.
+        <span>More Focus on Patient Care.</span>
+      </h2>
+
+    </div>
+
+    <div class="aa-mission-copy">
+
+      <p>
+        Avora was created around the belief
+        that medical practices deserve
+        operational support from people
+        who understand healthcare.
+      </p>
+
+      <p>
+        We aim to help physicians and
+        practice teams spend less time
+        navigating recurring administrative
+        work and more time focusing
+        on their patients.
+      </p>
+
+      <p>
+        By combining healthcare workflow
+        experience, dedicated administrative
+        support, and security-conscious
+        technology, we work to make
+        practice operations more manageable
+        without adding unnecessary complexity.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 04 — SECURITY
+========================================== -->
+
+<section class="aa-section" id="security-at-avora">
+
+  <div class="aa-container">
+
+    <div class="aa-security-head">
+
+      <span class="aa-eyebrow">
+        SECURITY AT AVORA SOLUTIONS
+      </span>
+
+      <h2 class="aa-title">
+        Built to Protect Patient Data
+        <span>at Every Step.</span>
+      </h2>
+
+      <p>
+        Our operating model is designed
+        to help practices expand administrative
+        support while maintaining appropriate
+        controls over patient information,
+        credentials, and system access.
+      </p>
+
+    </div>
+
+    <div class="aa-security-grid">
+
+      <article class="aa-security-card">
+
+        <span class="aa-security-number">01</span>
+
+        <h3>U.S.-Based Virtual Environment</h3>
+
+        <p>
+          Avora assistants work through
+          secure virtual desktops with
+          restrictions on local storage,
+          downloading, and remote printing.
+          The environment is designed
+          to keep administrative work
+          within controlled infrastructure.
+        </p>
+
+      </article>
+
+      <article class="aa-security-card">
+
+        <span class="aa-security-number">02</span>
+
+        <h3>Protected Login Credentials</h3>
+
+        <p>
+          An encrypted credential vault
+          with auto-fill technology supports
+          system access without requiring
+          assistants to view or directly
+          handle the practice's passwords.
+        </p>
+
+      </article>
+
+      <article class="aa-security-card">
+
+        <span class="aa-security-number">03</span>
+
+        <h3>Controlled Access &amp; Oversight</h3>
+
+        <p>
+          Assistants operate within
+          approved administrative workflows.
+          Practice-defined responsibilities
+          and access permissions help
+          support oversight of the
+          systems being used.
+        </p>
+
+      </article>
+
+    </div>
+
+    <div class="aa-security-bottom">
+
+      <p>
+        <strong>Why this matters:</strong>
+        Traditional remote staffing may
+        introduce risks involving personal
+        devices, credentials shared through
+        email, and limited oversight.
+        Avora's model is designed to
+        reduce these risks through controlled
+        infrastructure and protected access.
+        Specific safeguards and obligations
+        should be confirmed during the
+        client engagement.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 05 — HEALTHCARE WORKFLOWS
+========================================== -->
+
+<section class="aa-section aa-workflows">
+
+  <div class="aa-container aa-workflows-grid">
+
+    <div class="aa-workflows-copy">
+
+      <span class="aa-eyebrow">
+        DESIGNED FOR HEALTHCARE WORKFLOWS
+      </span>
+
+      <h2 class="aa-title">
+        Built Around the Systems
+        <span>Your Practice Already Uses.</span>
+      </h2>
+
+      <p>
+        Medical practices rely on multiple
+        systems to manage appointments,
+        patient records, insurance
+        requirements, and billing activities.
+      </p>
+
+      <p>
+        Avora's Medical Virtual Assistants
+        are matched to administrative
+        responsibilities and work within
+        approved systems and practice procedures.
+      </p>
+
+      <p>
+        This helps practices add support
+        without requiring an entirely
+        new operational process.
+      </p>
+
+    </div>
+
+    <div class="aa-workflow-list">
+
+      <div class="aa-workflow-row">
+        <span class="aa-workflow-check"
+              aria-hidden="true">✓</span>
+        <h3>EMRs &amp; Practice Systems</h3>
+      </div>
+
+      <div class="aa-workflow-row">
+        <span class="aa-workflow-check"
+              aria-hidden="true">✓</span>
+        <h3>Insurance &amp; Payer Portals</h3>
+      </div>
+
+      <div class="aa-workflow-row">
+        <span class="aa-workflow-check"
+              aria-hidden="true">✓</span>
+        <h3>Billing &amp; Administrative Workflows</h3>
+      </div>
+
+      <div class="aa-workflow-row">
+        <span class="aa-workflow-check"
+              aria-hidden="true">✓</span>
+        <h3>Patient Scheduling &amp; Coordination</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 06 — LEADERSHIP
+========================================== -->
+
+<section class="aa-section" id="avora-leadership">
+
+  <div class="aa-container">
+
+    <div class="aa-leadership-head">
+
+      <span class="aa-eyebrow">
+        OUR LEADERSHIP
+      </span>
+
+      <h2 class="aa-title">
+        Healthcare Is Built
+        <span>on Trust.</span>
+      </h2>
+
+      <p>
+        At Avora, our leadership brings
+        experience from the payer, provider,
+        and technology sides of healthcare.
+        Every decision is guided by one goal:
+        helping medical practices reduce
+        administrative burden so physicians
+        and their teams can focus on delivering
+        exceptional patient care.
+      </p>
+
+    </div>
+
+    <!-- FOUNDER & CEO -->
+    <!-- IMAGE LEFT / CONTENT RIGHT -->
+
+    <article class="aa-leader">
+
+      <div class="aa-leader-image">
+
+        <!--
+        REPLACE THIS PLACEHOLDER WITH:
+
+        <img
+          src="YOUR-NISHANT-IMAGE-URL"
+          alt="Nishant Munjal, Founder and CEO of Avora Solutions"
+          loading="lazy"
+          decoding="async">
+        -->
+
+        <div class="aa-leader-image-fallback">
+
+          <svg viewBox="0 0 100 100"
+               aria-hidden="true">
+            <circle cx="50" cy="30" r="17"/>
+            <path d="M16 90V78c0-18 15-31 34-31s34 13 34 31v12"/>
+          </svg>
+
+          <strong>Nishant Munjal</strong>
+          <span>Founder &amp; CEO</span>
+          <span>Insert approved photo</span>
+
+        </div>
+
+      </div>
+
+      <div class="aa-leader-content">
+
+        <span class="aa-leader-role">
+          FOUNDER &amp; CEO
+        </span>
+
+        <h3>Nishant Munjal</h3>
+
+        <p>
+          Nishant Munjal believes operational
+          excellence is one of the most
+          overlooked drivers of better patient
+          care. When physicians and their teams
+          spend less time navigating administrative
+          complexity, they gain more time
+          to focus on the people who matter
+          most: their patients.
+        </p>
+
+        <p>
+          After nearly two decades working
+          on the payer side of healthcare
+          and through his continued leadership
+          as Board Member and Practice
+          Administrator at NCIAP – People's
+          Medical Care, Nishant has experienced
+          healthcare from both the payer
+          and provider perspectives.
+        </p>
+
+        <p>
+          Those experiences gave him a deep
+          understanding of the operational
+          challenges independent medical
+          practices face every day and
+          shaped a simple conviction:
+          healthcare organizations deserve
+          operational partners who genuinely
+          understand their world.
+        </p>
+
+        <p>
+          That conviction became Avora Solutions.
+        </p>
+
+        <p>
+          Today, Nishant is building Avora
+          to help independent medical practices
+          strengthen operations through secure
+          Medical Virtual Assistants, thoughtful
+          workflow improvements, and practical
+          innovation that allows physicians
+          to spend less time managing
+          administrative work and more
+          time caring for patients.
+        </p>
+
+        <a
+          href="https://www.linkedin.com/in/nishantmunjal/"
+          class="aa-leader-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect with Nishant on LinkedIn
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- CTO -->
+    <!-- CONTENT LEFT / IMAGE RIGHT -->
+
+    <article class="aa-leader aa-leader--reverse">
+
+      <div class="aa-leader-image">
+
+        <!--
+        REPLACE THIS PLACEHOLDER WITH:
+
+        <img
+          src="YOUR-NAVEEN-IMAGE-URL"
+          alt="Naveen Deshwal, Chief Technology Officer of Avora Solutions"
+          loading="lazy"
+          decoding="async">
+        -->
+
+        <div class="aa-leader-image-fallback">
+
+          <svg viewBox="0 0 100 100"
+               aria-hidden="true">
+            <circle cx="50" cy="30" r="17"/>
+            <path d="M16 90V78c0-18 15-31 34-31s34 13 34 31v12"/>
+          </svg>
+
+          <strong>Naveen Deshwal</strong>
+          <span>Chief Technology Officer</span>
+          <span>Insert approved photo</span>
+
+        </div>
+
+      </div>
+
+      <div class="aa-leader-content">
+
+        <span class="aa-leader-role">
+          CHIEF TECHNOLOGY OFFICER
+        </span>
+
+        <h3>Naveen Deshwal</h3>
+
+        <p>
+          Naveen Deshwal believes technology
+          should make healthcare operations
+          simpler, more secure, and easier
+          for medical practices to manage.
+        </p>
+
+        <p>
+          As Avora's Chief Technology Officer,
+          Naveen designs the technology
+          foundation behind every client
+          engagement. His focus is building
+          secure systems that protect patient
+          information while allowing healthcare
+          teams to work efficiently and
+          confidently without adding
+          unnecessary complexity to their day.
+        </p>
+
+        <p>
+          He believes the best technology
+          is the kind that quietly supports
+          great healthcare. By combining
+          secure infrastructure with thoughtful
+          automation, Naveen is helping
+          build a future where technology
+          removes administrative friction,
+          allowing medical practices to
+          operate more efficiently while
+          physicians and their teams remain
+          focused on what matters most:
+          caring for patients.
+        </p>
+
+        <a
+          href="https://www.linkedin.com/in/deshwal/"
+          class="aa-leader-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect with Naveen on LinkedIn
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 07 — OUR COMMITMENT
+========================================== -->
+
+<section class="aa-section aa-commitment">
+
+  <div class="aa-container aa-commitment-inner">
+
+    <span class="aa-eyebrow">
+      OUR COMMITMENT
+    </span>
+
+    <h2 class="aa-title">
+      A Partner Who
+      <span>Understands Healthcare.</span>
+    </h2>
+
+    <p>
+      We built Avora with a simple belief:
+      medical practices deserve operational
+      partners who understand healthcare
+      as deeply as they do.
+    </p>
+
+    <p>
+      Our goal is not simply to provide
+      support. It is to earn the trust
+      of every physician, every practice,
+      and every patient we have the
+      privilege to serve.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 08 — FAQ (2 COLUMNS)
+========================================== -->
+
+<section class="aa-section aa-faq" id="avora-about-faq">
+
+  <div class="aa-container">
+
+    <div class="aa-faq-head">
+
+      <span class="aa-eyebrow">
+        FREQUENTLY ASKED QUESTIONS
+      </span>
+
+      <h2 class="aa-title">
+        Questions About
+        <span>Avora Solutions</span>
+      </h2>
+
+      <p>
+        Learn more about our company,
+        Medical Virtual Assistant model,
+        and how we support independent
+        medical practices.
+      </p>
+
+    </div>
+
+    <div class="aa-faq-grid">
+
+      <!-- LEFT FAQ COLUMN -->
+
+      <div class="aa-faq-col">
+
+        <details class="aa-faq-item">
+
+          <summary>
+            What is Avora Solutions?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              Avora Solutions is a North
+              Carolina-based company that
+              provides dedicated Medical
+              Virtual Assistants for independent
+              medical practices in the United States.
+              Its services focus on administrative
+              workflows, including scheduling,
+              insurance verification, prior
+              authorization support, referral
+              coordination, and billing administration.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="aa-faq-item">
+
+          <summary>
+            Who founded Avora Solutions?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              Avora Solutions was founded by
+              Nishant Munjal, whose experience
+              spans healthcare payer operations
+              and medical practice administration.
+              He serves as the company's
+              Founder and CEO.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="aa-faq-item">
+
+          <summary>
+            What types of practices does Avora support?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              Avora focuses on independent
+              medical practices across the
+              United States. The specific
+              responsibilities of an assistant
+              depend on the practice's specialty,
+              systems, and administrative needs.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="aa-faq-item">
+
+          <summary>
+            Do Avora's assistants make clinical decisions?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              No. Medical Virtual Assistants
+              provide administrative support.
+              Clinical decisions, medical advice,
+              and patient care responsibilities
+              remain with appropriately licensed
+              healthcare professionals
+              and the practice.
+            </p>
+          </div>
+
+        </details>
+
+      </div>
+
+
+      <!-- RIGHT FAQ COLUMN -->
+
+      <div class="aa-faq-col">
+
+        <details class="aa-faq-item">
+
+          <summary>
+            How does Avora approach patient data security?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              Avora's model incorporates a
+              controlled U.S.-based virtual
+              workspace, protected credential
+              handling, and practice-defined
+              access. These controls are
+              designed to support
+              security-conscious, HIPAA-aligned
+              administrative workflows.
+              Specific safeguards and agreements
+              should be confirmed for each engagement.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="aa-faq-item">
+
+          <summary>
+            Do assistants work with our existing EMR or EHR?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              Assistants are intended to work
+              within the practice's approved
+              EMR/EHR, payer portals, and
+              administrative systems, subject
+              to the permissions, onboarding,
+              and procedures established
+              by the practice.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="aa-faq-item">
+
+          <summary>
+            How is an assistant selected for our practice?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              Avora discusses your workflow
+              needs, identifies suitable
+              assistant candidates, and supports
+              practice interviews and selection
+              before onboarding. The exact
+              process and timing depend
+              on your requirements.
+            </p>
+          </div>
+
+        </details>
+
+
+        <details class="aa-faq-item">
+
+          <summary>
+            How can we speak with Avora?
+          </summary>
+
+          <div class="aa-faq-answer">
+            <p>
+              You can
+              <a href="https://www.avorasolutions.com/contact">
+                schedule a discovery call
+              </a>
+              or call
+              <a href="tel:+19194435604">
+                +1 (919) 443-5604
+              </a>
+              to discuss your practice's
+              administrative support needs.
+            </p>
+          </div>
+
+        </details>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ SECTION 09 — FINAL CTA
+========================================== -->
+
+<section class="aa-cta">
+
+  <div class="aa-container aa-cta-grid">
+
+    <div>
+
+      <span class="aa-eyebrow">
+        WORK WITH AVORA
+      </span>
+
+      <h2>
+        Reduce Administrative Work
+        Without Compromising Security.
+      </h2>
+
+      <p>
+        Learn how dedicated Medical Virtual
+        Assistant support can help your practice
+        manage scheduling, authorizations,
+        billing administration, and other
+        back-office workflows.
+      </p>
+
+    </div>
+
+    <div class="aa-cta-actions">
+
+      <!-- DISCOVERY CALL -->
+
+      <a
+        href="https://www.avorasolutions.com/contact"
+        class="aa-btn aa-btn-light"
+      >
+        Schedule a Discovery Call
+        <span aria-hidden="true">→</span>
+      </a>
+
+      <!-- CALL NOW -->
+
+      <a
+        href="tel:+19194435604"
+        class="aa-btn aa-btn-outline"
+      >
+        <span aria-hidden="true">☎</span>
+        Call Now
+      </a>
+
+      <span class="aa-cta-phone">
+        +1 (919) 443-5604
+      </span>
+
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+
+<!-- ==========================================
+ FAQ ACCORDION JAVASCRIPT
+ Only one FAQ open at a time
+========================================== -->
+
+<script>
+(function () {
+  "use strict";
+
+  function initAvoraAboutFAQ() {
+
+    var root = document.getElementById(
+      "avora-about-final"
+    );
+
+    if (!root) return;
+
+    if (root.dataset.faqReady === "1") return;
+
+    root.dataset.faqReady = "1";
+
+    var items = Array.from(
+      root.querySelectorAll(".aa-faq-item")
+    );
+
+    items.forEach(function (item) {
+
+      item.addEventListener("toggle", function () {
+
+        if (!item.open) return;
+
+        items.forEach(function (other) {
+
+          if (other !== item) {
+            other.open = false;
+          }
+
+        });
+
+      });
+
+    });
+
+  }
+
+  if (document.readyState === "loading") {
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      initAvoraAboutFAQ,
+      { once: true }
+    );
+
+  } else {
+
+    initAvoraAboutFAQ();
+
+  }
+
+})();
+</script>
